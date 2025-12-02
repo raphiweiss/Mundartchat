@@ -98,14 +98,23 @@ def get_top_ngrams(ngram_counts, n: int, topk: int = 20) -> pd.DataFrame:
 
     total = sum(counter.values())
     rows = []
-    for ng, cnt in counter.most_common(topk):
+    for ng, cnt in counter.most_common(topk * 3):  # etwas mehr holen zum Filtern
         text = " ".join(ng)
+
+        # ✂️ Satzgrenzen und Platzhalter rausfiltern
+        if "<s>" in ng or "</s>" in ng:
+            continue
+        if text.strip() in ("<s>", "</s>"):
+            continue
+
         rows.append({
             "ngram": text,
             "count": cnt,
             "rel_freq": round(cnt / total, 3),
         })
-    return pd.DataFrame(rows)
+
+    # auf topk nach dem Filtern begrenzen
+    return pd.DataFrame(rows[:topk])
 
 
 def _is_good_token(tok: str) -> bool:
