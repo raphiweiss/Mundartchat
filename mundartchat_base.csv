@@ -1,0 +1,301 @@
+text,label,intent,is_seed,text_clean
+was lauft so bi dir?,neutral,smalltalk,True,was lauft so bi dir
+mues ich mich irgendwo registriere dafür?,neutral,frage_info,True,mues ich mich irgendwo registriere dafuer
+du bisch sehr sorgfältig gsi,positiv,lob,True,du bisch sehr sorgfaeltig gsi
+es isch alles so schlecht organisiert,negativ,beschwerde,True,es isch alles so schlecht organisiert
+wottsch du en kalender-eintrag?,neutral,orga,True,wottsch du en kalender eintrag
+chömer s eventuell verschiebe?,neutral,orga,True,choemer s eventuell verschiebe
+das passt im momänt sehr guet für mich,positiv,freud,True,das passt im momaent sehr guet fuer mich
+merci fürs organisieren,positiv,dank,True,merci fuers organisieren
+das cha doch nöd wahr sii,negativ,beschwerde,True,das cha doch noed wahr sii
+ich han s richtig genosse,positiv,freud,True,ich han s richtig genosse
+wer söll sonst no debi sii?,neutral,orga,True,wer soell sonst no debi sii
+alles regt mich uf im momänt,negativ,frust,True,alles regt mich uf im momaent
+was luegsch im momänt so für series?,neutral,smalltalk,True,was luegsch im momaent so fuer series
+nüt macht mir grad würkli freud,negativ,frust,True,nuet macht mir grad wuerkli freud
+ich bin dankbar für die situation,positiv,freud,True,ich bin dankbar fuer die situation
+hesch no feriä plan?,neutral,smalltalk,True,hesch no feriae plan
+mer chönd s fürs erste so belah wie s isch,neutral,sonstiges,True,mer choend s fuers erste so belah wie s isch
+hesch grad vil um d ohre?,neutral,smalltalk,True,hesch grad vil um d ohre
+ich lern vil vo dim approach,positiv,lob,True,ich lern vil vo dim approach
+dini leistung isch beeindruckend,positiv,lob,True,dini leistung isch beeindruckend
+"ich bi froh um jede hilf, ganz ehrlich",negativ,hilfe_bitten,True,ich bi froh um jede hilf ganz ehrlich
+"danke fürs nachfroge, das bedeutet mir vil",positiv,dank,True,danke fuers nachfroge das bedeutet mir vil
+"mached mer es doodle, damits eifacher isch?",neutral,orga,True,mached mer es doodle damits eifacher isch
+wie funktionieret das genau?,neutral,frage_info,True,wie funktionieret das genau
+"das isch alles andere als selbstverständlich, danke",positiv,dank,True,das isch alles andere als selbstverstaendlich danke
+ich ha scho lang kei pause meh gha,negativ,frust,True,ich ha scho lang kei pause meh gha
+ich chan mit beidem lebe,neutral,sonstiges,True,ich chan mit beidem lebe
+"wenn du en vorschlag hesch, chömer dä neh",neutral,sonstiges,True,wenn du en vorschlag hesch choemer dae neh
+dini arbeit het qualität,positiv,lob,True,dini arbeit het qualitaet
+mached mer eifach es lockers abmache,neutral,orga,True,mached mer eifach es lockers abmache
+es nervt mi nur no,negativ,beschwerde,True,es nervt mi nur no
+ich würd das grad so wieder dir überlah,positiv,lob,True,ich wuerd das grad so wieder dir ueberlah
+das isch mir würkli z vill chaos,negativ,beschwerde,True,das isch mir wuerkli z vill chaos
+keim kommuniziert gscheit,negativ,beschwerde,True,keim kommuniziert gscheit
+bisch zfriede mit dim alltag im momänt?,neutral,smalltalk,True,bisch zfriede mit dim alltag im momaent
+merci für dä input,positiv,dank,True,merci fuer dae input
+ich ha schnouze voll vo dem,negativ,beschwerde,True,ich ha schnouze voll vo dem
+chan ich di ächt mit dem belästige?,negativ,hilfe_bitten,True,chan ich di aecht mit dem belaestige
+ich bi nur no am funktioniere,negativ,frust,True,ich bi nur no am funktioniere
+"ich ha angst, öppis falsch z mache, was meinsch?",negativ,hilfe_bitten,True,ich ha angst oeppis falsch z mache was meinsch
+ich wott nöd alles alei entscheide müesse,negativ,hilfe_bitten,True,ich wott noed alles alei entscheide mueesse
+"ich komm mit de situation nöd klar, was söll ich mache?",negativ,hilfe_bitten,True,ich komm mit de situation noed klar was soell ich mache
+"wenn s nöd klappt, isch au nöd weltuntergang",neutral,sonstiges,True,wenn s noed klappt isch au noed weltuntergang
+"ich weiss nöd, wohi mit mir",negativ,frust,True,ich weiss noed wohi mit mir
+hesch du scho erfahrig mit dem gha?,negativ,hilfe_bitten,True,hesch du scho erfahrig mit dem gha
+ich chan nüm so wiiter mache,negativ,frust,True,ich chan nuem so wiiter mache
+für wann sömer s ungefähr apegge?,neutral,orga,True,fuer wann soemer s ungefaehr apegge
+wo wäre für dich am praktischste?,neutral,orga,True,wo waere fuer dich am praktischste
+danke für dini ehrlechi wort,positiv,dank,True,danke fuer dini ehrlechi wort
+chunsch direkt oder muesch no öppis erledige?,neutral,orga,True,chunsch direkt oder muesch no oeppis erledige
+das isch es richtig schöns erlebnis gsi,positiv,freud,True,das isch es richtig schoens erlebnis gsi
+ich find dini lösig sehr geschickt,positiv,lob,True,ich find dini loesig sehr geschickt
+"bin relativ flexibel, wänn hesch du frei?",neutral,orga,True,bin relativ flexibel waenn hesch du frei
+chan ich dir es paar frage stelle dazu?,negativ,hilfe_bitten,True,chan ich dir es paar frage stelle dazu
+mir chönd s au schrittwiis aaluege,neutral,sonstiges,True,mir choend s au schrittwiis aaluege
+ich han no kei klare meinig dezue,neutral,sonstiges,True,ich han no kei klare meinig dezue
+chan ich dich um es ehrlechs feedback bitte?,negativ,hilfe_bitten,True,chan ich dich um es ehrlechs feedback bitte
+"ich ha müeh, das nüchtern aaluege",negativ,hilfe_bitten,True,ich ha mueeh das nuechtern aaluege
+ich chan nüt negatifs drüber säge,positiv,freud,True,ich chan nuet negatifs drueber saege
+ich ha kei lust meh uf das projekt,negativ,beschwerde,True,ich ha kei lust meh uf das projekt
+wänn söll ich dir d details schicke?,neutral,orga,True,waenn soell ich dir d details schicke
+ich bi verrisse zwüsche allem,negativ,frust,True,ich bi verrisse zwuesche allem
+nie chunt s so use wie abgmacht,negativ,beschwerde,True,nie chunt s so use wie abgmacht
+ich freu mi scho uf s nöchschte mol,positiv,freud,True,ich freu mi scho uf s noechschte mol
+"ich chan s fast nöd glaube, wie guet das cho isch",positiv,freud,True,ich chan s fast noed glaube wie guet das cho isch
+"so unprofessionell, würkli",negativ,beschwerde,True,so unprofessionell wuerkli
+qualitäet isch eifach im keller,negativ,beschwerde,True,qualitaeet isch eifach im keller
+mues ich dafür öppis speziells vorbereite?,neutral,frage_info,True,mues ich dafuer oeppis speziells vorbereite
+ich ha kei nerv meh für öppis,negativ,frust,True,ich ha kei nerv meh fuer oeppis
+ich ha lang nüm so chönne lache,positiv,freud,True,ich ha lang nuem so choenne lache
+"danke, dass du für mich do bisch",positiv,dank,True,danke dass du fuer mich do bisch
+ich wott nur schnell danke säge,positiv,dank,True,ich wott nur schnell danke saege
+wie lang hesch du ungefäär zit?,neutral,orga,True,wie lang hesch du ungefaeaer zit
+ich würd das sofort wieder so mache,positiv,freud,True,ich wuerd das sofort wieder so mache
+merci für dini hilfsbereitschaft,positiv,dank,True,merci fuer dini hilfsbereitschaft
+so wichtig isch s im momänt nöd,neutral,sonstiges,True,so wichtig isch s im momaent noed
+chan ich di spöter no mal druf aaluege?,negativ,hilfe_bitten,True,chan ich di spoeter no mal druf aaluege
+"ich ha s gfuehl, ich steck fescht, was empfiehlsch?",negativ,hilfe_bitten,True,ich ha s gfuehl ich steck fescht was empfiehlsch
+"ich ha s gfuehl, niemer versteht das",negativ,frust,True,ich ha s gfuehl niemer versteht das
+"ich ha jetzt nöd drang, das grad fertig z entscheide",neutral,sonstiges,True,ich ha jetzt noed drang das grad fertig z entscheide
+du wirkst sehr kompetent,positiv,lob,True,du wirkst sehr kompetent
+dini struktur isch sehr übersichtlich,positiv,lob,True,dini struktur isch sehr uebersichtlich
+das het nöd im ansatz glappt,negativ,beschwerde,True,das het noed im ansatz glappt
+merci fürs drann denke,positiv,dank,True,merci fuers drann denke
+chömer das zäme aaluege?,negativ,hilfe_bitten,True,choemer das zaeme aaluege
+"merci, dass du das nöd uf die leicht schulter gnoh hesch",positiv,dank,True,merci dass du das noed uf die leicht schulter gnoh hesch
+"danke, dass du so geduldig gsi bisch",positiv,dank,True,danke dass du so geduldig gsi bisch
+"ich versteh s nöd ganz, chasch s no mal erläutere?",negativ,hilfe_bitten,True,ich versteh s noed ganz chasch s no mal erlaeutere
+d abmachige werdet nie ihalte,negativ,beschwerde,True,d abmachige werdet nie ihalte
+keim nimmt das richtig ernst,negativ,beschwerde,True,keim nimmt das richtig ernst
+"ich bi stolz, wie sich das entwicklet het",positiv,freud,True,ich bi stolz wie sich das entwicklet het
+"danke dir, das hät mir sehr gholfe",positiv,dank,True,danke dir das haet mir sehr gholfe
+"ich bi grad überforderet, chasch mir helfe?",negativ,hilfe_bitten,True,ich bi grad ueberforderet chasch mir helfe
+wie bisch du i de morge cho?,neutral,smalltalk,True,wie bisch du i de morge cho
+ich bi komplett müed,negativ,frust,True,ich bi komplett mueed
+immer nur ausräd statt lösige,negativ,beschwerde,True,immer nur ausraed statt loesige
+ich bin sehr zfriede mit dem,positiv,freud,True,ich bin sehr zfriede mit dem
+"das isch besser worde, als ich erwartet ha",positiv,lob,True,das isch besser worde als ich erwartet ha
+was sind dini erfahrige mit dem bis jetzt?,neutral,frage_info,True,was sind dini erfahrige mit dem bis jetzt
+chan mir bitte öpper s erkläre? ich chum nöd drus,negativ,hilfe_bitten,True,chan mir bitte oepper s erklaere ich chum noed drus
+wottsch du online oder vor ort abmache?,neutral,orga,True,wottsch du online oder vor ort abmache
+"ich weiss nöd, was s nächschti isch, hesch en tipp?",negativ,hilfe_bitten,True,ich weiss noed was s naechschti isch hesch en tipp
+mer lernt nüt us de fehler,negativ,beschwerde,True,mer lernt nuet us de fehler
+"ich ha s gfühl, ich bi uf em richtige wäg",positiv,freud,True,ich ha s gfuehl ich bi uf em richtige waeg
+was würdest du a minere stell mache?,neutral,frage_info,True,was wuerdest du a minere stell mache
+wänn wür dir passe zum treffe?,neutral,orga,True,waenn wuer dir passe zum treffe
+das isch eifach gueti arbeit,positiv,lob,True,das isch eifach gueti arbeit
+ich bi eifach nöd zfriede,negativ,beschwerde,True,ich bi eifach noed zfriede
+ich blick grad sehr zuversichtlich i z zukuft,positiv,freud,True,ich blick grad sehr zuversichtlich i z zukuft
+"ich ha s gfuehl, ich verlüüre d linie",negativ,hilfe_bitten,True,ich ha s gfuehl ich verlueuere d linie
+"merci, dass du s mit mir usghalte hesch",positiv,dank,True,merci dass du s mit mir usghalte hesch
+"gits öpis, wo ich lieber nöd söll mache?",neutral,frage_info,True,gits oepis wo ich lieber noed soell mache
+"ich ha scho vil probiert, nüt het würkli glappt",negativ,hilfe_bitten,True,ich ha scho vil probiert nuet het wuerkli glappt
+söll ich no unterlage vorbereite?,neutral,orga,True,soell ich no unterlage vorbereite
+"gits öppis, wo mir vorher no kläre müend?",neutral,orga,True,gits oeppis wo mir vorher no klaere mueend
+"danke, du hesch mir vil druck gnoh",positiv,dank,True,danke du hesch mir vil druck gnoh
+dini idee het mir mega gfalle,positiv,lob,True,dini idee het mir mega gfalle
+ich ha s nöd pressant mit dem thema,neutral,sonstiges,True,ich ha s noed pressant mit dem thema
+"ich bi erleichtert, wie das usecho isch",positiv,freud,True,ich bi erleichtert wie das usecho isch
+bisch guet i d wuche startet?,neutral,smalltalk,True,bisch guet i d wuche startet
+ich bin nur no genervt,negativ,frust,True,ich bin nur no genervt
+ich bin voll positiver stimmig,positiv,freud,True,ich bin voll positiver stimmig
+das gibt mir richtig hoffnig,positiv,freud,True,das gibt mir richtig hoffnig
+ich freu mi so fescht drüber,positiv,freud,True,ich freu mi so fescht drueber
+du chasch würkli stolz sii uf dich,positiv,lob,True,du chasch wuerkli stolz sii uf dich
+wie läuft das normalerwiis ab?,neutral,frage_info,True,wie laeuft das normalerwiis ab
+ich fühl mi richtig usgbrennt,negativ,frust,True,ich fuehl mi richtig usgbrennt
+"danke, dass du das im blick gha hesch",positiv,dank,True,danke dass du das im blick gha hesch
+ich ha sehr viel freud a dem,positiv,freud,True,ich ha sehr viel freud a dem
+mir chönd s au no chli beobachte,neutral,sonstiges,True,mir choend s au no chli beobachte
+das isch richtig stark worde,positiv,lob,True,das isch richtig stark worde
+"ich ha s sehr schön gfunde, merci",positiv,dank,True,ich ha s sehr schoen gfunde merci
+ich bi mega happy grad,positiv,freud,True,ich bi mega happy grad
+merci für dini ruäigi art,positiv,dank,True,merci fuer dini ruaeigi art
+"mer lueged, was sich ergit",neutral,sonstiges,True,mer lueged was sich ergit
+isch das eimalig oder wiederhole sich das?,neutral,frage_info,True,isch das eimalig oder wiederhole sich das
+du bisch extrem konstruktiv mit dä sach umgange,positiv,lob,True,du bisch extrem konstruktiv mit dae sach umgange
+ich bi voll entspannt jetz,positiv,freud,True,ich bi voll entspannt jetz
+"ich ha s gfuehl, s lauft guet im momänt",positiv,freud,True,ich ha s gfuehl s lauft guet im momaent
+jedes mal s glychi theater,negativ,beschwerde,True,jedes mal s glychi theater
+"ich bi mega froh, dass du mir gholfe hesch",positiv,dank,True,ich bi mega froh dass du mir gholfe hesch
+das isch klar und sauber umegsetzt,positiv,lob,True,das isch klar und sauber umegsetzt
+das git mir viel energie,positiv,freud,True,das git mir viel energie
+"ich ha s würkli gmerkt, wie vill müeh du dir gäh hesch",positiv,dank,True,ich ha s wuerkli gmerkt wie vill mueeh du dir gaeh hesch
+wie isch s im schaffe grad?,neutral,smalltalk,True,wie isch s im schaffe grad
+was sind d vorteil und nachteil devo?,neutral,frage_info,True,was sind d vorteil und nachteil devo
+"merci, du hesch dä tag besser gmacht",positiv,dank,True,merci du hesch dae tag besser gmacht
+"ich weiss nöd, wie ich aafange söll",negativ,hilfe_bitten,True,ich weiss noed wie ich aafange soell
+ich muess immer alles zwei mol erläbe,negativ,beschwerde,True,ich muess immer alles zwei mol erlaebe
+ich verliere grad dr überblick,negativ,hilfe_bitten,True,ich verliere grad dr ueberblick
+brauch ich dafür bestimmti software?,neutral,frage_info,True,brauch ich dafuer bestimmti software
+"ich schätz das sehr, was du gmacht hesch",positiv,dank,True,ich schaetz das sehr was du gmacht hesch
+hesch es guets wucheend gha?,neutral,smalltalk,True,hesch es guets wucheend gha
+du bisch es vorbild in däm,positiv,lob,True,du bisch es vorbild in daem
+es muess nöd grad hüt sii,neutral,sonstiges,True,es muess noed grad huet sii
+"chan s au spöter in dr wuche sii, wenn s nöd passt?",neutral,orga,True,chan s au spoeter in dr wuche sii wenn s noed passt
+isch s wätter bi dir au so komisch?,neutral,smalltalk,True,isch s waetter bi dir au so komisch
+ich ha langsam gwungige schultere vom ganze druck,negativ,frust,True,ich ha langsam gwungige schultere vom ganze druck
+ich bin innerlich sehr ruhig grad,positiv,freud,True,ich bin innerlich sehr ruhig grad
+"hesch du en vorschlag, wie ich s anders mache chönnt?",negativ,hilfe_bitten,True,hesch du en vorschlag wie ich s anders mache choennt
+hesch öppis cools erlebt letschti zit?,neutral,smalltalk,True,hesch oeppis cools erlebt letschti zit
+ich bin echt fan vo dinere lösig,positiv,lob,True,ich bin echt fan vo dinere loesig
+niemer fühlt sich zuständig,negativ,beschwerde,True,niemer fuehlt sich zustaendig
+ich ha null motivation,negativ,frust,True,ich ha null motivation
+d kundebetreuig isch richtig schwach,negativ,beschwerde,True,d kundebetreuig isch richtig schwach
+du hesch en super job gmacht,positiv,lob,True,du hesch en super job gmacht
+ich find s weder mega guet no mega schlecht,neutral,sonstiges,True,ich find s weder mega guet no mega schlecht
+was isch dä unterschied zwüsche däne zwei variante?,neutral,frage_info,True,was isch dae unterschied zwuesche daene zwei variante
+ich ha grad richtig freud,positiv,freud,True,ich ha grad richtig freud
+ich cha nüm richtig schlofe vor lauter chopfkino,negativ,frust,True,ich cha nuem richtig schlofe vor lauter chopfkino
+wie würdest du an mini stell vorgoo?,negativ,hilfe_bitten,True,wie wuerdest du an mini stell vorgoo
+"lange nüm gseh, wie geits?",neutral,smalltalk,True,lange nuem gseh wie geits
+mer chönd s au spontan am tag sälber fixiere,neutral,orga,True,mer choend s au spontan am tag saelber fixiere
+ich bi emotional am limit,negativ,frust,True,ich bi emotional am limit
+"ich bi unsicher, ob ich überreagiere",negativ,hilfe_bitten,True,ich bi unsicher ob ich ueberreagiere
+"ich schick dir no es update, sobald ich öppis weiss",neutral,orga,True,ich schick dir no es update sobald ich oeppis weiss
+du hesch das super umegsetzt,positiv,lob,True,du hesch das super umegsetzt
+jedä schiebt s em andere zue,negativ,beschwerde,True,jedae schiebt s em andere zue
+mer chan s gern uf spöter verschiebe,neutral,sonstiges,True,mer chan s gern uf spoeter verschiebe
+ich han riesig freud an dim output,positiv,lob,True,ich han riesig freud an dim output
+hey wie gohts dir?,neutral,smalltalk,True,hey wie gohts dir
+das isch so huere müehsam,negativ,beschwerde,True,das isch so huere mueehsam
+wie streng isch das im durchschnitt?,neutral,frage_info,True,wie streng isch das im durchschnitt
+"chan ich di nöd kurz löchere, wenn ich hänge?",neutral,frage_info,True,chan ich di noed kurz loechere wenn ich haenge
+"merci viu mau, das isch mega lieb vo dir",positiv,dank,True,merci viu mau das isch mega lieb vo dir
+wie lang gaht das ungefäär?,neutral,frage_info,True,wie lang gaht das ungefaeaer
+"gits öppis, wo ich im vorus sött wüsse?",neutral,frage_info,True,gits oeppis wo ich im vorus soett wuesse
+das het mir dä tag verschönert,positiv,freud,True,das het mir dae tag verschoenert
+ich ha langsam kei idee meh,negativ,hilfe_bitten,True,ich ha langsam kei idee meh
+es isch mir alles z vill,negativ,frust,True,es isch mir alles z vill
+ich fühl mi eifach leer,negativ,frust,True,ich fuehl mi eifach leer
+ich ha grosses vertroue i dini fähigkeite,positiv,lob,True,ich ha grosses vertroue i dini faehigkeite
+"chömer s in zwei teil ufteile, wenn s z vil isch?",neutral,orga,True,choemer s in zwei teil ufteile wenn s z vil isch
+"na, alles klar bi dir?",neutral,smalltalk,True,na alles klar bi dir
+"ich chan diestig und donnschtig, wie isch s bi dir?",neutral,orga,True,ich chan diestig und donnschtig wie isch s bi dir
+ich muess immer allem noh springe,negativ,beschwerde,True,ich muess immer allem noh springe
+ich nimm s mal zur kenntnis,neutral,sonstiges,True,ich nimm s mal zur kenntnis
+"chan ich es bsüeli experimentiere, ohni vil kaputt z mache?",neutral,frage_info,True,chan ich es bsueeli experimentiere ohni vil kaputt z mache
+"ich ha s gfuehl, s interessiert niemer",negativ,beschwerde,True,ich ha s gfuehl s interessiert niemer
+hesch grad öppis guets glese?,neutral,smalltalk,True,hesch grad oeppis guets glese
+ich bi scho wieder enttäuscht,negativ,beschwerde,True,ich bi scho wieder enttaeuscht
+"danke, dass du nöd glägig gäh hesch mit mir",positiv,dank,True,danke dass du noed glaegig gaeh hesch mit mir
+ich bi es bitzli wütend langsam,negativ,beschwerde,True,ich bi es bitzli wuetend langsam
+wie hesch s gha hüt?,neutral,smalltalk,True,wie hesch s gha huet
+"ich find, du hesch das sehr souverän gmacht",positiv,lob,True,ich find du hesch das sehr souveraen gmacht
+was treibsch im momänt?,neutral,smalltalk,True,was treibsch im momaent
+"ich glaub, mer muess s nöd übertreibe mit dem",neutral,sonstiges,True,ich glaub mer muess s noed uebertreibe mit dem
+ich finds sehr professionell,positiv,lob,True,ich finds sehr professionell
+ich bruch dringen e change,negativ,frust,True,ich bruch dringen e change
+ich bi voll beeindruckt vo dim resultat,positiv,lob,True,ich bi voll beeindruckt vo dim resultat
+"danke, dass du so spontan usgheholfe hesch",positiv,dank,True,danke dass du so spontan usgheholfe hesch
+ich bi offe für vorschläg,neutral,sonstiges,True,ich bi offe fuer vorschlaeg
+immer wieder di glieche pannen,negativ,beschwerde,True,immer wieder di glieche pannen
+ich bruch dringends en rat,negativ,hilfe_bitten,True,ich bruch dringends en rat
+is das meh öppis für afänger oder nöd?,neutral,frage_info,True,is das meh oeppis fuer afaenger oder noed
+ich bi chli am abegheitä,negativ,frust,True,ich bi chli am abegheitae
+"ich ha s gfuehl, ich tritt a ort",negativ,frust,True,ich ha s gfuehl ich tritt a ort
+mir chönd s spontan entscheide,neutral,sonstiges,True,mir choend s spontan entscheide
+"ich find, du machsch das unglaublich guet",positiv,lob,True,ich find du machsch das unglaublich guet
+"ich weiss nöd, wie lang ich das no cha",negativ,frust,True,ich weiss noed wie lang ich das no cha
+danke für dini zuesproch,positiv,dank,True,danke fuer dini zuesproch
+isch mir im fall relativ egal,neutral,sonstiges,True,isch mir im fall relativ egal
+wie isch s mit dim gsundheitlich?,neutral,smalltalk,True,wie isch s mit dim gsundheitlich
+"ich ha s gfühl, du hesch s voll im griff",positiv,lob,True,ich ha s gfuehl du hesch s voll im griff
+es git kei klare infos,negativ,beschwerde,True,es git kei klare infos
+"wie hesch du das gmacht, wo du aagfange hesch?",neutral,frage_info,True,wie hesch du das gmacht wo du aagfange hesch
+merci für dini müeh,positiv,dank,True,merci fuer dini mueeh
+ich bruch äusseri sicht uf das,negativ,hilfe_bitten,True,ich bruch aeusseri sicht uf das
+was sind dini plän fürs wucheend?,neutral,smalltalk,True,was sind dini plaen fuers wucheend
+wie isch s im studi grad?,neutral,smalltalk,True,wie isch s im studi grad
+"ich ha s gfuehl, es louft immer gege mich",negativ,frust,True,ich ha s gfuehl es louft immer gege mich
+wänn bruchsch spötestens en beschaid?,neutral,orga,True,waenn bruchsch spoetestens en beschaid
+"mir mached s so, wie s am eifachste isch",neutral,sonstiges,True,mir mached s so wie s am eifachste isch
+hesch erfahrig mit dem gha?,neutral,frage_info,True,hesch erfahrig mit dem gha
+"ich ha s gfuehl, es chunnt no vil guets",positiv,freud,True,ich ha s gfuehl es chunnt no vil guets
+ich chum mir voll verarscht vor,negativ,beschwerde,True,ich chum mir voll verarscht vor
+ich bi grad voll im loch,negativ,frust,True,ich bi grad voll im loch
+"ich bi froh, wenn du ehrlich bisch mit mir",negativ,hilfe_bitten,True,ich bi froh wenn du ehrlich bisch mit mir
+wo find ich meh infos zu dem?,neutral,frage_info,True,wo find ich meh infos zu dem
+passts dir am morn oder am abig besser?,neutral,orga,True,passts dir am morn oder am abig besser
+wie handhabed das anderi normalerweise?,neutral,frage_info,True,wie handhabed das anderi normalerweise
+"hoi, was machsch grad so?",neutral,smalltalk,True,hoi was machsch grad so
+"man merkt, dass du vill erfahrig hesch",positiv,lob,True,man merkt dass du vill erfahrig hesch
+jedä tag fählt sich gliich streng a,negativ,frust,True,jedae tag faehlt sich gliich streng a
+hesch dir es bitzeli ruhe gönne chönne?,neutral,smalltalk,True,hesch dir es bitzeli ruhe goenne choenne
+du hesch dä nagel uf de chopf troffe,positiv,lob,True,du hesch dae nagel uf de chopf troffe
+ich bi grad total ufgstellt,positiv,freud,True,ich bi grad total ufgstellt
+wie isch s so im familie-lebe?,neutral,smalltalk,True,wie isch s so im familie lebe
+"chasch mir kurz erkläre, was ich mues mache?",neutral,frage_info,True,chasch mir kurz erklaere was ich mues mache
+immer lauft öppis schief,negativ,beschwerde,True,immer lauft oeppis schief
+danke fürs zuelose,positiv,dank,True,danke fuers zuelose
+ich bi grad würkli dünnhutig,negativ,frust,True,ich bi grad wuerkli duennhutig
+"danke, du bisch e riesigi unterstützig gsi",positiv,dank,True,danke du bisch e riesigi unterstuetzig gsi
+ich ha langsam kei nerv meh für dä scheiss,negativ,beschwerde,True,ich ha langsam kei nerv meh fuer dae scheiss
+"danke, dass ich cha uf dich zähle",positiv,dank,True,danke dass ich cha uf dich zaehle
+"merci, dass du dir d zit gnoh hesch",positiv,dank,True,merci dass du dir d zit gnoh hesch
+ich ha kei kraft meh für diskussione,negativ,frust,True,ich ha kei kraft meh fuer diskussione
+"ich bi nöd sicher, öb ich richtig handle",negativ,hilfe_bitten,True,ich bi noed sicher oeb ich richtig handle
+wie isch dini wuche bis jetzt gsi?,neutral,smalltalk,True,wie isch dini wuche bis jetzt gsi
+ich ha kei bock meh,negativ,frust,True,ich ha kei bock meh
+ich bruch nur chli orientierig im moment,negativ,hilfe_bitten,True,ich bruch nur chli orientierig im moment
+"ich ha s gfuehl, ich mach alles falsch",negativ,frust,True,ich ha s gfuehl ich mach alles falsch
+wottsch dich zuerst no abspreche mit öpperem?,neutral,orga,True,wottsch dich zuerst no abspreche mit oepperem
+alles verzögert sich eifach,negativ,beschwerde,True,alles verzoegert sich eifach
+"ich wott das ernst näh, aber ich weiss nöd wie",negativ,hilfe_bitten,True,ich wott das ernst naeh aber ich weiss noed wie
+ich ha grossi achtig vor dim einsatz,positiv,lob,True,ich ha grossi achtig vor dim einsatz
+ich wett s nöd komplizierter mache als nötig,neutral,sonstiges,True,ich wett s noed komplizierter mache als noetig
+das hesch mega guet gmacht,positiv,lob,True,das hesch mega guet gmacht
+mer chan s zu gegebener zit wieder aaluege,neutral,sonstiges,True,mer chan s zu gegebener zit wieder aaluege
+treffemer üs grad bim bahnhof?,neutral,orga,True,treffemer ues grad bim bahnhof
+ich han gnueg vo däm stress,negativ,frust,True,ich han gnueg vo daem stress
+ich bi überlastet mit allem,negativ,frust,True,ich bi ueberlastet mit allem
+"ich bin begeistert, wie sich das entwicklet het",positiv,freud,True,ich bin begeistert wie sich das entwicklet het
+ich ha richtig spass gha,positiv,freud,True,ich ha richtig spass gha
+"ich gang mit dem, was sich guet aafühlt",neutral,sonstiges,True,ich gang mit dem was sich guet aafuehlt
+das isch e wohltuendi abwechslig gsi,positiv,freud,True,das isch e wohltuendi abwechslig gsi
+das macht mi wirklich glücklich,positiv,freud,True,das macht mi wirklich gluecklich
+ich cha nüm locker blibe,negativ,frust,True,ich cha nuem locker blibe
+ich wür am liebschte alles hinschmeisse,negativ,frust,True,ich wuer am liebschte alles hinschmeisse
+mached mer lieber chli kürzer oder länger?,neutral,orga,True,mached mer lieber chli kuerzer oder laenger
+"was meinsch, isch die bescht option?",neutral,frage_info,True,was meinsch isch die bescht option
+ich bi richtig agfrässe,negativ,beschwerde,True,ich bi richtig agfraesse
+du hesch es guets händli für so sach,positiv,lob,True,du hesch es guets haendli fuer so sach
+mir chönd s au eifach mal offe lah,neutral,sonstiges,True,mir choend s au eifach mal offe lah
+"ich ha s gfuehl, alles füeget sich guet",positiv,freud,True,ich ha s gfuehl alles fueeget sich guet
+"chan ich das nacher no ändere, falls nötig?",neutral,frage_info,True,chan ich das nacher no aendere falls noetig
+du bisch sehr zuverlässig,positiv,lob,True,du bisch sehr zuverlaessig
+"ich ha s sehr gschätzt, was du gmacht hesch",positiv,dank,True,ich ha s sehr gschaetzt was du gmacht hesch
+de stil vo dir gfallt mir mega,positiv,lob,True,de stil vo dir gfallt mir mega
+ich wott nöd no meh kaputt mache als scho isch,negativ,hilfe_bitten,True,ich wott noed no meh kaputt mache als scho isch
+chan ich uf dini unterstützig zähle?,negativ,hilfe_bitten,True,chan ich uf dini unterstuetzig zaehle
+wie isch s mit dim projäkt vorwärts gange?,neutral,smalltalk,True,wie isch s mit dim projaekt vorwaerts gange
+"merci, das hät mi ufgstellt",positiv,dank,True,merci das haet mi ufgstellt
+mer müend s nöd uf bieg und bruch entscheide,neutral,sonstiges,True,mer mueend s noed uf bieg und bruch entscheide
+so cha mer doch nöd schaffe,negativ,beschwerde,True,so cha mer doch noed schaffe
+"ich bin froh, dass ich das erlebt ha",positiv,freud,True,ich bin froh dass ich das erlebt ha
+chasch mit mir das schnell durego?,negativ,hilfe_bitten,True,chasch mit mir das schnell durego
+merci fürs dini unterstützig,positiv,dank,True,merci fuers dini unterstuetzig
+"gits öppis, wo ich priorisiera sött?",neutral,frage_info,True,gits oeppis wo ich priorisiera soett
+ich bi dir würkli dankbar,positiv,dank,True,ich bi dir wuerkli dankbar

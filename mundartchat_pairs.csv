@@ -1,0 +1,301 @@
+user_text,user_text_clean,label,intent,answer_mundart,answer_style,needs_review,is_seed
+was lauft so bi dir?,was lauft so bi dir,neutral,smalltalk,"Mir gohts guet, danke. Und dir?",locker,True,True
+mues ich mich irgendwo registriere dafür?,mues ich mich irgendwo registriere dafuer,neutral,frage_info,Gueti Frog. Ich versuechs dir kurz und eifach z erkläre.,erklärend,True,True
+du bisch sehr sorgfältig gsi,du bisch sehr sorgfaeltig gsi,positiv,lob,Schön z ghöre. Du machsch das wirklich guet.,bestärkend,True,True
+es isch alles so schlecht organisiert,es isch alles so schlecht organisiert,negativ,beschwerde,"Das tönt würklich müehsam. Erzähl mer öppis meh, was genau passiert isch.",empathisch,True,True
+wottsch du en kalender-eintrag?,wottsch du en kalender eintrag,neutral,orga,"Klingt guet. Säg mir eifach, wänn s dir am beschte passt.",erklärend,True,True
+chömer s eventuell verschiebe?,choemer s eventuell verschiebe,neutral,orga,"Klingt guet. Säg mir eifach, wänn s dir am beschte passt.",erklärend,True,True
+das passt im momänt sehr guet für mich,das passt im momaent sehr guet fuer mich,positiv,freud,"Mega schön, dass du dich so freusch. Erzähl gern no es bitzeli meh.",bestärkend,True,True
+merci fürs organisieren,merci fuers organisieren,positiv,dank,"Sehr gärn. Freut mi, dass dir das öppis bringt.",bestärkend,True,True
+das cha doch nöd wahr sii,das cha doch noed wahr sii,negativ,beschwerde,"Das tönt würklich müehsam. Erzähl mer öppis meh, was genau passiert isch.",empathisch,True,True
+ich han s richtig genosse,ich han s richtig genosse,positiv,freud,"Mega schön, dass du dich so freusch. Erzähl gern no es bitzeli meh.",bestärkend,True,True
+wer söll sonst no debi sii?,wer soell sonst no debi sii,neutral,orga,"Klingt guet. Säg mir eifach, wänn s dir am beschte passt.",erklärend,True,True
+alles regt mich uf im momänt,alles regt mich uf im momaent,negativ,frust,"Ich verstand, dass di das grad stresst. Was isch im Momänt am schwierigste für dich?",empathisch,True,True
+was luegsch im momänt so für series?,was luegsch im momaent so fuer series,neutral,smalltalk,"Mir gohts guet, danke. Und dir?",locker,True,True
+nüt macht mir grad würkli freud,nuet macht mir grad wuerkli freud,negativ,frust,"Ich verstand, dass di das grad stresst. Was isch im Momänt am schwierigste für dich?",empathisch,True,True
+ich bin dankbar für die situation,ich bin dankbar fuer die situation,positiv,freud,"Mega schön, dass du dich so freusch. Erzähl gern no es bitzeli meh.",bestärkend,True,True
+hesch no feriä plan?,hesch no feriae plan,neutral,smalltalk,"Mir gohts guet, danke. Und dir?",locker,True,True
+mer chönd s fürs erste so belah wie s isch,mer choend s fuers erste so belah wie s isch,neutral,sonstiges,"Alles klar, merci für dini Rückmeldung.",neutral,True,True
+hesch grad vil um d ohre?,hesch grad vil um d ohre,neutral,smalltalk,"Mir gohts guet, danke. Und dir?",locker,True,True
+ich lern vil vo dim approach,ich lern vil vo dim approach,positiv,lob,Schön z ghöre. Du machsch das wirklich guet.,bestärkend,True,True
+dini leistung isch beeindruckend,dini leistung isch beeindruckend,positiv,lob,Schön z ghöre. Du machsch das wirklich guet.,bestärkend,True,True
+"ich bi froh um jede hilf, ganz ehrlich",ich bi froh um jede hilf ganz ehrlich,negativ,hilfe_bitten,"Klar, ich probier dir z helfe. Sag mer, wo genau du grad hängt.",empathisch,True,True
+"danke fürs nachfroge, das bedeutet mir vil",danke fuers nachfroge das bedeutet mir vil,positiv,dank,"Sehr gärn. Freut mi, dass dir das öppis bringt.",bestärkend,True,True
+"mached mer es doodle, damits eifacher isch?",mached mer es doodle damits eifacher isch,neutral,orga,"Klingt guet. Säg mir eifach, wänn s dir am beschte passt.",erklärend,True,True
+wie funktionieret das genau?,wie funktionieret das genau,neutral,frage_info,Gueti Frog. Ich versuechs dir kurz und eifach z erkläre.,erklärend,True,True
+"das isch alles andere als selbstverständlich, danke",das isch alles andere als selbstverstaendlich danke,positiv,dank,"Sehr gärn. Freut mi, dass dir das öppis bringt.",bestärkend,True,True
+ich ha scho lang kei pause meh gha,ich ha scho lang kei pause meh gha,negativ,frust,"Ich verstand, dass di das grad stresst. Was isch im Momänt am schwierigste für dich?",empathisch,True,True
+ich chan mit beidem lebe,ich chan mit beidem lebe,neutral,sonstiges,"Alles klar, merci für dini Rückmeldung.",neutral,True,True
+"wenn du en vorschlag hesch, chömer dä neh",wenn du en vorschlag hesch choemer dae neh,neutral,sonstiges,"Alles klar, merci für dini Rückmeldung.",neutral,True,True
+dini arbeit het qualität,dini arbeit het qualitaet,positiv,lob,Schön z ghöre. Du machsch das wirklich guet.,bestärkend,True,True
+mached mer eifach es lockers abmache,mached mer eifach es lockers abmache,neutral,orga,"Klingt guet. Säg mir eifach, wänn s dir am beschte passt.",erklärend,True,True
+es nervt mi nur no,es nervt mi nur no,negativ,beschwerde,"Das tönt würklich müehsam. Erzähl mer öppis meh, was genau passiert isch.",empathisch,True,True
+ich würd das grad so wieder dir überlah,ich wuerd das grad so wieder dir ueberlah,positiv,lob,Schön z ghöre. Du machsch das wirklich guet.,bestärkend,True,True
+das isch mir würkli z vill chaos,das isch mir wuerkli z vill chaos,negativ,beschwerde,"Das tönt würklich müehsam. Erzähl mer öppis meh, was genau passiert isch.",empathisch,True,True
+keim kommuniziert gscheit,keim kommuniziert gscheit,negativ,beschwerde,"Das tönt würklich müehsam. Erzähl mer öppis meh, was genau passiert isch.",empathisch,True,True
+bisch zfriede mit dim alltag im momänt?,bisch zfriede mit dim alltag im momaent,neutral,smalltalk,"Mir gohts guet, danke. Und dir?",locker,True,True
+merci für dä input,merci fuer dae input,positiv,dank,"Sehr gärn. Freut mi, dass dir das öppis bringt.",bestärkend,True,True
+ich ha schnouze voll vo dem,ich ha schnouze voll vo dem,negativ,beschwerde,"Das tönt würklich müehsam. Erzähl mer öppis meh, was genau passiert isch.",empathisch,True,True
+chan ich di ächt mit dem belästige?,chan ich di aecht mit dem belaestige,negativ,hilfe_bitten,"Klar, ich probier dir z helfe. Sag mer, wo genau du grad hängt.",empathisch,True,True
+ich bi nur no am funktioniere,ich bi nur no am funktioniere,negativ,frust,"Ich verstand, dass di das grad stresst. Was isch im Momänt am schwierigste für dich?",empathisch,True,True
+"ich ha angst, öppis falsch z mache, was meinsch?",ich ha angst oeppis falsch z mache was meinsch,negativ,hilfe_bitten,"Klar, ich probier dir z helfe. Sag mer, wo genau du grad hängt.",empathisch,True,True
+ich wott nöd alles alei entscheide müesse,ich wott noed alles alei entscheide mueesse,negativ,hilfe_bitten,"Klar, ich probier dir z helfe. Sag mer, wo genau du grad hängt.",empathisch,True,True
+"ich komm mit de situation nöd klar, was söll ich mache?",ich komm mit de situation noed klar was soell ich mache,negativ,hilfe_bitten,"Klar, ich probier dir z helfe. Sag mer, wo genau du grad hängt.",empathisch,True,True
+"wenn s nöd klappt, isch au nöd weltuntergang",wenn s noed klappt isch au noed weltuntergang,neutral,sonstiges,"Alles klar, merci für dini Rückmeldung.",neutral,True,True
+"ich weiss nöd, wohi mit mir",ich weiss noed wohi mit mir,negativ,frust,"Ich verstand, dass di das grad stresst. Was isch im Momänt am schwierigste für dich?",empathisch,True,True
+hesch du scho erfahrig mit dem gha?,hesch du scho erfahrig mit dem gha,negativ,hilfe_bitten,"Klar, ich probier dir z helfe. Sag mer, wo genau du grad hängt.",empathisch,True,True
+ich chan nüm so wiiter mache,ich chan nuem so wiiter mache,negativ,frust,"Ich verstand, dass di das grad stresst. Was isch im Momänt am schwierigste für dich?",empathisch,True,True
+für wann sömer s ungefähr apegge?,fuer wann soemer s ungefaehr apegge,neutral,orga,"Klingt guet. Säg mir eifach, wänn s dir am beschte passt.",erklärend,True,True
+wo wäre für dich am praktischste?,wo waere fuer dich am praktischste,neutral,orga,"Klingt guet. Säg mir eifach, wänn s dir am beschte passt.",erklärend,True,True
+danke für dini ehrlechi wort,danke fuer dini ehrlechi wort,positiv,dank,"Sehr gärn. Freut mi, dass dir das öppis bringt.",bestärkend,True,True
+chunsch direkt oder muesch no öppis erledige?,chunsch direkt oder muesch no oeppis erledige,neutral,orga,"Klingt guet. Säg mir eifach, wänn s dir am beschte passt.",erklärend,True,True
+das isch es richtig schöns erlebnis gsi,das isch es richtig schoens erlebnis gsi,positiv,freud,"Mega schön, dass du dich so freusch. Erzähl gern no es bitzeli meh.",bestärkend,True,True
+ich find dini lösig sehr geschickt,ich find dini loesig sehr geschickt,positiv,lob,Schön z ghöre. Du machsch das wirklich guet.,bestärkend,True,True
+"bin relativ flexibel, wänn hesch du frei?",bin relativ flexibel waenn hesch du frei,neutral,orga,"Klingt guet. Säg mir eifach, wänn s dir am beschte passt.",erklärend,True,True
+chan ich dir es paar frage stelle dazu?,chan ich dir es paar frage stelle dazu,negativ,hilfe_bitten,"Klar, ich probier dir z helfe. Sag mer, wo genau du grad hängt.",empathisch,True,True
+mir chönd s au schrittwiis aaluege,mir choend s au schrittwiis aaluege,neutral,sonstiges,"Alles klar, merci für dini Rückmeldung.",neutral,True,True
+ich han no kei klare meinig dezue,ich han no kei klare meinig dezue,neutral,sonstiges,"Alles klar, merci für dini Rückmeldung.",neutral,True,True
+chan ich dich um es ehrlechs feedback bitte?,chan ich dich um es ehrlechs feedback bitte,negativ,hilfe_bitten,"Klar, ich probier dir z helfe. Sag mer, wo genau du grad hängt.",empathisch,True,True
+"ich ha müeh, das nüchtern aaluege",ich ha mueeh das nuechtern aaluege,negativ,hilfe_bitten,"Klar, ich probier dir z helfe. Sag mer, wo genau du grad hängt.",empathisch,True,True
+ich chan nüt negatifs drüber säge,ich chan nuet negatifs drueber saege,positiv,freud,"Mega schön, dass du dich so freusch. Erzähl gern no es bitzeli meh.",bestärkend,True,True
+ich ha kei lust meh uf das projekt,ich ha kei lust meh uf das projekt,negativ,beschwerde,"Das tönt würklich müehsam. Erzähl mer öppis meh, was genau passiert isch.",empathisch,True,True
+wänn söll ich dir d details schicke?,waenn soell ich dir d details schicke,neutral,orga,"Klingt guet. Säg mir eifach, wänn s dir am beschte passt.",erklärend,True,True
+ich bi verrisse zwüsche allem,ich bi verrisse zwuesche allem,negativ,frust,"Ich verstand, dass di das grad stresst. Was isch im Momänt am schwierigste für dich?",empathisch,True,True
+nie chunt s so use wie abgmacht,nie chunt s so use wie abgmacht,negativ,beschwerde,"Das tönt würklich müehsam. Erzähl mer öppis meh, was genau passiert isch.",empathisch,True,True
+ich freu mi scho uf s nöchschte mol,ich freu mi scho uf s noechschte mol,positiv,freud,"Mega schön, dass du dich so freusch. Erzähl gern no es bitzeli meh.",bestärkend,True,True
+"ich chan s fast nöd glaube, wie guet das cho isch",ich chan s fast noed glaube wie guet das cho isch,positiv,freud,"Mega schön, dass du dich so freusch. Erzähl gern no es bitzeli meh.",bestärkend,True,True
+"so unprofessionell, würkli",so unprofessionell wuerkli,negativ,beschwerde,"Das tönt würklich müehsam. Erzähl mer öppis meh, was genau passiert isch.",empathisch,True,True
+qualitäet isch eifach im keller,qualitaeet isch eifach im keller,negativ,beschwerde,"Das tönt würklich müehsam. Erzähl mer öppis meh, was genau passiert isch.",empathisch,True,True
+mues ich dafür öppis speziells vorbereite?,mues ich dafuer oeppis speziells vorbereite,neutral,frage_info,Gueti Frog. Ich versuechs dir kurz und eifach z erkläre.,erklärend,True,True
+ich ha kei nerv meh für öppis,ich ha kei nerv meh fuer oeppis,negativ,frust,"Ich verstand, dass di das grad stresst. Was isch im Momänt am schwierigste für dich?",empathisch,True,True
+ich ha lang nüm so chönne lache,ich ha lang nuem so choenne lache,positiv,freud,"Mega schön, dass du dich so freusch. Erzähl gern no es bitzeli meh.",bestärkend,True,True
+"danke, dass du für mich do bisch",danke dass du fuer mich do bisch,positiv,dank,"Sehr gärn. Freut mi, dass dir das öppis bringt.",bestärkend,True,True
+ich wott nur schnell danke säge,ich wott nur schnell danke saege,positiv,dank,"Sehr gärn. Freut mi, dass dir das öppis bringt.",bestärkend,True,True
+wie lang hesch du ungefäär zit?,wie lang hesch du ungefaeaer zit,neutral,orga,"Klingt guet. Säg mir eifach, wänn s dir am beschte passt.",erklärend,True,True
+ich würd das sofort wieder so mache,ich wuerd das sofort wieder so mache,positiv,freud,"Mega schön, dass du dich so freusch. Erzähl gern no es bitzeli meh.",bestärkend,True,True
+merci für dini hilfsbereitschaft,merci fuer dini hilfsbereitschaft,positiv,dank,"Sehr gärn. Freut mi, dass dir das öppis bringt.",bestärkend,True,True
+so wichtig isch s im momänt nöd,so wichtig isch s im momaent noed,neutral,sonstiges,"Alles klar, merci für dini Rückmeldung.",neutral,True,True
+chan ich di spöter no mal druf aaluege?,chan ich di spoeter no mal druf aaluege,negativ,hilfe_bitten,"Klar, ich probier dir z helfe. Sag mer, wo genau du grad hängt.",empathisch,True,True
+"ich ha s gfuehl, ich steck fescht, was empfiehlsch?",ich ha s gfuehl ich steck fescht was empfiehlsch,negativ,hilfe_bitten,"Klar, ich probier dir z helfe. Sag mer, wo genau du grad hängt.",empathisch,True,True
+"ich ha s gfuehl, niemer versteht das",ich ha s gfuehl niemer versteht das,negativ,frust,"Ich verstand, dass di das grad stresst. Was isch im Momänt am schwierigste für dich?",empathisch,True,True
+"ich ha jetzt nöd drang, das grad fertig z entscheide",ich ha jetzt noed drang das grad fertig z entscheide,neutral,sonstiges,"Alles klar, merci für dini Rückmeldung.",neutral,True,True
+du wirkst sehr kompetent,du wirkst sehr kompetent,positiv,lob,Schön z ghöre. Du machsch das wirklich guet.,bestärkend,True,True
+dini struktur isch sehr übersichtlich,dini struktur isch sehr uebersichtlich,positiv,lob,Schön z ghöre. Du machsch das wirklich guet.,bestärkend,True,True
+das het nöd im ansatz glappt,das het noed im ansatz glappt,negativ,beschwerde,"Das tönt würklich müehsam. Erzähl mer öppis meh, was genau passiert isch.",empathisch,True,True
+merci fürs drann denke,merci fuers drann denke,positiv,dank,"Sehr gärn. Freut mi, dass dir das öppis bringt.",bestärkend,True,True
+chömer das zäme aaluege?,choemer das zaeme aaluege,negativ,hilfe_bitten,"Klar, ich probier dir z helfe. Sag mer, wo genau du grad hängt.",empathisch,True,True
+"merci, dass du das nöd uf die leicht schulter gnoh hesch",merci dass du das noed uf die leicht schulter gnoh hesch,positiv,dank,"Sehr gärn. Freut mi, dass dir das öppis bringt.",bestärkend,True,True
+"danke, dass du so geduldig gsi bisch",danke dass du so geduldig gsi bisch,positiv,dank,"Sehr gärn. Freut mi, dass dir das öppis bringt.",bestärkend,True,True
+"ich versteh s nöd ganz, chasch s no mal erläutere?",ich versteh s noed ganz chasch s no mal erlaeutere,negativ,hilfe_bitten,"Klar, ich probier dir z helfe. Sag mer, wo genau du grad hängt.",empathisch,True,True
+d abmachige werdet nie ihalte,d abmachige werdet nie ihalte,negativ,beschwerde,"Das tönt würklich müehsam. Erzähl mer öppis meh, was genau passiert isch.",empathisch,True,True
+keim nimmt das richtig ernst,keim nimmt das richtig ernst,negativ,beschwerde,"Das tönt würklich müehsam. Erzähl mer öppis meh, was genau passiert isch.",empathisch,True,True
+"ich bi stolz, wie sich das entwicklet het",ich bi stolz wie sich das entwicklet het,positiv,freud,"Mega schön, dass du dich so freusch. Erzähl gern no es bitzeli meh.",bestärkend,True,True
+"danke dir, das hät mir sehr gholfe",danke dir das haet mir sehr gholfe,positiv,dank,"Sehr gärn. Freut mi, dass dir das öppis bringt.",bestärkend,True,True
+"ich bi grad überforderet, chasch mir helfe?",ich bi grad ueberforderet chasch mir helfe,negativ,hilfe_bitten,"Klar, ich probier dir z helfe. Sag mer, wo genau du grad hängt.",empathisch,True,True
+wie bisch du i de morge cho?,wie bisch du i de morge cho,neutral,smalltalk,"Mir gohts guet, danke. Und dir?",locker,True,True
+ich bi komplett müed,ich bi komplett mueed,negativ,frust,"Ich verstand, dass di das grad stresst. Was isch im Momänt am schwierigste für dich?",empathisch,True,True
+immer nur ausräd statt lösige,immer nur ausraed statt loesige,negativ,beschwerde,"Das tönt würklich müehsam. Erzähl mer öppis meh, was genau passiert isch.",empathisch,True,True
+ich bin sehr zfriede mit dem,ich bin sehr zfriede mit dem,positiv,freud,"Mega schön, dass du dich so freusch. Erzähl gern no es bitzeli meh.",bestärkend,True,True
+"das isch besser worde, als ich erwartet ha",das isch besser worde als ich erwartet ha,positiv,lob,Schön z ghöre. Du machsch das wirklich guet.,bestärkend,True,True
+was sind dini erfahrige mit dem bis jetzt?,was sind dini erfahrige mit dem bis jetzt,neutral,frage_info,Gueti Frog. Ich versuechs dir kurz und eifach z erkläre.,erklärend,True,True
+chan mir bitte öpper s erkläre? ich chum nöd drus,chan mir bitte oepper s erklaere ich chum noed drus,negativ,hilfe_bitten,"Klar, ich probier dir z helfe. Sag mer, wo genau du grad hängt.",empathisch,True,True
+wottsch du online oder vor ort abmache?,wottsch du online oder vor ort abmache,neutral,orga,"Klingt guet. Säg mir eifach, wänn s dir am beschte passt.",erklärend,True,True
+"ich weiss nöd, was s nächschti isch, hesch en tipp?",ich weiss noed was s naechschti isch hesch en tipp,negativ,hilfe_bitten,"Klar, ich probier dir z helfe. Sag mer, wo genau du grad hängt.",empathisch,True,True
+mer lernt nüt us de fehler,mer lernt nuet us de fehler,negativ,beschwerde,"Das tönt würklich müehsam. Erzähl mer öppis meh, was genau passiert isch.",empathisch,True,True
+"ich ha s gfühl, ich bi uf em richtige wäg",ich ha s gfuehl ich bi uf em richtige waeg,positiv,freud,"Mega schön, dass du dich so freusch. Erzähl gern no es bitzeli meh.",bestärkend,True,True
+was würdest du a minere stell mache?,was wuerdest du a minere stell mache,neutral,frage_info,Gueti Frog. Ich versuechs dir kurz und eifach z erkläre.,erklärend,True,True
+wänn wür dir passe zum treffe?,waenn wuer dir passe zum treffe,neutral,orga,"Klingt guet. Säg mir eifach, wänn s dir am beschte passt.",erklärend,True,True
+das isch eifach gueti arbeit,das isch eifach gueti arbeit,positiv,lob,Schön z ghöre. Du machsch das wirklich guet.,bestärkend,True,True
+ich bi eifach nöd zfriede,ich bi eifach noed zfriede,negativ,beschwerde,"Das tönt würklich müehsam. Erzähl mer öppis meh, was genau passiert isch.",empathisch,True,True
+ich blick grad sehr zuversichtlich i z zukuft,ich blick grad sehr zuversichtlich i z zukuft,positiv,freud,"Mega schön, dass du dich so freusch. Erzähl gern no es bitzeli meh.",bestärkend,True,True
+"ich ha s gfuehl, ich verlüüre d linie",ich ha s gfuehl ich verlueuere d linie,negativ,hilfe_bitten,"Klar, ich probier dir z helfe. Sag mer, wo genau du grad hängt.",empathisch,True,True
+"merci, dass du s mit mir usghalte hesch",merci dass du s mit mir usghalte hesch,positiv,dank,"Sehr gärn. Freut mi, dass dir das öppis bringt.",bestärkend,True,True
+"gits öpis, wo ich lieber nöd söll mache?",gits oepis wo ich lieber noed soell mache,neutral,frage_info,Gueti Frog. Ich versuechs dir kurz und eifach z erkläre.,erklärend,True,True
+"ich ha scho vil probiert, nüt het würkli glappt",ich ha scho vil probiert nuet het wuerkli glappt,negativ,hilfe_bitten,"Klar, ich probier dir z helfe. Sag mer, wo genau du grad hängt.",empathisch,True,True
+söll ich no unterlage vorbereite?,soell ich no unterlage vorbereite,neutral,orga,"Klingt guet. Säg mir eifach, wänn s dir am beschte passt.",erklärend,True,True
+"gits öppis, wo mir vorher no kläre müend?",gits oeppis wo mir vorher no klaere mueend,neutral,orga,"Klingt guet. Säg mir eifach, wänn s dir am beschte passt.",erklärend,True,True
+"danke, du hesch mir vil druck gnoh",danke du hesch mir vil druck gnoh,positiv,dank,"Sehr gärn. Freut mi, dass dir das öppis bringt.",bestärkend,True,True
+dini idee het mir mega gfalle,dini idee het mir mega gfalle,positiv,lob,Schön z ghöre. Du machsch das wirklich guet.,bestärkend,True,True
+ich ha s nöd pressant mit dem thema,ich ha s noed pressant mit dem thema,neutral,sonstiges,"Alles klar, merci für dini Rückmeldung.",neutral,True,True
+"ich bi erleichtert, wie das usecho isch",ich bi erleichtert wie das usecho isch,positiv,freud,"Mega schön, dass du dich so freusch. Erzähl gern no es bitzeli meh.",bestärkend,True,True
+bisch guet i d wuche startet?,bisch guet i d wuche startet,neutral,smalltalk,"Mir gohts guet, danke. Und dir?",locker,True,True
+ich bin nur no genervt,ich bin nur no genervt,negativ,frust,"Ich verstand, dass di das grad stresst. Was isch im Momänt am schwierigste für dich?",empathisch,True,True
+ich bin voll positiver stimmig,ich bin voll positiver stimmig,positiv,freud,"Mega schön, dass du dich so freusch. Erzähl gern no es bitzeli meh.",bestärkend,True,True
+das gibt mir richtig hoffnig,das gibt mir richtig hoffnig,positiv,freud,"Mega schön, dass du dich so freusch. Erzähl gern no es bitzeli meh.",bestärkend,True,True
+ich freu mi so fescht drüber,ich freu mi so fescht drueber,positiv,freud,"Mega schön, dass du dich so freusch. Erzähl gern no es bitzeli meh.",bestärkend,True,True
+du chasch würkli stolz sii uf dich,du chasch wuerkli stolz sii uf dich,positiv,lob,Schön z ghöre. Du machsch das wirklich guet.,bestärkend,True,True
+wie läuft das normalerwiis ab?,wie laeuft das normalerwiis ab,neutral,frage_info,Gueti Frog. Ich versuechs dir kurz und eifach z erkläre.,erklärend,True,True
+ich fühl mi richtig usgbrennt,ich fuehl mi richtig usgbrennt,negativ,frust,"Ich verstand, dass di das grad stresst. Was isch im Momänt am schwierigste für dich?",empathisch,True,True
+"danke, dass du das im blick gha hesch",danke dass du das im blick gha hesch,positiv,dank,"Sehr gärn. Freut mi, dass dir das öppis bringt.",bestärkend,True,True
+ich ha sehr viel freud a dem,ich ha sehr viel freud a dem,positiv,freud,"Mega schön, dass du dich so freusch. Erzähl gern no es bitzeli meh.",bestärkend,True,True
+mir chönd s au no chli beobachte,mir choend s au no chli beobachte,neutral,sonstiges,"Alles klar, merci für dini Rückmeldung.",neutral,True,True
+das isch richtig stark worde,das isch richtig stark worde,positiv,lob,Schön z ghöre. Du machsch das wirklich guet.,bestärkend,True,True
+"ich ha s sehr schön gfunde, merci",ich ha s sehr schoen gfunde merci,positiv,dank,"Sehr gärn. Freut mi, dass dir das öppis bringt.",bestärkend,True,True
+ich bi mega happy grad,ich bi mega happy grad,positiv,freud,"Mega schön, dass du dich so freusch. Erzähl gern no es bitzeli meh.",bestärkend,True,True
+merci für dini ruäigi art,merci fuer dini ruaeigi art,positiv,dank,"Sehr gärn. Freut mi, dass dir das öppis bringt.",bestärkend,True,True
+"mer lueged, was sich ergit",mer lueged was sich ergit,neutral,sonstiges,"Alles klar, merci für dini Rückmeldung.",neutral,True,True
+isch das eimalig oder wiederhole sich das?,isch das eimalig oder wiederhole sich das,neutral,frage_info,Gueti Frog. Ich versuechs dir kurz und eifach z erkläre.,erklärend,True,True
+du bisch extrem konstruktiv mit dä sach umgange,du bisch extrem konstruktiv mit dae sach umgange,positiv,lob,Schön z ghöre. Du machsch das wirklich guet.,bestärkend,True,True
+ich bi voll entspannt jetz,ich bi voll entspannt jetz,positiv,freud,"Mega schön, dass du dich so freusch. Erzähl gern no es bitzeli meh.",bestärkend,True,True
+"ich ha s gfuehl, s lauft guet im momänt",ich ha s gfuehl s lauft guet im momaent,positiv,freud,"Mega schön, dass du dich so freusch. Erzähl gern no es bitzeli meh.",bestärkend,True,True
+jedes mal s glychi theater,jedes mal s glychi theater,negativ,beschwerde,"Das tönt würklich müehsam. Erzähl mer öppis meh, was genau passiert isch.",empathisch,True,True
+"ich bi mega froh, dass du mir gholfe hesch",ich bi mega froh dass du mir gholfe hesch,positiv,dank,"Sehr gärn. Freut mi, dass dir das öppis bringt.",bestärkend,True,True
+das isch klar und sauber umegsetzt,das isch klar und sauber umegsetzt,positiv,lob,Schön z ghöre. Du machsch das wirklich guet.,bestärkend,True,True
+das git mir viel energie,das git mir viel energie,positiv,freud,"Mega schön, dass du dich so freusch. Erzähl gern no es bitzeli meh.",bestärkend,True,True
+"ich ha s würkli gmerkt, wie vill müeh du dir gäh hesch",ich ha s wuerkli gmerkt wie vill mueeh du dir gaeh hesch,positiv,dank,"Sehr gärn. Freut mi, dass dir das öppis bringt.",bestärkend,True,True
+wie isch s im schaffe grad?,wie isch s im schaffe grad,neutral,smalltalk,"Mir gohts guet, danke. Und dir?",locker,True,True
+was sind d vorteil und nachteil devo?,was sind d vorteil und nachteil devo,neutral,frage_info,Gueti Frog. Ich versuechs dir kurz und eifach z erkläre.,erklärend,True,True
+"merci, du hesch dä tag besser gmacht",merci du hesch dae tag besser gmacht,positiv,dank,"Sehr gärn. Freut mi, dass dir das öppis bringt.",bestärkend,True,True
+"ich weiss nöd, wie ich aafange söll",ich weiss noed wie ich aafange soell,negativ,hilfe_bitten,"Klar, ich probier dir z helfe. Sag mer, wo genau du grad hängt.",empathisch,True,True
+ich muess immer alles zwei mol erläbe,ich muess immer alles zwei mol erlaebe,negativ,beschwerde,"Das tönt würklich müehsam. Erzähl mer öppis meh, was genau passiert isch.",empathisch,True,True
+ich verliere grad dr überblick,ich verliere grad dr ueberblick,negativ,hilfe_bitten,"Klar, ich probier dir z helfe. Sag mer, wo genau du grad hängt.",empathisch,True,True
+brauch ich dafür bestimmti software?,brauch ich dafuer bestimmti software,neutral,frage_info,Gueti Frog. Ich versuechs dir kurz und eifach z erkläre.,erklärend,True,True
+"ich schätz das sehr, was du gmacht hesch",ich schaetz das sehr was du gmacht hesch,positiv,dank,"Sehr gärn. Freut mi, dass dir das öppis bringt.",bestärkend,True,True
+hesch es guets wucheend gha?,hesch es guets wucheend gha,neutral,smalltalk,"Mir gohts guet, danke. Und dir?",locker,True,True
+du bisch es vorbild in däm,du bisch es vorbild in daem,positiv,lob,Schön z ghöre. Du machsch das wirklich guet.,bestärkend,True,True
+es muess nöd grad hüt sii,es muess noed grad huet sii,neutral,sonstiges,"Alles klar, merci für dini Rückmeldung.",neutral,True,True
+"chan s au spöter in dr wuche sii, wenn s nöd passt?",chan s au spoeter in dr wuche sii wenn s noed passt,neutral,orga,"Klingt guet. Säg mir eifach, wänn s dir am beschte passt.",erklärend,True,True
+isch s wätter bi dir au so komisch?,isch s waetter bi dir au so komisch,neutral,smalltalk,"Mir gohts guet, danke. Und dir?",locker,True,True
+ich ha langsam gwungige schultere vom ganze druck,ich ha langsam gwungige schultere vom ganze druck,negativ,frust,"Ich verstand, dass di das grad stresst. Was isch im Momänt am schwierigste für dich?",empathisch,True,True
+ich bin innerlich sehr ruhig grad,ich bin innerlich sehr ruhig grad,positiv,freud,"Mega schön, dass du dich so freusch. Erzähl gern no es bitzeli meh.",bestärkend,True,True
+"hesch du en vorschlag, wie ich s anders mache chönnt?",hesch du en vorschlag wie ich s anders mache choennt,negativ,hilfe_bitten,"Klar, ich probier dir z helfe. Sag mer, wo genau du grad hängt.",empathisch,True,True
+hesch öppis cools erlebt letschti zit?,hesch oeppis cools erlebt letschti zit,neutral,smalltalk,"Mir gohts guet, danke. Und dir?",locker,True,True
+ich bin echt fan vo dinere lösig,ich bin echt fan vo dinere loesig,positiv,lob,Schön z ghöre. Du machsch das wirklich guet.,bestärkend,True,True
+niemer fühlt sich zuständig,niemer fuehlt sich zustaendig,negativ,beschwerde,"Das tönt würklich müehsam. Erzähl mer öppis meh, was genau passiert isch.",empathisch,True,True
+ich ha null motivation,ich ha null motivation,negativ,frust,"Ich verstand, dass di das grad stresst. Was isch im Momänt am schwierigste für dich?",empathisch,True,True
+d kundebetreuig isch richtig schwach,d kundebetreuig isch richtig schwach,negativ,beschwerde,"Das tönt würklich müehsam. Erzähl mer öppis meh, was genau passiert isch.",empathisch,True,True
+du hesch en super job gmacht,du hesch en super job gmacht,positiv,lob,Schön z ghöre. Du machsch das wirklich guet.,bestärkend,True,True
+ich find s weder mega guet no mega schlecht,ich find s weder mega guet no mega schlecht,neutral,sonstiges,"Alles klar, merci für dini Rückmeldung.",neutral,True,True
+was isch dä unterschied zwüsche däne zwei variante?,was isch dae unterschied zwuesche daene zwei variante,neutral,frage_info,Gueti Frog. Ich versuechs dir kurz und eifach z erkläre.,erklärend,True,True
+ich ha grad richtig freud,ich ha grad richtig freud,positiv,freud,"Mega schön, dass du dich so freusch. Erzähl gern no es bitzeli meh.",bestärkend,True,True
+ich cha nüm richtig schlofe vor lauter chopfkino,ich cha nuem richtig schlofe vor lauter chopfkino,negativ,frust,"Ich verstand, dass di das grad stresst. Was isch im Momänt am schwierigste für dich?",empathisch,True,True
+wie würdest du an mini stell vorgoo?,wie wuerdest du an mini stell vorgoo,negativ,hilfe_bitten,"Klar, ich probier dir z helfe. Sag mer, wo genau du grad hängt.",empathisch,True,True
+"lange nüm gseh, wie geits?",lange nuem gseh wie geits,neutral,smalltalk,"Mir gohts guet, danke. Und dir?",locker,True,True
+mer chönd s au spontan am tag sälber fixiere,mer choend s au spontan am tag saelber fixiere,neutral,orga,"Klingt guet. Säg mir eifach, wänn s dir am beschte passt.",erklärend,True,True
+ich bi emotional am limit,ich bi emotional am limit,negativ,frust,"Ich verstand, dass di das grad stresst. Was isch im Momänt am schwierigste für dich?",empathisch,True,True
+"ich bi unsicher, ob ich überreagiere",ich bi unsicher ob ich ueberreagiere,negativ,hilfe_bitten,"Klar, ich probier dir z helfe. Sag mer, wo genau du grad hängt.",empathisch,True,True
+"ich schick dir no es update, sobald ich öppis weiss",ich schick dir no es update sobald ich oeppis weiss,neutral,orga,"Klingt guet. Säg mir eifach, wänn s dir am beschte passt.",erklärend,True,True
+du hesch das super umegsetzt,du hesch das super umegsetzt,positiv,lob,Schön z ghöre. Du machsch das wirklich guet.,bestärkend,True,True
+jedä schiebt s em andere zue,jedae schiebt s em andere zue,negativ,beschwerde,"Das tönt würklich müehsam. Erzähl mer öppis meh, was genau passiert isch.",empathisch,True,True
+mer chan s gern uf spöter verschiebe,mer chan s gern uf spoeter verschiebe,neutral,sonstiges,"Alles klar, merci für dini Rückmeldung.",neutral,True,True
+ich han riesig freud an dim output,ich han riesig freud an dim output,positiv,lob,Schön z ghöre. Du machsch das wirklich guet.,bestärkend,True,True
+hey wie gohts dir?,hey wie gohts dir,neutral,smalltalk,"Mir gohts guet, danke. Und dir?",locker,True,True
+das isch so huere müehsam,das isch so huere mueehsam,negativ,beschwerde,"Das tönt würklich müehsam. Erzähl mer öppis meh, was genau passiert isch.",empathisch,True,True
+wie streng isch das im durchschnitt?,wie streng isch das im durchschnitt,neutral,frage_info,Gueti Frog. Ich versuechs dir kurz und eifach z erkläre.,erklärend,True,True
+"chan ich di nöd kurz löchere, wenn ich hänge?",chan ich di noed kurz loechere wenn ich haenge,neutral,frage_info,Gueti Frog. Ich versuechs dir kurz und eifach z erkläre.,erklärend,True,True
+"merci viu mau, das isch mega lieb vo dir",merci viu mau das isch mega lieb vo dir,positiv,dank,"Sehr gärn. Freut mi, dass dir das öppis bringt.",bestärkend,True,True
+wie lang gaht das ungefäär?,wie lang gaht das ungefaeaer,neutral,frage_info,Gueti Frog. Ich versuechs dir kurz und eifach z erkläre.,erklärend,True,True
+"gits öppis, wo ich im vorus sött wüsse?",gits oeppis wo ich im vorus soett wuesse,neutral,frage_info,Gueti Frog. Ich versuechs dir kurz und eifach z erkläre.,erklärend,True,True
+das het mir dä tag verschönert,das het mir dae tag verschoenert,positiv,freud,"Mega schön, dass du dich so freusch. Erzähl gern no es bitzeli meh.",bestärkend,True,True
+ich ha langsam kei idee meh,ich ha langsam kei idee meh,negativ,hilfe_bitten,"Klar, ich probier dir z helfe. Sag mer, wo genau du grad hängt.",empathisch,True,True
+es isch mir alles z vill,es isch mir alles z vill,negativ,frust,"Ich verstand, dass di das grad stresst. Was isch im Momänt am schwierigste für dich?",empathisch,True,True
+ich fühl mi eifach leer,ich fuehl mi eifach leer,negativ,frust,"Ich verstand, dass di das grad stresst. Was isch im Momänt am schwierigste für dich?",empathisch,True,True
+ich ha grosses vertroue i dini fähigkeite,ich ha grosses vertroue i dini faehigkeite,positiv,lob,Schön z ghöre. Du machsch das wirklich guet.,bestärkend,True,True
+"chömer s in zwei teil ufteile, wenn s z vil isch?",choemer s in zwei teil ufteile wenn s z vil isch,neutral,orga,"Klingt guet. Säg mir eifach, wänn s dir am beschte passt.",erklärend,True,True
+"na, alles klar bi dir?",na alles klar bi dir,neutral,smalltalk,"Mir gohts guet, danke. Und dir?",locker,True,True
+"ich chan diestig und donnschtig, wie isch s bi dir?",ich chan diestig und donnschtig wie isch s bi dir,neutral,orga,"Klingt guet. Säg mir eifach, wänn s dir am beschte passt.",erklärend,True,True
+ich muess immer allem noh springe,ich muess immer allem noh springe,negativ,beschwerde,"Das tönt würklich müehsam. Erzähl mer öppis meh, was genau passiert isch.",empathisch,True,True
+ich nimm s mal zur kenntnis,ich nimm s mal zur kenntnis,neutral,sonstiges,"Alles klar, merci für dini Rückmeldung.",neutral,True,True
+"chan ich es bsüeli experimentiere, ohni vil kaputt z mache?",chan ich es bsueeli experimentiere ohni vil kaputt z mache,neutral,frage_info,Gueti Frog. Ich versuechs dir kurz und eifach z erkläre.,erklärend,True,True
+"ich ha s gfuehl, s interessiert niemer",ich ha s gfuehl s interessiert niemer,negativ,beschwerde,"Das tönt würklich müehsam. Erzähl mer öppis meh, was genau passiert isch.",empathisch,True,True
+hesch grad öppis guets glese?,hesch grad oeppis guets glese,neutral,smalltalk,"Mir gohts guet, danke. Und dir?",locker,True,True
+ich bi scho wieder enttäuscht,ich bi scho wieder enttaeuscht,negativ,beschwerde,"Das tönt würklich müehsam. Erzähl mer öppis meh, was genau passiert isch.",empathisch,True,True
+"danke, dass du nöd glägig gäh hesch mit mir",danke dass du noed glaegig gaeh hesch mit mir,positiv,dank,"Sehr gärn. Freut mi, dass dir das öppis bringt.",bestärkend,True,True
+ich bi es bitzli wütend langsam,ich bi es bitzli wuetend langsam,negativ,beschwerde,"Das tönt würklich müehsam. Erzähl mer öppis meh, was genau passiert isch.",empathisch,True,True
+wie hesch s gha hüt?,wie hesch s gha huet,neutral,smalltalk,"Mir gohts guet, danke. Und dir?",locker,True,True
+"ich find, du hesch das sehr souverän gmacht",ich find du hesch das sehr souveraen gmacht,positiv,lob,Schön z ghöre. Du machsch das wirklich guet.,bestärkend,True,True
+was treibsch im momänt?,was treibsch im momaent,neutral,smalltalk,"Mir gohts guet, danke. Und dir?",locker,True,True
+"ich glaub, mer muess s nöd übertreibe mit dem",ich glaub mer muess s noed uebertreibe mit dem,neutral,sonstiges,"Alles klar, merci für dini Rückmeldung.",neutral,True,True
+ich finds sehr professionell,ich finds sehr professionell,positiv,lob,Schön z ghöre. Du machsch das wirklich guet.,bestärkend,True,True
+ich bruch dringen e change,ich bruch dringen e change,negativ,frust,"Ich verstand, dass di das grad stresst. Was isch im Momänt am schwierigste für dich?",empathisch,True,True
+ich bi voll beeindruckt vo dim resultat,ich bi voll beeindruckt vo dim resultat,positiv,lob,Schön z ghöre. Du machsch das wirklich guet.,bestärkend,True,True
+"danke, dass du so spontan usgheholfe hesch",danke dass du so spontan usgheholfe hesch,positiv,dank,"Sehr gärn. Freut mi, dass dir das öppis bringt.",bestärkend,True,True
+ich bi offe für vorschläg,ich bi offe fuer vorschlaeg,neutral,sonstiges,"Alles klar, merci für dini Rückmeldung.",neutral,True,True
+immer wieder di glieche pannen,immer wieder di glieche pannen,negativ,beschwerde,"Das tönt würklich müehsam. Erzähl mer öppis meh, was genau passiert isch.",empathisch,True,True
+ich bruch dringends en rat,ich bruch dringends en rat,negativ,hilfe_bitten,"Klar, ich probier dir z helfe. Sag mer, wo genau du grad hängt.",empathisch,True,True
+is das meh öppis für afänger oder nöd?,is das meh oeppis fuer afaenger oder noed,neutral,frage_info,Gueti Frog. Ich versuechs dir kurz und eifach z erkläre.,erklärend,True,True
+ich bi chli am abegheitä,ich bi chli am abegheitae,negativ,frust,"Ich verstand, dass di das grad stresst. Was isch im Momänt am schwierigste für dich?",empathisch,True,True
+"ich ha s gfuehl, ich tritt a ort",ich ha s gfuehl ich tritt a ort,negativ,frust,"Ich verstand, dass di das grad stresst. Was isch im Momänt am schwierigste für dich?",empathisch,True,True
+mir chönd s spontan entscheide,mir choend s spontan entscheide,neutral,sonstiges,"Alles klar, merci für dini Rückmeldung.",neutral,True,True
+"ich find, du machsch das unglaublich guet",ich find du machsch das unglaublich guet,positiv,lob,Schön z ghöre. Du machsch das wirklich guet.,bestärkend,True,True
+"ich weiss nöd, wie lang ich das no cha",ich weiss noed wie lang ich das no cha,negativ,frust,"Ich verstand, dass di das grad stresst. Was isch im Momänt am schwierigste für dich?",empathisch,True,True
+danke für dini zuesproch,danke fuer dini zuesproch,positiv,dank,"Sehr gärn. Freut mi, dass dir das öppis bringt.",bestärkend,True,True
+isch mir im fall relativ egal,isch mir im fall relativ egal,neutral,sonstiges,"Alles klar, merci für dini Rückmeldung.",neutral,True,True
+wie isch s mit dim gsundheitlich?,wie isch s mit dim gsundheitlich,neutral,smalltalk,"Mir gohts guet, danke. Und dir?",locker,True,True
+"ich ha s gfühl, du hesch s voll im griff",ich ha s gfuehl du hesch s voll im griff,positiv,lob,Schön z ghöre. Du machsch das wirklich guet.,bestärkend,True,True
+es git kei klare infos,es git kei klare infos,negativ,beschwerde,"Das tönt würklich müehsam. Erzähl mer öppis meh, was genau passiert isch.",empathisch,True,True
+"wie hesch du das gmacht, wo du aagfange hesch?",wie hesch du das gmacht wo du aagfange hesch,neutral,frage_info,Gueti Frog. Ich versuechs dir kurz und eifach z erkläre.,erklärend,True,True
+merci für dini müeh,merci fuer dini mueeh,positiv,dank,"Sehr gärn. Freut mi, dass dir das öppis bringt.",bestärkend,True,True
+ich bruch äusseri sicht uf das,ich bruch aeusseri sicht uf das,negativ,hilfe_bitten,"Klar, ich probier dir z helfe. Sag mer, wo genau du grad hängt.",empathisch,True,True
+was sind dini plän fürs wucheend?,was sind dini plaen fuers wucheend,neutral,smalltalk,"Mir gohts guet, danke. Und dir?",locker,True,True
+wie isch s im studi grad?,wie isch s im studi grad,neutral,smalltalk,"Mir gohts guet, danke. Und dir?",locker,True,True
+"ich ha s gfuehl, es louft immer gege mich",ich ha s gfuehl es louft immer gege mich,negativ,frust,"Ich verstand, dass di das grad stresst. Was isch im Momänt am schwierigste für dich?",empathisch,True,True
+wänn bruchsch spötestens en beschaid?,waenn bruchsch spoetestens en beschaid,neutral,orga,"Klingt guet. Säg mir eifach, wänn s dir am beschte passt.",erklärend,True,True
+"mir mached s so, wie s am eifachste isch",mir mached s so wie s am eifachste isch,neutral,sonstiges,"Alles klar, merci für dini Rückmeldung.",neutral,True,True
+hesch erfahrig mit dem gha?,hesch erfahrig mit dem gha,neutral,frage_info,Gueti Frog. Ich versuechs dir kurz und eifach z erkläre.,erklärend,True,True
+"ich ha s gfuehl, es chunnt no vil guets",ich ha s gfuehl es chunnt no vil guets,positiv,freud,"Mega schön, dass du dich so freusch. Erzähl gern no es bitzeli meh.",bestärkend,True,True
+ich chum mir voll verarscht vor,ich chum mir voll verarscht vor,negativ,beschwerde,"Das tönt würklich müehsam. Erzähl mer öppis meh, was genau passiert isch.",empathisch,True,True
+ich bi grad voll im loch,ich bi grad voll im loch,negativ,frust,"Ich verstand, dass di das grad stresst. Was isch im Momänt am schwierigste für dich?",empathisch,True,True
+"ich bi froh, wenn du ehrlich bisch mit mir",ich bi froh wenn du ehrlich bisch mit mir,negativ,hilfe_bitten,"Klar, ich probier dir z helfe. Sag mer, wo genau du grad hängt.",empathisch,True,True
+wo find ich meh infos zu dem?,wo find ich meh infos zu dem,neutral,frage_info,Gueti Frog. Ich versuechs dir kurz und eifach z erkläre.,erklärend,True,True
+passts dir am morn oder am abig besser?,passts dir am morn oder am abig besser,neutral,orga,"Klingt guet. Säg mir eifach, wänn s dir am beschte passt.",erklärend,True,True
+wie handhabed das anderi normalerweise?,wie handhabed das anderi normalerweise,neutral,frage_info,Gueti Frog. Ich versuechs dir kurz und eifach z erkläre.,erklärend,True,True
+"hoi, was machsch grad so?",hoi was machsch grad so,neutral,smalltalk,"Mir gohts guet, danke. Und dir?",locker,True,True
+"man merkt, dass du vill erfahrig hesch",man merkt dass du vill erfahrig hesch,positiv,lob,Schön z ghöre. Du machsch das wirklich guet.,bestärkend,True,True
+jedä tag fählt sich gliich streng a,jedae tag faehlt sich gliich streng a,negativ,frust,"Ich verstand, dass di das grad stresst. Was isch im Momänt am schwierigste für dich?",empathisch,True,True
+hesch dir es bitzeli ruhe gönne chönne?,hesch dir es bitzeli ruhe goenne choenne,neutral,smalltalk,"Mir gohts guet, danke. Und dir?",locker,True,True
+du hesch dä nagel uf de chopf troffe,du hesch dae nagel uf de chopf troffe,positiv,lob,Schön z ghöre. Du machsch das wirklich guet.,bestärkend,True,True
+ich bi grad total ufgstellt,ich bi grad total ufgstellt,positiv,freud,"Mega schön, dass du dich so freusch. Erzähl gern no es bitzeli meh.",bestärkend,True,True
+wie isch s so im familie-lebe?,wie isch s so im familie lebe,neutral,smalltalk,"Mir gohts guet, danke. Und dir?",locker,True,True
+"chasch mir kurz erkläre, was ich mues mache?",chasch mir kurz erklaere was ich mues mache,neutral,frage_info,Gueti Frog. Ich versuechs dir kurz und eifach z erkläre.,erklärend,True,True
+immer lauft öppis schief,immer lauft oeppis schief,negativ,beschwerde,"Das tönt würklich müehsam. Erzähl mer öppis meh, was genau passiert isch.",empathisch,True,True
+danke fürs zuelose,danke fuers zuelose,positiv,dank,"Sehr gärn. Freut mi, dass dir das öppis bringt.",bestärkend,True,True
+ich bi grad würkli dünnhutig,ich bi grad wuerkli duennhutig,negativ,frust,"Ich verstand, dass di das grad stresst. Was isch im Momänt am schwierigste für dich?",empathisch,True,True
+"danke, du bisch e riesigi unterstützig gsi",danke du bisch e riesigi unterstuetzig gsi,positiv,dank,"Sehr gärn. Freut mi, dass dir das öppis bringt.",bestärkend,True,True
+ich ha langsam kei nerv meh für dä scheiss,ich ha langsam kei nerv meh fuer dae scheiss,negativ,beschwerde,"Das tönt würklich müehsam. Erzähl mer öppis meh, was genau passiert isch.",empathisch,True,True
+"danke, dass ich cha uf dich zähle",danke dass ich cha uf dich zaehle,positiv,dank,"Sehr gärn. Freut mi, dass dir das öppis bringt.",bestärkend,True,True
+"merci, dass du dir d zit gnoh hesch",merci dass du dir d zit gnoh hesch,positiv,dank,"Sehr gärn. Freut mi, dass dir das öppis bringt.",bestärkend,True,True
+ich ha kei kraft meh für diskussione,ich ha kei kraft meh fuer diskussione,negativ,frust,"Ich verstand, dass di das grad stresst. Was isch im Momänt am schwierigste für dich?",empathisch,True,True
+"ich bi nöd sicher, öb ich richtig handle",ich bi noed sicher oeb ich richtig handle,negativ,hilfe_bitten,"Klar, ich probier dir z helfe. Sag mer, wo genau du grad hängt.",empathisch,True,True
+wie isch dini wuche bis jetzt gsi?,wie isch dini wuche bis jetzt gsi,neutral,smalltalk,"Mir gohts guet, danke. Und dir?",locker,True,True
+ich ha kei bock meh,ich ha kei bock meh,negativ,frust,"Ich verstand, dass di das grad stresst. Was isch im Momänt am schwierigste für dich?",empathisch,True,True
+ich bruch nur chli orientierig im moment,ich bruch nur chli orientierig im moment,negativ,hilfe_bitten,"Klar, ich probier dir z helfe. Sag mer, wo genau du grad hängt.",empathisch,True,True
+"ich ha s gfuehl, ich mach alles falsch",ich ha s gfuehl ich mach alles falsch,negativ,frust,"Ich verstand, dass di das grad stresst. Was isch im Momänt am schwierigste für dich?",empathisch,True,True
+wottsch dich zuerst no abspreche mit öpperem?,wottsch dich zuerst no abspreche mit oepperem,neutral,orga,"Klingt guet. Säg mir eifach, wänn s dir am beschte passt.",erklärend,True,True
+alles verzögert sich eifach,alles verzoegert sich eifach,negativ,beschwerde,"Das tönt würklich müehsam. Erzähl mer öppis meh, was genau passiert isch.",empathisch,True,True
+"ich wott das ernst näh, aber ich weiss nöd wie",ich wott das ernst naeh aber ich weiss noed wie,negativ,hilfe_bitten,"Klar, ich probier dir z helfe. Sag mer, wo genau du grad hängt.",empathisch,True,True
+ich ha grossi achtig vor dim einsatz,ich ha grossi achtig vor dim einsatz,positiv,lob,Schön z ghöre. Du machsch das wirklich guet.,bestärkend,True,True
+ich wett s nöd komplizierter mache als nötig,ich wett s noed komplizierter mache als noetig,neutral,sonstiges,"Alles klar, merci für dini Rückmeldung.",neutral,True,True
+das hesch mega guet gmacht,das hesch mega guet gmacht,positiv,lob,Schön z ghöre. Du machsch das wirklich guet.,bestärkend,True,True
+mer chan s zu gegebener zit wieder aaluege,mer chan s zu gegebener zit wieder aaluege,neutral,sonstiges,"Alles klar, merci für dini Rückmeldung.",neutral,True,True
+treffemer üs grad bim bahnhof?,treffemer ues grad bim bahnhof,neutral,orga,"Klingt guet. Säg mir eifach, wänn s dir am beschte passt.",erklärend,True,True
+ich han gnueg vo däm stress,ich han gnueg vo daem stress,negativ,frust,"Ich verstand, dass di das grad stresst. Was isch im Momänt am schwierigste für dich?",empathisch,True,True
+ich bi überlastet mit allem,ich bi ueberlastet mit allem,negativ,frust,"Ich verstand, dass di das grad stresst. Was isch im Momänt am schwierigste für dich?",empathisch,True,True
+"ich bin begeistert, wie sich das entwicklet het",ich bin begeistert wie sich das entwicklet het,positiv,freud,"Mega schön, dass du dich so freusch. Erzähl gern no es bitzeli meh.",bestärkend,True,True
+ich ha richtig spass gha,ich ha richtig spass gha,positiv,freud,"Mega schön, dass du dich so freusch. Erzähl gern no es bitzeli meh.",bestärkend,True,True
+"ich gang mit dem, was sich guet aafühlt",ich gang mit dem was sich guet aafuehlt,neutral,sonstiges,"Alles klar, merci für dini Rückmeldung.",neutral,True,True
+das isch e wohltuendi abwechslig gsi,das isch e wohltuendi abwechslig gsi,positiv,freud,"Mega schön, dass du dich so freusch. Erzähl gern no es bitzeli meh.",bestärkend,True,True
+das macht mi wirklich glücklich,das macht mi wirklich gluecklich,positiv,freud,"Mega schön, dass du dich so freusch. Erzähl gern no es bitzeli meh.",bestärkend,True,True
+ich cha nüm locker blibe,ich cha nuem locker blibe,negativ,frust,"Ich verstand, dass di das grad stresst. Was isch im Momänt am schwierigste für dich?",empathisch,True,True
+ich wür am liebschte alles hinschmeisse,ich wuer am liebschte alles hinschmeisse,negativ,frust,"Ich verstand, dass di das grad stresst. Was isch im Momänt am schwierigste für dich?",empathisch,True,True
+mached mer lieber chli kürzer oder länger?,mached mer lieber chli kuerzer oder laenger,neutral,orga,"Klingt guet. Säg mir eifach, wänn s dir am beschte passt.",erklärend,True,True
+"was meinsch, isch die bescht option?",was meinsch isch die bescht option,neutral,frage_info,Gueti Frog. Ich versuechs dir kurz und eifach z erkläre.,erklärend,True,True
+ich bi richtig agfrässe,ich bi richtig agfraesse,negativ,beschwerde,"Das tönt würklich müehsam. Erzähl mer öppis meh, was genau passiert isch.",empathisch,True,True
+du hesch es guets händli für so sach,du hesch es guets haendli fuer so sach,positiv,lob,Schön z ghöre. Du machsch das wirklich guet.,bestärkend,True,True
+mir chönd s au eifach mal offe lah,mir choend s au eifach mal offe lah,neutral,sonstiges,"Alles klar, merci für dini Rückmeldung.",neutral,True,True
+"ich ha s gfuehl, alles füeget sich guet",ich ha s gfuehl alles fueeget sich guet,positiv,freud,"Mega schön, dass du dich so freusch. Erzähl gern no es bitzeli meh.",bestärkend,True,True
+"chan ich das nacher no ändere, falls nötig?",chan ich das nacher no aendere falls noetig,neutral,frage_info,Gueti Frog. Ich versuechs dir kurz und eifach z erkläre.,erklärend,True,True
+du bisch sehr zuverlässig,du bisch sehr zuverlaessig,positiv,lob,Schön z ghöre. Du machsch das wirklich guet.,bestärkend,True,True
+"ich ha s sehr gschätzt, was du gmacht hesch",ich ha s sehr gschaetzt was du gmacht hesch,positiv,dank,"Sehr gärn. Freut mi, dass dir das öppis bringt.",bestärkend,True,True
+de stil vo dir gfallt mir mega,de stil vo dir gfallt mir mega,positiv,lob,Schön z ghöre. Du machsch das wirklich guet.,bestärkend,True,True
+ich wott nöd no meh kaputt mache als scho isch,ich wott noed no meh kaputt mache als scho isch,negativ,hilfe_bitten,"Klar, ich probier dir z helfe. Sag mer, wo genau du grad hängt.",empathisch,True,True
+chan ich uf dini unterstützig zähle?,chan ich uf dini unterstuetzig zaehle,negativ,hilfe_bitten,"Klar, ich probier dir z helfe. Sag mer, wo genau du grad hängt.",empathisch,True,True
+wie isch s mit dim projäkt vorwärts gange?,wie isch s mit dim projaekt vorwaerts gange,neutral,smalltalk,"Mir gohts guet, danke. Und dir?",locker,True,True
+"merci, das hät mi ufgstellt",merci das haet mi ufgstellt,positiv,dank,"Sehr gärn. Freut mi, dass dir das öppis bringt.",bestärkend,True,True
+mer müend s nöd uf bieg und bruch entscheide,mer mueend s noed uf bieg und bruch entscheide,neutral,sonstiges,"Alles klar, merci für dini Rückmeldung.",neutral,True,True
+so cha mer doch nöd schaffe,so cha mer doch noed schaffe,negativ,beschwerde,"Das tönt würklich müehsam. Erzähl mer öppis meh, was genau passiert isch.",empathisch,True,True
+"ich bin froh, dass ich das erlebt ha",ich bin froh dass ich das erlebt ha,positiv,freud,"Mega schön, dass du dich so freusch. Erzähl gern no es bitzeli meh.",bestärkend,True,True
+chasch mit mir das schnell durego?,chasch mit mir das schnell durego,negativ,hilfe_bitten,"Klar, ich probier dir z helfe. Sag mer, wo genau du grad hängt.",empathisch,True,True
+merci fürs dini unterstützig,merci fuers dini unterstuetzig,positiv,dank,"Sehr gärn. Freut mi, dass dir das öppis bringt.",bestärkend,True,True
+"gits öppis, wo ich priorisiera sött?",gits oeppis wo ich priorisiera soett,neutral,frage_info,Gueti Frog. Ich versuechs dir kurz und eifach z erkläre.,erklärend,True,True
+ich bi dir würkli dankbar,ich bi dir wuerkli dankbar,positiv,dank,"Sehr gärn. Freut mi, dass dir das öppis bringt.",bestärkend,True,True
