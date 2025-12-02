@@ -13,7 +13,7 @@ from sklearn.metrics import classification_report, accuracy_score
 from sklearn.metrics.pairwise import cosine_similarity
 from sentence_transformers import SentenceTransformer
 
-from mundart_chat_data import (
+from mundartchat_data import (
     RANDOM_STATE,
     DATA_CSV_BASE,
     DATA_CSV_CHATPAIRS,
