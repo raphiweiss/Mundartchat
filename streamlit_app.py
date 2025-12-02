@@ -428,11 +428,27 @@ def main():
         with st.expander("🔍 Modell-Performance (Testset)", expanded=False):
             for name, info in eval_info.items():
                 st.subheader(name.upper())
-                st.write(f"Accuracy: **{info['accuracy']:.3f}**")
-                st.text(info["report"])
+        
+                # Accuracy als Metric
+                st.metric("Accuracy", f"{info['accuracy']:.3f}")
+        
+                # classification_report-Dict -> DataFrame
+                report_dict = info["report"]
+                df_report = pd.DataFrame(report_dict).T  # Transpose = Zeilen = Klassen
+        
+                # Nur Klassen + Macro/Weighted, Accuracy-Reihe rauswerfen
+                if "accuracy" in df_report.index:
+                    df_report = df_report.drop(index="accuracy")
+        
+                # etwas aufräumen & runden
+                df_report = df_report[["precision", "recall", "f1-score", "support"]]
+                df_report["precision"] = df_report["precision"].round(3)
+                df_report["recall"] = df_report["recall"].round(3)
+                df_report["f1-score"] = df_report["f1-score"].round(3)
+        
+                st.dataframe(df_report, use_container_width=True)
 
-        st.markdown("---")
-        st.markdown("**Hinweis:** Modelle werden gecached und nur bei App-Neustart neu trainiert.")
+
 
     # ---------------- Eingabe ----------------
     user_text = st.text_area(
