@@ -98,29 +98,25 @@ def _is_good_token(tok: str) -> bool:
     return True
 
 
-def next_word_candidates(prefix: str,
-                         ngram_counts,
-                         analyzer,
-                         n_max: int = 3,
-                         topk: int = 5):
+def next_word_candidates(prefix, ngram_counts, analyzer, n_max=3, topk=5):
     toks = analyzer(preprocess_text_chat(prefix))
-    # Backoff von n_max -> 1
+    backoff_level = None  # NEW
+
     for n in range(n_max, 0, -1):
         if n == 1:
-            total = sum(
-                cnt
-                for (tok,), cnt in ngram_counts[1].items()
-                if _is_good_token(tok)
-            )
+            # Unigram
+            total = sum(cnt for (tok,), cnt in ngram_counts[1].items() if _is_good_token(tok))
             if total == 0:
                 continue
+            backoff_level = 1  # NEW
             candidates = [
                 (tok, cnt)
                 for (tok,), cnt in ngram_counts[1].most_common()
                 if _is_good_token(tok)
             ][:topk]
-            return [(w, c / float(total)) for w, c in candidates]
+            return candidates, total, backoff_level  # NEW
 
+        # 2-gram & 3-gram
         if len(toks) < n - 1:
             continue
 
@@ -132,15 +128,13 @@ def next_word_candidates(prefix: str,
                 if _is_good_token(w):
                     candidates.append((w, cnt))
 
-        if not candidates:
-            continue
+        if candidates:
+            backoff_level = n  # NEW
+            candidates.sort(key=lambda x: x[1], reverse=True)
+            total_cnt = sum(c for _, c in candidates)
+            return candidates[:topk], total_cnt, backoff_level  # NEW
 
-        candidates.sort(key=lambda x: x[1], reverse=True)
-        candidates = candidates[:topk]
-        total_cnt = sum(c for _, c in candidates)
-        return [(w, c / float(total_cnt)) for w, c in candidates]
-
-    return []
+    return [], 0, None
 
 
 @st.cache_resource
@@ -473,16 +467,27 @@ def main():
     with tab2:
         if st.button("Next-Word Vorschläge berechnen", key="btn_nextword"):
             with st.spinner("Berechne Next-Word-Vorschläge ..."):
-                cands = next_word_candidates(
+                cands, backoff = next_word_candidates(   # <-- NEU: 2 Werte
                     user_text,
                     models["ngram_counts"],
                     models["lm_analyzer"],
                     n_max=3,
                     topk=5,
                 )
+    
             if not cands:
                 st.warning("Keine brauchbaren Vorschläge gefunden.")
             else:
+                # Info, auf welchem N-Gramm-Level wir gelandet sind
+                if backoff == 3:
+                    st.info("N-Gramm-Level: 3-Gramm (voller Kontext benutzt)")
+                elif backoff == 2:
+                    st.info("N-Gramm-Level: 2-Gramm (Backoff – nur letztes Wort)")
+                elif backoff == 1:
+                    st.info("N-Gramm-Level: 1-Gramm (Unigram-Fallback)")
+                else:
+                    st.info("N-Gramm-Level: unbekannt / kein Treffer")
+    
                 rows = []
                 for w, p in cands:
                     rows.append({
@@ -534,7 +539,8 @@ def main():
                 st.warning("Keine passenden Nachbarn gefunden.")
             else:
                 df_neighbors = pd.DataFrame(neighbors)
-                st.dataframe(df_neighbors, use_container_width=True)
+                # is_seed im UI ausblenden
+                df_neighbors = df_neighbors.drop(columns=["is_seed"], errors="ignore")
 
 
 if __name__ == "__main__":
