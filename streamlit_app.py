@@ -464,10 +464,6 @@ def main():
         placeholder="z.B. «ich ha kei bock meh uf dä stress»",
     )
 
-    # if not user_text.strip():
-    #     st.info("Bitte oben eine Nachricht eingeben.")
-    #     return
-
     # ---------------- Tabs ----------------
     tab1, tab2, tab3, tab4 = st.tabs([
         "Sentiment-Klassifikation",
@@ -586,7 +582,7 @@ def main():
                     df_neighbors = pd.DataFrame(neighbors)
                     # is_seed im UI ausblenden
                     df_neighbors = df_neighbors.drop(columns=["is_seed"], errors="ignore")
-
+                    st.dataframe(df_neighbors, use_container_width=True)
 
 if __name__ == "__main__":
     main()
