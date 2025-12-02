@@ -100,21 +100,26 @@ def _is_good_token(tok: str) -> bool:
 
 def next_word_candidates(prefix, ngram_counts, analyzer, n_max=3, topk=5):
     toks = analyzer(preprocess_text_chat(prefix))
-    backoff_level = None  # NEW
+    backoff_level = None
 
     for n in range(n_max, 0, -1):
         if n == 1:
             # Unigram
-            total = sum(cnt for (tok,), cnt in ngram_counts[1].items() if _is_good_token(tok))
+            total = sum(
+                cnt
+                for (tok,), cnt in ngram_counts[1].items()
+                if _is_good_token(tok)
+            )
             if total == 0:
                 continue
-            backoff_level = 1  # NEW
             candidates = [
                 (tok, cnt)
                 for (tok,), cnt in ngram_counts[1].most_common()
                 if _is_good_token(tok)
             ][:topk]
-            return candidates, total, backoff_level  # NEW
+            backoff_level = 1
+            probs = [(w, c / float(total)) for w, c in candidates]
+            return probs, backoff_level
 
         # 2-gram & 3-gram
         if len(toks) < n - 1:
@@ -129,12 +134,14 @@ def next_word_candidates(prefix, ngram_counts, analyzer, n_max=3, topk=5):
                     candidates.append((w, cnt))
 
         if candidates:
-            backoff_level = n  # NEW
             candidates.sort(key=lambda x: x[1], reverse=True)
+            candidates = candidates[:topk]
             total_cnt = sum(c for _, c in candidates)
-            return candidates[:topk], total_cnt, backoff_level  # NEW
+            backoff_level = n
+            probs = [(w, c / float(total_cnt)) for w, c in candidates]
+            return probs, backoff_level
 
-    return [], 0, None
+    return [], None
 
 
 @st.cache_resource
