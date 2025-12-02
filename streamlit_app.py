@@ -87,6 +87,27 @@ def train_ngram_lm(texts, n_max: int = 3):
     return ngram_counts, lm_analyzer
 
 
+def get_top_ngrams(ngram_counts, n: int, topk: int = 20) -> pd.DataFrame:
+    """Top-N-Gramme für gegebenes n als DataFrame zurückgeben."""
+    if n not in ngram_counts:
+        return pd.DataFrame(columns=["ngram", "count", "rel_freq"])
+
+    counter = ngram_counts[n]
+    if not counter:
+        return pd.DataFrame(columns=["ngram", "count", "rel_freq"])
+
+    total = sum(counter.values())
+    rows = []
+    for ng, cnt in counter.most_common(topk):
+        text = " ".join(ng)
+        rows.append({
+            "ngram": text,
+            "count": cnt,
+            "rel_freq": round(cnt / total, 3),
+        })
+    return pd.DataFrame(rows)
+
+
 def _is_good_token(tok: str) -> bool:
     # keine Satzgrenzen, keine Placeholder, kein 1-Zeichen-Rauschen
     if tok in ("<s>", "</s>"):
@@ -454,6 +475,17 @@ def main():
                 df_report["f1-score"] = df_report["f1-score"].round(3)
         
                 st.dataframe(df_report, use_container_width=True)
+                
+        with st.expander("📈 N-Gramm-Statistik (LM)", expanded=False):
+            ngram_counts = models["ngram_counts"]
+
+            st.subheader("1-Gramme (Unigramme)")
+            df_uni = get_top_ngrams(ngram_counts, n=1, topk=20)
+            st.dataframe(df_uni, use_container_width=True)
+
+            st.subheader("2-Gramme (Bigramme)")
+            df_bi = get_top_ngrams(ngram_counts, n=2, topk=20)
+            st.dataframe(df_bi, use_container_width=True)
 
 
 
