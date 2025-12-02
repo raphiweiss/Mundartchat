@@ -189,21 +189,30 @@ def train_all_models(base_df: pd.DataFrame, resp_df: pd.DataFrame):
 
     # BoW
     y_pred_bow = bow.predict(X_te_clean)
+    report_bow = classification_report(
+        y_test, y_pred_bow, digits=3, output_dict=True
+    )
     eval_info["bow"] = {
-        "report": classification_report(y_test, y_pred_bow, digits=3),
+        "report": report_bow,
         "accuracy": accuracy_score(y_test, y_pred_bow),
     }
 
     # TF-IDF
     y_pred_tfidf = tfidf.predict(X_te_clean)
+    report_tfidf = classification_report(
+        y_test, y_pred_tfidf, digits=3, output_dict=True
+    )
     eval_info["tfidf"] = {
-        "report": classification_report(y_test, y_pred_tfidf, digits=3),
+        "report": report_tfidf,
         "accuracy": accuracy_score(y_test, y_pred_tfidf),
     }
 
     # SBERT
+    report_sbert = classification_report(
+        y_test, y_pred_sbert, digits=3, output_dict=True
+    )
     eval_info["sbert"] = {
-        "report": classification_report(y_test, y_pred_sbert, digits=3),
+        "report": report_sbert,
         "accuracy": accuracy_score(y_test, y_pred_sbert),
     }
 
