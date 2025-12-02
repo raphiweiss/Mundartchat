@@ -432,9 +432,9 @@ def main():
         placeholder="z.B. «ich ha kei bock meh uf dä stress»",
     )
 
-    if not user_text.strip():
-        st.info("Bitte oben eine Nachricht eingeben.")
-        return
+    # if not user_text.strip():
+    #     st.info("Bitte oben eine Nachricht eingeben.")
+    #     return
 
     # ---------------- Tabs ----------------
     tab1, tab2, tab3, tab4 = st.tabs([
@@ -447,100 +447,113 @@ def main():
     # --- Tab 1: Klassifikation ---
     with tab1:
         if st.button("Klassifizieren", key="btn_classify"):
-            with st.spinner("Klassifiziere ..."):
-                cls = classify_text(models, user_text)
-
-            col1, col2, col3 = st.columns(3)
-            col1.metric("BoW", cls["bow_pred"])
-            col2.metric("TF-IDF", cls["tfidf_pred"])
-            col3.metric("SBERT", cls["sbert_pred"])
-
-            st.subheader("Wahrscheinlichkeiten")
-            probs_df = pd.DataFrame([
-                {**{"modell": "BoW"}, **cls["bow_probs"]},
-                {**{"modell": "TF-IDF"}, **cls["tfidf_probs"]},
-                {**{"modell": "SBERT"}, **cls["sbert_probs"]},
-            ])
-            st.dataframe(probs_df, use_container_width=True)
+            if not user_text.strip():
+                st.warning("Bitte oben zuerst eine Nachricht eingeben.")
+            else:
+                with st.spinner("Klassifiziere ..."):
+                    cls = classify_text(models, user_text)
+    
+    
+                col1, col2, col3 = st.columns(3)
+                col1.metric("BoW", cls["bow_pred"])
+                col2.metric("TF-IDF", cls["tfidf_pred"])
+                col3.metric("SBERT", cls["sbert_pred"])
+    
+                st.subheader("Wahrscheinlichkeiten")
+                probs_df = pd.DataFrame([
+                    {**{"modell": "BoW"}, **cls["bow_probs"]},
+                    {**{"modell": "TF-IDF"}, **cls["tfidf_probs"]},
+                    {**{"modell": "SBERT"}, **cls["sbert_probs"]},
+                ])
+                st.dataframe(probs_df, use_container_width=True)
 
     # --- Tab 2: Next-Word ---
     with tab2:
         if st.button("Next-Word Vorschläge berechnen", key="btn_nextword"):
-            with st.spinner("Berechne Next-Word-Vorschläge ..."):
-                cands, backoff = next_word_candidates(   # <-- NEU: 2 Werte
-                    user_text,
-                    models["ngram_counts"],
-                    models["lm_analyzer"],
-                    n_max=3,
-                    topk=5,
-                )
-    
-            if not cands:
-                st.warning("Keine brauchbaren Vorschläge gefunden.")
+            if not user_text.strip():
+                st.warning("Bitte oben zuerst eine Nachricht eingeben.")
             else:
-                # Info, auf welchem N-Gramm-Level wir gelandet sind
-                if backoff == 3:
-                    st.info("N-Gramm-Level: 3-Gramm (voller Kontext benutzt)")
-                elif backoff == 2:
-                    st.info("N-Gramm-Level: 2-Gramm (Backoff – nur letztes Wort)")
-                elif backoff == 1:
-                    st.info("N-Gramm-Level: 1-Gramm (Unigram-Fallback)")
+                with st.spinner("Berechne Next-Word-Vorschläge ..."):
+                    cands, backoff = next_word_candidates(
+                        user_text,
+                        models["ngram_counts"],
+                        models["lm_analyzer"],
+                        n_max=3,
+                        topk=5,
+                    )
+        
+                if not cands:
+                    st.warning("Keine brauchbaren Vorschläge gefunden.")
                 else:
-                    st.info("N-Gramm-Level: unbekannt / kein Treffer")
-    
-                rows = []
-                for w, p in cands:
-                    rows.append({
-                        "Token": w,
-                        "p (relativ)": round(p, 3),
-                        "Vorschlag": (user_text + " " + w).strip(),
-                    })
-                st.table(pd.DataFrame(rows))
+                    # Info, auf welchem N-Gramm-Level wir gelandet sind
+                    if backoff == 3:
+                        st.info("N-Gramm-Level: 3-Gramm (voller Kontext benutzt)")
+                    elif backoff == 2:
+                        st.info("N-Gramm-Level: 2-Gramm (Backoff – nur letztes Wort)")
+                    elif backoff == 1:
+                        st.info("N-Gramm-Level: 1-Gramm (Unigram-Fallback)")
+                    else:
+                        st.info("N-Gramm-Level: unbekannt / kein Treffer")
+        
+                    rows = []
+                    for w, p in cands:
+                        rows.append({
+                            "Token": w,
+                            "p (relativ)": round(p, 3),
+                            "Vorschlag": (user_text + " " + w).strip(),
+                        })
+                    st.table(pd.DataFrame(rows))
 
     # --- Tab 3: Antwortvorschlag ---
     with tab3:
         if st.button("Antwort generieren", key="btn_answer"):
-            with st.spinner("Klassifiziere & suche passende Antwort ..."):
-                cls = classify_text(models, user_text)
-                sbert_label = cls["sbert_pred"]
-                answer, sim = generate_answer(
-                    models,
-                    user_text,
-                    predicted_label=sbert_label,
-                    topk=5,
-                    min_sim=0.2,
-                )
-
-            st.write(f"**SBERT-Label:** {sbert_label}")
-            if answer is None:
-                st.warning(
-                    f"Keine passende Antwort im Datensatz gefunden "
-                    f"(beste Ähnlichkeit: {sim:.2f})."
-                )
+            if not user_text.strip():
+                st.warning("Bitte oben zuerst eine Nachricht eingeben.")
             else:
-                st.subheader("Antwortvorschlag (Mundart)")
-                st.success(answer)
-                st.caption(f"Ähnlichkeit zu Trainingsbeispielen: {sim:.2f}")
+                with st.spinner("Klassifiziere & suche passende Antwort ..."):
+                    cls = classify_text(models, user_text)
+                    sbert_label = cls["sbert_pred"]
+                    answer, sim = generate_answer(
+                        models,
+                        user_text,
+                        predicted_label=sbert_label,
+                        topk=5,
+                        min_sim=0.2,
+                    )
+    
+                st.write(f"**SBERT-Label:** {sbert_label}")
+                if answer is None:
+                    st.warning(
+                        f"Keine passende Antwort im Datensatz gefunden "
+                        f"(beste Ähnlichkeit: {sim:.2f})."
+                    )
+                else:
+                    st.subheader("Antwortvorschlag (Mundart)")
+                    st.success(answer)
+                    st.caption(f"Ähnlichkeit zu Trainingsbeispielen: {sim:.2f}")
 
     # --- Tab 4: Debug Nachbarn ---
     with tab4:
         topn = st.slider("Anzahl Nachbarn", min_value=3, max_value=15, value=5)
         if st.button("Ähnlichste Beispiele anzeigen", key="btn_debug"):
-            with st.spinner("Suche ähnliche Beispiele ..."):
-                sbert_label, neighbors = debug_neighbors(
-                    models,
-                    user_text,
-                    topn=topn,
-                    filter_by_label=True,
-                )
-
-            st.write(f"**SBERT-Label:** {sbert_label}")
-            if not neighbors:
-                st.warning("Keine passenden Nachbarn gefunden.")
+            if not user_text.strip():
+                st.warning("Bitte oben zuerst eine Nachricht eingeben.")
             else:
-                df_neighbors = pd.DataFrame(neighbors)
-                # is_seed im UI ausblenden
-                df_neighbors = df_neighbors.drop(columns=["is_seed"], errors="ignore")
+                with st.spinner("Suche ähnliche Beispiele ..."):
+                    sbert_label, neighbors = debug_neighbors(
+                        models,
+                        user_text,
+                        topn=topn,
+                        filter_by_label=True,
+                    )
+    
+                st.write(f"**SBERT-Label:** {sbert_label}")
+                if not neighbors:
+                    st.warning("Keine passenden Nachbarn gefunden.")
+                else:
+                    df_neighbors = pd.DataFrame(neighbors)
+                    # is_seed im UI ausblenden
+                    df_neighbors = df_neighbors.drop(columns=["is_seed"], errors="ignore")
 
 
 if __name__ == "__main__":
