@@ -623,6 +623,18 @@ def main():
             )
             st.pyplot(fig)
             st.caption(f"Zipf-Exponent α ≈ {alpha:.3f}, Steigung ≈ {slope:.3f}")
+            
+        with st.expander("📊 Vokab-Statistik", expanded=False):
+            unigram_counter = models["ngram_counts"][1]
+            total_types = len(unigram_counter)
+            hapax = [
+                tok for (tok,), cnt in unigram_counter.items()
+                if cnt == 1 and _is_good_token(tok)
+            ]
+            st.metric("Token-Typen gesamt", total_types)
+            st.metric("Hapax-Typen", len(hapax))
+            st.metric("Anteil Hapax", f"{len(hapax) / total_types:.2f}")
+            st.write("Beispiele:", ", ".join(hapax[:50]))            
     # ---------------- Eingabe ----------------
     user_text = st.text_area(
         "Mundart-Nachricht eingeben",
