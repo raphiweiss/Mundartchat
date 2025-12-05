@@ -225,11 +225,8 @@ def train_all_models(base_df: pd.DataFrame, resp_df: pd.DataFrame):
         batch_size=BATCH_SIZE,
     )
     y_pred_sbert = sbert_clf.predict(emb_test)
+
     eval_info = {}
-    cm_sbert = confusion_matrix(y_test, y_pred_sbert, labels=LABEL_ORDER)
-    eval_info["sbert"]["confusion_matrix"] = cm_sbert
-
-
 
     # BoW
     y_pred_bow = bow.predict(X_te_clean)
@@ -259,17 +256,16 @@ def train_all_models(base_df: pd.DataFrame, resp_df: pd.DataFrame):
         "report": report_sbert,
         "accuracy": accuracy_score(y_test, y_pred_sbert),
     }
-    from sklearn.metrics import confusion_matrix
 
-    # nach dem Teil, wo du y_test und y_pred_sbert bereits hast
+    # Confusion-Matrix für SBERT
     cm_sbert = confusion_matrix(y_test, y_pred_sbert, labels=LABEL_ORDER)
-
     cm_df = pd.DataFrame(
         cm_sbert,
         index=[f"true_{l}" for l in LABEL_ORDER],
         columns=[f"pred_{l}" for l in LABEL_ORDER],
     )
     eval_info["sbert"]["confusion_matrix"] = cm_df
+
 
     # -------- N-Gramm LM --------
     ngram_counts, lm_analyzer = train_ngram_lm(base_df["text_clean"], n_max=3)
