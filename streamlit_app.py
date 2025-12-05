@@ -605,6 +605,11 @@ def main():
                 # Nur Klassen + Macro/Weighted, Accuracy-Reihe rauswerfen
                 if "accuracy" in df_report.index:
                     df_report = df_report.drop(index="accuracy")
+                
+                # Nur für SBERT z.B. Confusion Matrix zeigen
+                if name == "sbert" and "confusion_matrix" in info:
+                    st.caption("Confusion Matrix (SBERT)")
+                    st.dataframe(info["confusion_matrix"], use_container_width=True)   
         
                 # etwas aufräumen & runden
                 df_report = df_report[["precision", "recall", "f1-score", "support"]]
@@ -659,17 +664,9 @@ def main():
             st.pyplot(fig)
             st.caption(f"Zipf-Exponent α ≈ {alpha:.3f}, Steigung ≈ {slope:.3f}")
             
-        with st.expander("🔍 Modell-Performance (Testset)", expanded=False):
-            for name, info in eval_info.items():
-                st.subheader(name.upper())
-                st.metric("Accuracy", f"{info['accuracy']:.3f}")
-                ...
-                st.dataframe(df_report, use_container_width=True)
         
-                # Nur für SBERT z.B. Confusion Matrix zeigen
-                if name == "sbert" and "confusion_matrix" in info:
-                    st.caption("Confusion Matrix (SBERT)")
-                    st.dataframe(info["confusion_matrix"], use_container_width=True)        
+        
+     
             
          
     # ---------------- Eingabe ----------------
