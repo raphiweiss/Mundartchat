@@ -613,7 +613,6 @@ def main():
             df_bi = get_top_ngrams(ngram_counts, n=2, topk=20)
             st.dataframe(df_bi, use_container_width=True)
     
-        # 👉 NEU: Zipf-Plot
         with st.expander("📊 Zipf-Plot (Token-Verteilung)", expanded=False):
             fig, alpha, slope = plot_zipf_with_fit(
                 base_df,
