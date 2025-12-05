@@ -9,6 +9,7 @@ from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import Pipeline
 from sklearn.metrics import classification_report, accuracy_score
+from sklearn.metrics import confusion_matrix
 
 from sklearn.metrics.pairwise import cosine_similarity
 from sentence_transformers import SentenceTransformer
@@ -224,6 +225,8 @@ def train_all_models(base_df: pd.DataFrame, resp_df: pd.DataFrame):
         batch_size=BATCH_SIZE,
     )
     y_pred_sbert = sbert_clf.predict(emb_test)
+    cm_sbert = confusion_matrix(y_test, y_pred_sbert, labels=LABEL_ORDER)
+    eval_info["sbert"]["confusion_matrix"] = cm_sbert
 
     eval_info = {}
 
@@ -605,19 +608,37 @@ def main():
                 # Nur Klassen + Macro/Weighted, Accuracy-Reihe rauswerfen
                 if "accuracy" in df_report.index:
                     df_report = df_report.drop(index="accuracy")
-                
-                # Nur für SBERT z.B. Confusion Matrix zeigen
+        
+                df_report = df_report[["precision", "recall", "f1-score", "support"]]
+                st.dataframe(df_report, use_container_width=True)
+        
+                # 👉 Heatmap der Confusion-Matrix nur für SBERT
                 if name == "sbert" and "confusion_matrix" in info:
                     st.caption("Confusion Matrix (SBERT)")
-                    st.dataframe(info["confusion_matrix"], use_container_width=True)   
         
-                # etwas aufräumen & runden
-                df_report = df_report[["precision", "recall", "f1-score", "support"]]
-                df_report["precision"] = df_report["precision"].round(3)
-                df_report["recall"] = df_report["recall"].round(3)
-                df_report["f1-score"] = df_report["f1-score"].round(3)
+                    cm = info["confusion_matrix"]  # numpy-Array
+                    fig, ax = plt.subplots()
         
-                st.dataframe(df_report, use_container_width=True)
+                    im = ax.imshow(cm, cmap="Blues")  # einfache Heatmap
+        
+                    # Achsenticks / Labels
+                    ax.set_xticks(np.arange(len(LABEL_ORDER)))
+                    ax.set_yticks(np.arange(len(LABEL_ORDER)))
+                    ax.set_xticklabels(LABEL_ORDER)
+                    ax.set_yticklabels(LABEL_ORDER)
+                    ax.set_xlabel("Predicted label")
+                    ax.set_ylabel("True label")
+        
+                    # Werte in die Zellen schreiben
+                    for i in range(cm.shape[0]):
+                        for j in range(cm.shape[1]):
+                            ax.text(
+                                j, i, int(cm[i, j]),
+                                ha="center", va="center"
+                            )
+        
+                    fig.tight_layout()
+                    st.pyplot(fig)        
         
         with st.expander("📊 Label-Verteilung", expanded=False):
             label_counts = base_df["label"].value_counts().sort_index()
