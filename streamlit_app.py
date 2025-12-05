@@ -255,6 +255,17 @@ def train_all_models(base_df: pd.DataFrame, resp_df: pd.DataFrame):
         "report": report_sbert,
         "accuracy": accuracy_score(y_test, y_pred_sbert),
     }
+    from sklearn.metrics import confusion_matrix
+
+    # nach dem Teil, wo du y_test und y_pred_sbert bereits hast
+    cm_sbert = confusion_matrix(y_test, y_pred_sbert, labels=LABEL_ORDER)
+
+    cm_df = pd.DataFrame(
+        cm_sbert,
+        index=[f"true_{l}" for l in LABEL_ORDER],
+        columns=[f"pred_{l}" for l in LABEL_ORDER],
+    )
+    eval_info["sbert"]["confusion_matrix"] = cm_df
 
     # -------- N-Gramm LM --------
     ngram_counts, lm_analyzer = train_ngram_lm(base_df["text_clean"], n_max=3)
@@ -282,6 +293,7 @@ def train_all_models(base_df: pd.DataFrame, resp_df: pd.DataFrame):
         "eval_info": eval_info,
     }
     return models
+
 
 
 # =========================================================
@@ -601,7 +613,18 @@ def main():
                 df_report["f1-score"] = df_report["f1-score"].round(3)
         
                 st.dataframe(df_report, use_container_width=True)
-                
+        
+        with st.expander("📊 Label-Verteilung", expanded=False):
+            label_counts = base_df["label"].value_counts().sort_index()
+            st.bar_chart(label_counts)   
+            
+        with st.expander("📏 Textlängen (Tokens)", expanded=False):
+            lengths = base_df["text_clean"].astype(str).apply(lambda t: len(t.split()))
+            st.write(f"Ø Länge: {lengths.mean():.1f} Tokens")
+            st.write(f"Median: {lengths.median():.0f} Tokens")
+            st.write(f"Max: {lengths.max():.0f} Tokens")
+            st.bar_chart(lengths.value_counts().sort_index())            
+                 
         with st.expander("📈 N-Gramm-Statistik (LM)", expanded=False):
             ngram_counts = models["ngram_counts"]
 
@@ -612,6 +635,18 @@ def main():
             st.subheader("2-Gramme (Bigramme)")
             df_bi = get_top_ngrams(ngram_counts, n=2, topk=20)
             st.dataframe(df_bi, use_container_width=True)
+            
+        with st.expander("📊 Vokab-Statistik", expanded=False):
+            unigram_counter = models["ngram_counts"][1]
+            total_types = len(unigram_counter)
+            hapax = [
+                tok for (tok,), cnt in unigram_counter.items()
+                if cnt == 1 and _is_good_token(tok)
+            ]
+            st.metric("Token-Typen gesamt", total_types)
+            st.metric("Hapax-Typen", len(hapax))
+            st.metric("Anteil Hapax", f"{len(hapax) / total_types:.2f}")
+            st.write("Beispiele:", ", ".join(hapax[:50]))                 
     
         with st.expander("📊 Zipf-Plot (Token-Verteilung)", expanded=False):
             fig, alpha, slope = plot_zipf_with_fit(
@@ -624,17 +659,19 @@ def main():
             st.pyplot(fig)
             st.caption(f"Zipf-Exponent α ≈ {alpha:.3f}, Steigung ≈ {slope:.3f}")
             
-        with st.expander("📊 Vokab-Statistik", expanded=False):
-            unigram_counter = models["ngram_counts"][1]
-            total_types = len(unigram_counter)
-            hapax = [
-                tok for (tok,), cnt in unigram_counter.items()
-                if cnt == 1 and _is_good_token(tok)
-            ]
-            st.metric("Token-Typen gesamt", total_types)
-            st.metric("Hapax-Typen", len(hapax))
-            st.metric("Anteil Hapax", f"{len(hapax) / total_types:.2f}")
-            st.write("Beispiele:", ", ".join(hapax[:50]))            
+        with st.expander("🔍 Modell-Performance (Testset)", expanded=False):
+            for name, info in eval_info.items():
+                st.subheader(name.upper())
+                st.metric("Accuracy", f"{info['accuracy']:.3f}")
+                ...
+                st.dataframe(df_report, use_container_width=True)
+        
+                # Nur für SBERT z.B. Confusion Matrix zeigen
+                if name == "sbert" and "confusion_matrix" in info:
+                    st.caption("Confusion Matrix (SBERT)")
+                    st.dataframe(info["confusion_matrix"], use_container_width=True)        
+            
+         
     # ---------------- Eingabe ----------------
     user_text = st.text_area(
         "Mundart-Nachricht eingeben",
