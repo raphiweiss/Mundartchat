@@ -225,10 +225,11 @@ def train_all_models(base_df: pd.DataFrame, resp_df: pd.DataFrame):
         batch_size=BATCH_SIZE,
     )
     y_pred_sbert = sbert_clf.predict(emb_test)
+    eval_info = {}
     cm_sbert = confusion_matrix(y_test, y_pred_sbert, labels=LABEL_ORDER)
     eval_info["sbert"]["confusion_matrix"] = cm_sbert
 
-    eval_info = {}
+
 
     # BoW
     y_pred_bow = bow.predict(X_te_clean)
