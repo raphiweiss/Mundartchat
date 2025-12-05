@@ -13,6 +13,9 @@ from sklearn.metrics import classification_report, accuracy_score
 from sklearn.metrics.pairwise import cosine_similarity
 from sentence_transformers import SentenceTransformer
 
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+
 from mundartchat_data import (
     RANDOM_STATE,
     DATA_CSV_BASE,
@@ -191,12 +194,12 @@ def train_all_models(base_df: pd.DataFrame, resp_df: pd.DataFrame):
 
     # -------- BoW / TF-IDF --------
     bow = Pipeline([
-        ("vec", CountVectorizer(token_pattern=TOKEN_PATTERN)),
+        ("vec", CountVectorizer(token_pattern=TOKEN_PATTERN, min_df=2)),
         ("clf", LogisticRegression(max_iter=1000, random_state=RANDOM_STATE)),
     ]).fit(X_tr_clean, y_train)
 
     tfidf = Pipeline([
-        ("vec", TfidfVectorizer(ngram_range=(1, 2), token_pattern=TOKEN_PATTERN)),
+        ("vec", TfidfVectorizer(ngram_range=(1, 2), token_pattern=TOKEN_PATTERN, min_df=2)),
         ("clf", LogisticRegression(max_iter=1000, random_state=RANDOM_STATE)),
     ]).fit(X_tr_clean, y_train)
 
@@ -436,6 +439,120 @@ def debug_neighbors(models,
 
     return sbert_label, neighbors
 
+# =========================================================
+# Zipf-Analyse
+# =========================================================
+def get_token_freqs(texts):
+    """Einfache Token-Frequenzen auf Basis von preprocess_text_chat."""
+    freqs = Counter()
+    for t in texts:
+        clean = preprocess_text_chat(str(t))
+        if not clean:
+            continue
+        for tok in clean.split():
+            freqs[tok] += 1
+    return freqs
+
+
+def plot_zipf_with_fit(
+    df: pd.DataFrame,
+    text_col: str = "text_clean",
+    min_freq: int = 1,
+    fit_range: tuple[int, int] | None = (5, 100),
+    title_suffix: str = "",
+):
+    """
+    Zipf-Plot (log-log) mit:
+      - Datenpunkten (Hapax rot markiert)
+      - linearer Regression im log-log-Raum
+      - Zipf-Referenzlinie (slope = -1)
+    """
+    texts = df[text_col].astype(str)
+    freqs = get_token_freqs(texts)
+
+    counts = np.array(sorted(
+        [c for c in freqs.values() if c >= min_freq],
+        reverse=True
+    ))
+    ranks = np.arange(1, len(counts) + 1)
+
+    log_ranks = np.log(ranks)
+    log_counts = np.log(counts)
+
+    # Masken für Hapax vs. Rest
+    hapax_mask = counts == 1
+    non_hapax_mask = ~hapax_mask
+
+    fig, ax = plt.subplots(figsize=(7, 5))
+
+    # 1) Datenpunkte: Nicht-Hapax normal
+    if non_hapax_mask.any():
+        ax.loglog(
+            ranks[non_hapax_mask],
+            counts[non_hapax_mask],
+            "o",
+            markersize=4,
+            alpha=0.7,
+            label="Tokens (freq > 1)",
+        )
+
+    # Hapax rot hervorheben
+    if hapax_mask.any():
+        ax.loglog(
+            ranks[hapax_mask],
+            counts[hapax_mask],
+            "o",
+            markersize=4,
+            alpha=0.7,
+            color="red",
+            linestyle="none",
+            label="Hapax (freq = 1)",
+        )
+
+    # 2) Lineare Regression (Fit) im log-log-Raum
+    if fit_range is not None:
+        r_start, r_end = fit_range
+        mask = (ranks >= r_start) & (ranks <= r_end)
+    else:
+        mask = np.ones_like(ranks, dtype=bool)
+
+    X = log_ranks[mask].reshape(-1, 1)
+    y = log_counts[mask]
+
+    reg = LinearRegression().fit(X, y)
+    slope = reg.coef_[0]
+    intercept = reg.intercept_
+
+    y_fit = reg.predict(log_ranks.reshape(-1, 1))
+    ax.loglog(
+        ranks,
+        np.exp(y_fit),
+        "--",
+        label=f"Fit: slope={slope:.2f}",
+    )
+
+    # 3) Zipf-Referenzlinie mit slope = -1
+    zipf_slope = -1.0
+    zipf_intercept = np.log(counts[0]) - zipf_slope * np.log(ranks[0])
+    zipf_line = np.exp(zipf_intercept + zipf_slope * log_ranks)
+    ax.loglog(
+        ranks,
+        zipf_line,
+        ":",
+        label="Referenz: slope = -1",
+    )
+
+    ax.set_xlabel("Rang")
+    ax.set_ylabel("Häufigkeit")
+    title = "Zipf-Plot mit Regressionsgeraden"
+    if title_suffix:
+        title += f" – {title_suffix}"
+    ax.set_title(title)
+    ax.legend()
+    fig.tight_layout()
+
+    alpha = -slope  # Zipf-Exponent α ≈ -Steigung
+    return fig, alpha, slope
 
 # =========================================================
 # Streamlit UI
@@ -495,9 +612,18 @@ def main():
             st.subheader("2-Gramme (Bigramme)")
             df_bi = get_top_ngrams(ngram_counts, n=2, topk=20)
             st.dataframe(df_bi, use_container_width=True)
-
-
-
+    
+        # 👉 NEU: Zipf-Plot
+        with st.expander("📊 Zipf-Plot (Token-Verteilung)", expanded=False):
+            fig, alpha, slope = plot_zipf_with_fit(
+                base_df,
+                text_col="text_clean",
+                min_freq=1,
+                fit_range=(5, 100),
+                title_suffix="Basisdaten",
+            )
+            st.pyplot(fig)
+            st.caption(f"Zipf-Exponent α ≈ {alpha:.3f}, Steigung ≈ {slope:.3f}")
     # ---------------- Eingabe ----------------
     user_text = st.text_area(
         "Mundart-Nachricht eingeben",
