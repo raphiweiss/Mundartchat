@@ -612,30 +612,29 @@ def main():
                 # 👉 Heatmap der Confusion-Matrix nur für SBERT
                 if name == "sbert" and "confusion_matrix" in info:
                     st.caption("Confusion Matrix (SBERT)")
-        
-                    cm = info["confusion_matrix"]  # numpy-Array
+                
+                    cm_df = info["confusion_matrix"]          # DataFrame mit true_*/pred_*
+                    cm = cm_df.to_numpy()                     # als NumPy-Array für die Heatmap
+                    cm_labels = LABEL_ORDER                   # ["negativ", "neutral", "positiv"]
+                
                     fig, ax = plt.subplots()
-        
-                    im = ax.imshow(cm, cmap="Blues")  # einfache Heatmap
-        
-                    # Achsenticks / Labels
-                    ax.set_xticks(np.arange(len(LABEL_ORDER)))
-                    ax.set_yticks(np.arange(len(LABEL_ORDER)))
-                    ax.set_xticklabels(LABEL_ORDER)
-                    ax.set_yticklabels(LABEL_ORDER)
+                    im = ax.imshow(cm, cmap="Blues")
+                
+                    ax.set_xticks(np.arange(len(cm_labels)))
+                    ax.set_yticks(np.arange(len(cm_labels)))
+                    ax.set_xticklabels(cm_labels)
+                    ax.set_yticklabels(cm_labels)
                     ax.set_xlabel("Predicted label")
                     ax.set_ylabel("True label")
-        
+                
                     # Werte in die Zellen schreiben
                     for i in range(cm.shape[0]):
                         for j in range(cm.shape[1]):
-                            ax.text(
-                                j, i, int(cm[i, j]),
-                                ha="center", va="center"
-                            )
-        
+                            ax.text(j, i, int(cm[i, j]), ha="center", va="center")
+                
                     fig.tight_layout()
-                    st.pyplot(fig)        
+                    st.pyplot(fig)
+
         
         with st.expander("📊 Label-Verteilung", expanded=False):
             label_counts = base_df["label"].value_counts().sort_index()
