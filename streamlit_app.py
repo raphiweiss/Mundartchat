@@ -695,6 +695,22 @@ def main():
             df_bi = get_top_ngrams(ngram_counts, n=2, topk=20)
             st.dataframe(df_bi, use_container_width=True)
             
+        # 7️⃣ Projekt-PDF
+        with st.expander("📄 Projektpräsentation (PDF)", expanded=False):
+            pdf_path = "Schlusspräsentation.pdf"  # ggf. Pfad anpassen
+
+            try:
+                with open(pdf_path, "rb") as f:
+                    pdf_bytes = f.read()
+
+                st.download_button(
+                    label="📥 Präsentation als PDF herunterladen",
+                    data=pdf_bytes,
+                    file_name="Schlusspräsentation.pdf",
+                    mime="application/pdf",
+                )
+            except FileNotFoundError:
+                st.warning(f"PDF nicht gefunden unter: {pdf_path}")
          
     # ---------------- Eingabe ----------------
     user_text = st.text_area(
