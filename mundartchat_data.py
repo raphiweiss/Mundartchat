@@ -26,23 +26,41 @@ LABEL_ORDER = ["negativ", "neutral", "positiv"]
 
 # Dialekt-Normalisierung (minimal, erweiterbar)
 DIALECT_MAP = {
-    "nöd": "ned",
+    # Verneinung / "nur"
     "nid": "ned",
-    "ned": "ned",
-    "isch": "isch",
-    "bisch": "bisch",
-    "chan": "chan",
-    "chasch": "chasch",
-    "chume": "chume",
-    "chunsch": "chunsch",
-    "huere": "huere",
-    "mega": "mega",
-    "guet": "guet",
-    "geil": "geil",
-    "müehsam": "muehsam",
-    "müeh": "mueh",
-    "müed": "mued",
+    "noed": "ned",
+    "numae": "nume",
+    "numeno": "nume no",
+
+    # Formen von "sein"
+    "bin": "bi",
+    "bini": "bi",
+    "ischno": "isch no",
+    "sisch": "s isch",
+
+    # Formen von "können"
+    "cha": "chan",
+    "chani": "chan i",
+    "chamer": "chan mer",
+    "channsch": "chasch",
+
+    # kommen / gehen
+    "chunt": "chunnt",
+    "chuntsch": "chunsch",
+    "gang": "go",
+    "geh": "go",
+
+    # Ausdrücke
+    "imfall": "im fall",
+
+    # Adjektive
+    "huereguet": "huere guet",
+    "hueregael": "huere geil",
+    "muesam": "muehsam",
 }
+
+
+
 
 URL_RE     = re.compile(r"https?://\S+|www\.\S+")
 USER_RE    = re.compile(r"@\w+")
@@ -96,11 +114,9 @@ def preprocess_text_chat(t: str) -> str:
 # 1) Mundart-Chatnachrichten (Seeds, ohne Augmentation)
 # =========================================================
 
-# Genau 100 Sätze pro Klasse (negativ/positiv/neutral), natürliche Mundart, ohne Emojis.
-
 EXAMPLES = {
     # =========================================
-    # NEGATIV (100)
+    # NEGATIV (10 Intents × 10 Bsp)
     # =========================================
 
     ("negativ", "beschwerde"): [
@@ -110,34 +126,10 @@ EXAMPLES = {
         "immer lauft öppis schief",
         "ich bi scho wieder enttäuscht",
         "das cha doch nöd wahr sii",
-        "nie chunt s so use wie abgmacht",
-        "ich ha schnouze voll vo dem",
-        "immer wieder di glieche pannen",
         "es isch alles so schlecht organisiert",
         "keim nimmt das richtig ernst",
-        "ich muess immer allem noh springe",
         "niemer fühlt sich zuständig",
-        "alles verzögert sich eifach",
-        "ich chum mir voll verarscht vor",
         "d abmachige werdet nie ihalte",
-        "immer nur ausräd statt lösige",
-        "es nervt mi nur no",
-        "ich bi eifach nöd zfriede",
-        "das het nöd im ansatz glappt",
-        "so cha mer doch nöd schaffe",
-        "ich bi richtig agfrässe",
-        "qualitäet isch eifach im keller",
-        "es git kei klare infos",
-        "keim kommuniziert gscheit",
-        "ich ha kei lust meh uf das projekt",
-        "jedä schiebt s em andere zue",
-        "ich ha s gfuehl, s interessiert niemer",
-        "d kundebetreuig isch richtig schwach",
-        "ich muess immer alles zwei mol erläbe",
-        "so unprofessionell, würkli",
-        "mer lernt nüt us de fehler",
-        "ich bi es bitzli wütend langsam",
-        "das isch mir würkli z vill chaos",
     ],
 
     ("negativ", "frust"): [
@@ -149,31 +141,8 @@ EXAMPLES = {
         "ich ha s gfuehl, es louft immer gege mich",
         "ich weiss nöd, wie lang ich das no cha",
         "ich bi emotional am limit",
-        "ich ha scho lang kei pause meh gha",
         "jedä tag fählt sich gliich streng a",
-        "ich ha s gfuehl, ich tritt a ort",
-        "nüt macht mir grad würkli freud",
-        "ich bi nur no am funktioniere",
         "ich bi grad voll im loch",
-        "ich wür am liebschte alles hinschmeisse",
-        "ich ha kei kraft meh für diskussione",
-        "ich bi überlastet mit allem",
-        "ich cha nüm richtig schlofe vor lauter chopfkino",
-        "ich ha s gfuehl, ich mach alles falsch",
-        "ich bi grad würkli dünnhutig",
-        "ich han gnueg vo däm stress",
-        "ich bin nur no genervt",
-        "ich ha kei nerv meh für öppis",
-        "alles regt mich uf im momänt",
-        "ich cha nüm locker blibe",
-        "ich bi verrisse zwüsche allem",
-        "ich weiss nöd, wohi mit mir",
-        "ich fühl mi eifach leer",
-        "ich bruch dringen e change",
-        "ich chan nüm so wiiter mache",
-        "ich bi chli am abegheitä",
-        "ich ha langsam gwungige schultere vom ganze druck",
-        "ich ha s gfuehl, niemer versteht das",
     ],
 
     ("negativ", "hilfe_bitten"): [
@@ -182,38 +151,106 @@ EXAMPLES = {
         "ich weiss nöd, was s nächschti isch, hesch en tipp?",
         "ich bruch dringends en rat",
         "chasch mit mir das schnell durego?",
-        "ich versteh s nöd ganz, chasch s no mal erläutere?",
-        "ich ha angst, öppis falsch z mache, was meinsch?",
+        "ich versteh s nöd ganz, chasch s no mal erläuterä?",
         "ich weiss nöd, wie ich aafange söll",
         "chan ich dir es paar frage stelle dazu?",
-        "ich komm mit de situation nöd klar, was söll ich mache?",
-        "hesch du scho erfahrig mit dem gha?",
-        "ich bi froh um jede hilf, ganz ehrlich",
-        "chömer das zäme aaluege?",
-        "ich bi nöd sicher, öb ich richtig handle",
-        "ich bruch äusseri sicht uf das",
-        "chan ich di spöter no mal druf aaluege?",
         "ich verliere grad dr überblick",
-        "ich ha s gfuehl, ich steck fescht, was empfiehlsch?",
-        "hesch du en vorschlag, wie ich s anders mache chönnt?",
-        "ich ha scho vil probiert, nüt het würkli glappt",
-        "chan ich uf dini unterstützig zähle?",
-        "ich wott das ernst näh, aber ich weiss nöd wie",
-        "ich bi unsicher, ob ich überreagiere",
-        "chan ich di ächt mit dem belästige?",
-        "ich bruch nur chli orientierig im moment",
-        "ich ha müeh, das nüchtern aaluege",
-        "ich wott nöd alles alei entscheide müesse",
-        "ich bi froh, wenn du ehrlich bisch mit mir",
-        "wie würdest du an mini stell vorgoo?",
-        "ich ha s gfuehl, ich verlüüre d linie",
-        "chan ich dich um es ehrlechs feedback bitte?",
-        "ich ha langsam kei idee meh",
-        "ich wott nöd no meh kaputt mache als scho isch",
+        "ich ha langsam kei idee meh, was ich no cha probiere",
+    ],
+
+    ("negativ", "stress_alltag"): [
+        "ich ha s gfuehl, ich chum mit mim alltag nüm nach",
+        "alles isch grad uf einisch z vil",
+        "ich bi jede tag nur am rennä",
+        "mini agenda isch voll und ich ha kei luft meh",
+        "i ha kei ahnig, wie ich das alles söll under e huet bringe",
+        "s chummt immer no öppis debi und nüt wird weniger",
+        "ich ha scho lang kei richtige pause meh gha",
+        "jedä tag fängt scho gestresst a",
+        "ich ha s gfühl, ich funktionier nume no",
+        "i bi am abig eifach komplett dure",
+    ],
+
+    ("negativ", "konflikt"): [
+        "mir händ scho wieder streit gha",
+        "ich ha kei nerv meh für die diskussione",
+        "jedä versuecht nume sini sicht dürzdrücke",
+        "mir rede ane vorbei und nüt chunt a",
+        "i ha s gfuehl, mir verstöhnd üs immer weniger",
+        "jedes gspröch eskaliert grad",
+        "ich weiss nöd, wie ich mit dem umgah söll",
+        "ich bi s pandablet, aber es fählt kei lösig",
+        "ich ha kei lust meh uf no meh stress mit däne",
+        "ich weiss nöd, ob sich das no flicke laht",
+    ],
+
+    ("negativ", "selbstzweifel"): [
+        "ich ha s gfuehl, ich bin nöd guet gnue",
+        "ich frag mi die ganz zit, öb ich das würklich cha",
+        "ich vergleich mi immer mit andere und schneid schlecht ab",
+        "ich ha angst, alles nur z versaurä",
+        "ich zweifle grad voll a mir selber",
+        "ich ha s gfuehl, alli andere chönd s besser als ich",
+        "ich ha nöd viel vertroue i mini eigete fähigkeite",
+        "jedä chliini fehler macht mi grad fertig",
+        "ich ha s gfuehl, ich werd nöd würkli wahrgnuu",
+        "ich frag mi, öb ich überhaupt uffem richtige wäg bi",
+    ],
+
+    ("negativ", "überforderung_job"): [
+        "im schaffe isch s grad viel z vil",
+        "mini aufgabe sind imfall nüm machbar i dere zit",
+        "ich bi jede tag am limit im büro",
+        "ich weiss nöd, wie ich all die projects söll schaffe",
+        "i ha s gfuehl, ich brenne bald us",
+        "es chunnt immer meh ufträgi debi, aber kei ressourcen",
+        "ich ha angst, dä ansprüch nöd z genüege",
+        "ich bin im job grad nur am hinterher renne",
+        "ich cha nüm abschalte, wenn ich hei chume",
+        "ich ha s gfühl, ich gang im job langsam unter",
+    ],
+
+    ("negativ", "gesundheit_sorge"): [
+        "ich mach mer sorgä um mini gsundheit",
+        "ich ha scho lang s gfuehl, öppis stimt nöd mit mir",
+        "ich ha immer wieder komische symptöm und weiss nöd, was das isch",
+        "ich weiss nöd, öb ich zum arzt söll oder nöd",
+        "ich ha angst, dass es öppis ernsthafts isch",
+        "mini schlaf isch seit wuche schlecht und das macht mir sorge",
+        "ich ha ständig müedigkeit und kenn de grund nöd",
+        "ich mach mer au sorgä, öb ich z vill stress ha fürs herz",
+        "ich ha s gfuehl, mis imunsystem isch im keller",
+        "ich weiss nöd, wie lang das no so cha wiiter gah",
+    ],
+
+    ("negativ", "enttäuschung_beziehung"): [
+        "ich bi grad recht enttäuscht vo dere person",
+        "ich ha s gfuehl, ich bi nöd priorität für sie",
+        "mir händ abgmacht gha und sie händ s wieder nöd ernst gnoh",
+        "mini erwartige sind grad voll nöd erfüllt worde",
+        "ich ha sehr vil i die beziehig investiert und wenig zrugg übercho",
+        "ich ha s gfuehl, ich werd nöd würklich glosä",
+        "i bi nöd sicher, öb mer no am gliiche ort sind",
+        "ich ha s vertroue chli verlore",
+        "ich bin traurig, wie sich das entwicklet het",
+        "ich ha s gfuehl, ich bedeut nöd meh so vil wie früher",
+    ],
+
+    ("negativ", "einsamkeit"): [
+        "ich fühl mi imfall recht einsam im momänt",
+        "au wenn lüüt um mich ume sind, fühl ich mi allei",
+        "ich ha s gfuehl, niemer versteht mi würkli",
+        "ich weiss nöd, mit wem ich cha richtig drüber rede",
+        "alli händ irgendwie ihre gruppe, nur ich nöd",
+        "ich würd mir meh nächi wünsche, aber ich weiss nöd, wie",
+        "ich han vil kontakt online, aber weni, wo sich echt aafühlt",
+        "ich vermisse s gfühl, würklich ufgnoh z sii",
+        "ich fühl mi imfall schono längers isoliert",
+        "ich ha s gfuehl, ich zieh mi immer meh zrugg",
     ],
 
     # =========================================
-    # POSITIV (100)
+    # POSITIV (10 Intents × 10 Bsp)
     # =========================================
 
     ("positiv", "dank"): [
@@ -227,30 +264,6 @@ EXAMPLES = {
         "ich schätz das sehr, was du gmacht hesch",
         "danke, dass du für mich do bisch",
         "merci fürs organisieren",
-        "merci für dini müeh",
-        "danke für dini ehrlechi wort",
-        "ich ha s sehr schön gfunde, merci",
-        "danke fürs nachfroge, das bedeutet mir vil",
-        "merci, dass du das nöd uf die leicht schulter gnoh hesch",
-        "ich bi mega froh, dass du mir gholfe hesch",
-        "danke, du hesch mir vil druck gnoh",
-        "merci für dini ruäigi art",
-        "danke, dass du so geduldig gsi bisch",
-        "merci für dä input",
-        "ich ha s würkli gmerkt, wie vill müeh du dir gäh hesch",
-        "merci, das hät mi ufgstellt",
-        "danke, dass du nöd glägig gäh hesch mit mir",
-        "danke für dini zuesproch",
-        "merci fürs drann denke",
-        "danke, dass du das im blick gha hesch",
-        "ich wott nur schnell danke säge",
-        "merci, du hesch dä tag besser gmacht",
-        "danke, dass du so spontan usgheholfe hesch",
-        "merci für dini hilfsbereitschaft",
-        "ich ha s sehr gschätzt, was du gmacht hesch",
-        "danke, dass ich cha uf dich zähle",
-        "merci, dass du s mit mir usghalte hesch",
-        "danke, du bisch e riesigi unterstützig gsi",
     ],
 
     ("positiv", "lob"): [
@@ -263,30 +276,7 @@ EXAMPLES = {
         "das isch eifach gueti arbeit",
         "ich han riesig freud an dim output",
         "du hesch en super job gmacht",
-        "das isch klar und sauber umegsetzt",
         "ich find dini lösig sehr geschickt",
-        "du hesch dä nagel uf de chopf troffe",
-        "dini idee het mir mega gfalle",
-        "das isch besser worde, als ich erwartet ha",
-        "ich lern vil vo dim approach",
-        "du bisch sehr zuverlässig",
-        "ich ha grosses vertroue i dini fähigkeite",
-        "de stil vo dir gfallt mir mega",
-        "du bisch sehr sorgfältig gsi",
-        "ich ha s gfühl, du hesch s voll im griff",
-        "dini struktur isch sehr übersichtlich",
-        "du bisch extrem konstruktiv mit dä sach umgange",
-        "ich find, du machsch das unglaublich guet",
-        "dini arbeit het qualität",
-        "du bisch es vorbild in däm",
-        "ich bin echt fan vo dinere lösig",
-        "du hesch es guets händli für so sach",
-        "man merkt, dass du vill erfahrig hesch",
-        "ich find, du hesch das sehr souverän gmacht",
-        "du wirkst sehr kompetent",
-        "ich würd das grad so wieder dir überlah",
-        "dini leistung isch beeindruckend",
-        "ich ha grossi achtig vor dim einsatz",
     ],
 
     ("positiv", "freud"): [
@@ -298,35 +288,103 @@ EXAMPLES = {
         "ich bin voll positiver stimmig",
         "ich chan s fast nöd glaube, wie guet das cho isch",
         "ich bin begeistert, wie sich das entwicklet het",
-        "ich han s richtig genosse",
-        "ich bi voll entspannt jetz",
+        "ich ha s richtig genosse",
         "das git mir viel energie",
-        "ich ha s gfuehl, s lauft guet im momänt",
-        "ich bin sehr zfriede mit dem",
-        "das isch es richtig schöns erlebnis gsi",
-        "ich blick grad sehr zuversichtlich i z zukuft",
-        "ich bin dankbar für die situation",
-        "ich ha s gfühl, ich bi uf em richtige wäg",
-        "das gibt mir richtig hoffnig",
-        "ich freu mi scho uf s nöchschte mol",
-        "ich ha lang nüm so chönne lache",
-        "das isch e wohltuendi abwechslig gsi",
-        "ich bin froh, dass ich das erlebt ha",
-        "ich ha richtig spass gha",
-        "ich bi grad total ufgstellt",
-        "ich ha s gfuehl, alles füeget sich guet",
-        "ich chan nüt negatifs drüber säge",
-        "ich würd das sofort wieder so mache",
-        "ich bi stolz, wie sich das entwicklet het",
-        "ich ha sehr viel freud a dem",
-        "das passt im momänt sehr guet für mich",
-        "ich bi erleichtert, wie das usecho isch",
-        "ich bin innerlich sehr ruhig grad",
-        "ich ha s gfuehl, es chunnt no vil guets",
+    ],
+
+    ("positiv", "erfolg"): [
+        "ich ha mini prüefig bstange, bin voll erleichtert",
+        "s projekt isch mega guet usecho",
+        "ich ha es wichtigs ziel erreicht, wo ich lang dra gschaffet ha",
+        "mini müeh hät sich würkli glohnt",
+        "ich ha es komplizierte thema endlich checkt",
+        "ich ha feedback übercho, dass mini arbeit sehr guet isch gsi",
+        "ich bi e schritt wiiter cho, als ich denkt ha",
+        "ich bi stolz, dass ich das durchzoge ha",
+        "ich ha en schöne erfolg im job gha",
+        "ich ha s gfühl, ich mach imfall fortschritt",
+    ],
+
+    ("positiv", "erleichterung"): [
+        "ich bin so erleichtert, dass das jetzt um isch",
+        "ich ha lang sorgä gha und jetzt isch s doch guet cho",
+        "es isch e riesen stei vom härz gfalle",
+        "endlich isch d entscheidig do, und s isch besser cho als erwartet",
+        "ich ha s gfühl, ich chan wieder freier atme",
+        "ich bi froh, dass sich das nöd so schlimm entwicklet het",
+        "ich ha lang druf gwartet und jetzt isch s eifach e guets gfühl",
+        "mini angst het sich zum gliick nöd bestätiget",
+        "ich ha etz wieder chli ruhe im chopf",
+        "ich bi froh, dass ich das chli hinter mir han",
+    ],
+
+    ("positiv", "stolz"): [
+        "ich bi würkli stolz uf mich grad",
+        "ich ha öppis gstemt, wo ich mir selber nöd zuegtraut ha",
+        "es isch schön z gseh, wie wiit ich cho bi",
+        "ich ha s gfuehl, ich cha zurecht chli stolz sii",
+        "ich ha hart drfür gschaffet und jetzt zahlts sich us",
+        "ich bi zfriede mit dem, wie ich mit dere situation umgange bi",
+        "ich bi stolz, dass ich drblibe bi, au wenn s schwierig gsi isch",
+        "ich ha min weg gmacht, Schritt für Schritt",
+        "ich cha uf das resultat ohni schlechts gfühl luege",
+        "ich bin stolz, dass ich mini werte nöd verloo ha",
+    ],
+
+    ("positiv", "verbindung_freunde"): [
+        "mir händ en extrem gmüetliche abig gha zäme",
+        "ich bi mega froh um mini fründschaftä",
+        "mir händ so vil glacht, das het richtig guet ta",
+        "ich fühl mi grad voll ufgnoh i dere gruppe",
+        "ich ha s gfühl, mer verstönd sich immer besser",
+        "mir händ offe chönne rede über ernsti sache",
+        "ich schätz es mega, so mensche um mich z ha",
+        "ich ha lang nüm so e ehrlechs gspröch gha",
+        "ich bin dankbar für die nächi, wo mer händ",
+        "ich ha s gfühl, ich bi nöd alei mit mine themä",
+    ],
+
+    ("positiv", "motivation"): [
+        "ich bi imfall grad voll motiviert",
+        "ich ha richtig lust, öppis azpacke",
+        "ich ha en guete drive im momänt",
+        "ich ha s gfühl, jetzt isch en guete zeitpunkt zum starte",
+        "ich ha so vil ideä im chopf, wo ich umsetze wott",
+        "ich spür grad richtig energie i mir",
+        "ich ha s gfühl, ich chan grad vil bewege",
+        "ich freu mi sogar uf d nägschti aufgabä",
+        "ich ha imfall grad vill bock zum dranzbliibe",
+        "ich bin parat, en schritt wiiter z gah",
+    ],
+
+    ("positiv", "vorfreude"): [
+        "ich freu mi mega uf d feriä",
+        "ich ha so vorfreud uf dä termin",
+        "ich chan s fast nüm abwarte, bis es so wiit isch",
+        "ich bi scho am plane, wie das chönnt werde",
+        "ich hab e richtig guets gfühl für das, was chunt",
+        "ich zähl fasch d tägli bis dr tag chunnt",
+        "ich freu mi uf d lüt, wo ich denn wieder gseh",
+        "ich han lang uf dä moment gwartet",
+        "ich ha s gfühl, das wird öppis schöns",
+        "die vorfreud git mir grad viel energie",
+    ],
+
+    ("positiv", "zufriedenheit_alltag"): [
+        "ich bi imfall im momänt recht zfriede mit mim alltag",
+        "es lauft nöd perfekt, aber es stimmt für mich",
+        "ich ha e gueti balans zwüsche pause und leistung gfunde",
+        "ich ha s gfühl, s passt so im momänt",
+        "ich chan mit dim, wie s grad isch, guet lebe",
+        "mini rutine tuet mir guet",
+        "ich bi froh, dass nöd jede tag drama isch",
+        "ich ha s gfühl, ich ha mini säch im griff",
+        "ich chan au chli ruhe gniesse zwüschet dur",
+        "ich bi dankbar für die stabilität, wo ich grad ha",
     ],
 
     # =========================================
-    # NEUTRAL (100)
+    # NEUTRAL (10 Intents × 10 Bsp)
     # =========================================
 
     ("neutral", "smalltalk"): [
@@ -340,21 +398,6 @@ EXAMPLES = {
         "was sind dini plän fürs wucheend?",
         "lange nüm gseh, wie geits?",
         "was treibsch im momänt?",
-        "wie isch s im schaffe grad?",
-        "hesch grad vil um d ohre?",
-        "wie isch s im studi grad?",
-        "hesch öppis cools erlebt letschti zit?",
-        "wie isch s mit dim projäkt vorwärts gange?",
-        "bisch zfriede mit dim alltag im momänt?",
-        "wie isch s mit dim gsundheitlich?",
-        "hesch dir es bitzeli ruhe gönne chönne?",
-        "was luegsch im momänt so für series?",
-        "hesch grad öppis guets glese?",
-        "wie isch s so im familie-lebe?",
-        "hesch no feriä plan?",
-        "isch s wätter bi dir au so komisch?",
-        "hesch es guets wucheend gha?",
-        "wie bisch du i de morge cho?",
     ],
 
     ("neutral", "orga"): [
@@ -364,25 +407,10 @@ EXAMPLES = {
         "wottsch du online oder vor ort abmache?",
         "wo wäre für dich am praktischste?",
         "wie lang hesch du ungefäär zit?",
-        "chunsch direkt oder muesch no öppis erledige?",
         "wänn söll ich dir d details schicke?",
         "wottsch du en kalender-eintrag?",
         "für wann sömer s ungefähr apegge?",
-        "mached mer lieber chli kürzer oder länger?",
-        "chömer s in zwei teil ufteile, wenn s z vil isch?",
-        "wer söll sonst no debi sii?",
-        "mached mer eifach es lockers abmache",
-        "bin relativ flexibel, wänn hesch du frei?",
-        "wänn bruchsch spötestens en beschaid?",
-        "wottsch dich zuerst no abspreche mit öpperem?",
-        "ich chan diestig und donnschtig, wie isch s bi dir?",
-        "treffemer üs grad bim bahnhof?",
-        "ich schick dir no es update, sobald ich öppis weiss",
-        "gits öppis, wo mir vorher no kläre müend?",
-        "chan s au spöter in dr wuche sii, wenn s nöd passt?",
-        "mer chönd s au spontan am tag sälber fixiere",
-        "söll ich no unterlage vorbereite?",
-        "mached mer es doodle, damits eifacher isch?",
+        "chan s au spöter i de wuche sii, wenn s nöd passt?",
     ],
 
     ("neutral", "frage_info"): [
@@ -396,21 +424,6 @@ EXAMPLES = {
         "chan ich das nacher no ändere, falls nötig?",
         "hesch erfahrig mit dem gha?",
         "wie lang gaht das ungefäär?",
-        "was sind d vorteil und nachteil devo?",
-        "wie hesch du das gmacht, wo du aagfange hesch?",
-        "gits öpis, wo ich lieber nöd söll mache?",
-        "wo find ich meh infos zu dem?",
-        "is das meh öppis für afänger oder nöd?",
-        "was würdest du a minere stell mache?",
-        "mues ich mich irgendwo registriere dafür?",
-        "chan ich es bsüeli experimentiere, ohni vil kaputt z mache?",
-        "wie streng isch das im durchschnitt?",
-        "brauch ich dafür bestimmti software?",
-        "gits öppis, wo ich priorisiera sött?",
-        "isch das eimalig oder wiederhole sich das?",
-        "chan ich di nöd kurz löchere, wenn ich hänge?",
-        "wie handhabed das anderi normalerweise?",
-        "was sind dini erfahrige mit dem bis jetzt?",
     ],
 
     ("neutral", "sonstiges"): [
@@ -424,23 +437,87 @@ EXAMPLES = {
         "so wichtig isch s im momänt nöd",
         "mir chönd s au no chli beobachte",
         "ich find s weder mega guet no mega schlecht",
-        "ich glaub, mer muess s nöd übertreibe mit dem",
-        "wenn s nöd klappt, isch au nöd weltuntergang",
-        "mer chan s zu gegebener zit wieder aaluege",
-        "ich ha jetzt nöd drang, das grad fertig z entscheide",
-        "mer chönd s fürs erste so belah wie s isch",
-        "ich bi offe für vorschläg",
-        "mir mached s so, wie s am eifachste isch",
-        "ich ha s nöd pressant mit dem thema",
-        "mer chan s gern uf spöter verschiebe",
-        "ich wett s nöd komplizierter mache als nötig",
-        "wenn du en vorschlag hesch, chömer dä neh",
-        "ich nimm s mal zur kenntnis",
-        "mir chönd s au schrittwiis aaluege",
-        "ich gang mit dem, was sich guet aafühlt",
-        "mer müend s nöd uf bieg und bruch entscheide",
+    ],
+
+    ("neutral", "status_update"): [
+        "kurz es update: es lauft imfall solid, aber langsam",
+        "ich bi mittendrin im projektschub",
+        "es isch no nöd alles fertig, aber ich bi druf und dra",
+        "ich ha s gröbschte gmacht, aber es brucht no feinarbeit",
+        "ich bi no nöd dort, wo ich wott sii, aber ufem weg",
+        "bis jetzt isch no nüt eskaliert, es lauft ruhig",
+        "ich han scho es bitzeli fortschritt gmacht",
+        "im moment isch s chli viel, aber im rahme",
+        "es isch imfall alles no im gange",
+        "ich gib dir wieder bschaid, sobald öppis neus isch",
+    ],
+
+    ("neutral", "planung_langfristig"): [
+        "ich versueche grad mini längfristige plän z ordne",
+        "ich überleg mer, wie s die nächschte jahr sött usegseh",
+        "ich weiss no nöd genau, wohi, aber ich wott chli struktur ine bringe",
+        "ich probier chli vorus z plane statt nume spontan",
+        "ich möcht mir e chli klari ziel setze fürs nöchschte jahr",
+        "ich bin am luege, wie sich jobb und privat chönd verbinde lah",
+        "ich wott eigentli chli meh ruhe i mini plän ine bringe",
+        "ich mues no uussortiere, was mir würkli wichtig isch uf d längi",
+        "ich denk grad vil drüber nach, was ich langfristig wott",
+        "ich probier Schritt für Schritt öppis z verändere, nöd alles uf einisch",
+    ],
+
+    ("neutral", "feedback_sachlich"): [
+        "nur chli feedback: es isch übersichtlich, aber chönnt no klarer sii",
+        "ich find s grundsätzlich guet, aber es het no paar punkt zum verbessere",
+        "vo minere sicht her funktioniert s, aber d doku chönnt besser sii",
+        "ich finds sachlich okay umgsetzt, d struktur isch logisch",
+        "ich würd eifach no chli meh erläuterige erwarte",
+        "mini rückmeldung wär, dass d zeitplän chli optimiert chönd wärde",
+        "inhaltlich isch s stabil, optisch chan mer no drann schaffe",
+        "es isch guet lösbar, aber d anleitig chönnt knapp formuliert sii",
+        "ich find s fair, aber chli streng i dere form",
+        "vo mir us es nüchternes, aber positives feedback",
+    ],
+
+    ("neutral", "hobby_talk"): [
+        "ich bi grad wieder vil am gamä i minere freizit",
+        "ich go gern jogge, wenn ich chli kopf lüfte möcht",
+        "ich ha wieder aagfange meh z läse",
+        "ich bi im moment voll im kochfilm",
+        "ich lueg viel series, wenn ich abends am abchille bi",
+        "musik lose hilft mer mega zum abschalte",
+        "ich bin grad am übe ufem instrument",
+        "ich ha neu mit fotografie aagfange",
+        "ich bi gern drausse underwägs, wenn s wätter mitmacht",
+        "ich versueche meh kreativs zeug i mini freizit ine z bringe",
+    ],
+
+    ("neutral", "news_teilen"): [
+        "hesch gseh, was grad i de nöi passiert isch?",
+        "ich ha grad es interessants artikel glese über das thema",
+        "es het wieder es update zue dere sach geh",
+        "imfall, es git jetzt es neus feature bi dere app",
+        "ich ha ghört, dass sich bi dere regel öppis gänderet het",
+        "es isch grad en spannende entwicklung i dem bereich am laufe",
+        "ich bi über en beitrag gstolpert, wo guet z dem passt",
+        "grad in de nöi isch vil diskussion zu dem thema",
+        "es het es neus projekt, wo spannend chönnt sii",
+        "ich ha gseh, dass d termi sich chli gschobe händ",
+    ],
+
+    ("neutral", "technik_support"): [
+        "mini app spinnt scho wieder und ich weiss nöd, wieso",
+        "ich chum nöd drus mit däm update",
+        "mis wlan macht grad komische sache",
+        "ich weiss nöd, wie ich das programm söll installiere",
+        "dä login will eifach nöd funktioniere",
+        "ich ha s gfuehl, mis handy isch extrem langsam worde",
+        "ich bechum ständig fehlermeldig und check nöd, was s heisst",
+        "ich weiss nöd, welches kabel wohi ghört",
+        "ich ha öppis verstellt i de einstellige und find s nüm",
+        "ich bruch nur chli hilf, zum das technisch wieder zum laufe bringe",
     ],
 }
+
 
 
 # =========================================================
@@ -448,42 +525,79 @@ EXAMPLES = {
 # =========================================================
 
 DEFAULT_ANSWERS_MUNDART = {
+    # NEGATIV
     ("negativ", "beschwerde"):
-        "Das tönt würklich müehsam. Erzähl mer öppis meh, was genau passiert isch.",
-
+        "Das tönt würklich müehsam. Erzähl gern no chli meh, was genau di stört.",
     ("negativ", "frust"):
-        "Ich verstand, dass di das grad stresst. Was isch im Momänt am schwierigste für dich?",
-
+        "Ich verstand, dass dich das nervt. Was isch im Momänt am müehsamste für dich?",
     ("negativ", "hilfe_bitten"):
-        "Klar, ich probier dir z helfe. Sag mer, wo genau du grad hängt.",
+        "Ich probier gern z helfe. Sag eifach, wo du grad hängsch.",
+    ("negativ", "stress_alltag"):
+        "Alltag cha schnell z vil wärde. Womit fangemer am beschte aa, zum s chli z ordne?",
+    ("negativ", "konflikt"):
+        "Konflikt sind nöd eifach. Was isch dir da besonders wichtig i dä situation?",
+    ("negativ", "selbstzweifel"):
+        "Es isch okay, wenn mer sich mal unsicher fühlt. Worin hesch du grad am meiste zweifel?",
+    ("negativ", "überforderung_job"):
+        "Jobstress cha würklich belaste. Was belastet di im momänt am stärkschte?",
+    ("negativ", "gesundheit_sorge"):
+        "Gsundheitssorgä nimmt mer sich zu herz. Was macht dir im momänt am meiste sorge?",
+    ("negativ", "enttäuschung_beziehung"):
+        "Enttäuschige tue weh. Wenn du wotsch, chasch chli erläutere, was passiert isch.",
+    ("negativ", "einsamkeit"):
+        "Sich einsam fühle isch nöd eifach. Schön, dass du drüber redsch. Wie fült sich das grad a für dich?",
 
+    # POSITIV
     ("positiv", "dank"):
-        "Sehr gärn. Freut mi, dass dir das öppis bringt.",
-
+        "Sehr gärn. Freut mi, wenn es dir öppis bringt.",
     ("positiv", "lob"):
-        "Schön z ghöre. Du machsch das wirklich guet.",
-
+        "Schön z ghöre, dass das so guet cho isch. Mach eifach so wiiter.",
     ("positiv", "freud"):
-        "Mega schön, dass du dich so freusch. Erzähl gern no es bitzeli meh.",
+        "Mega schön, dass dich das so freut. Erzähl gern no meh drüber, wenn du wotsch.",
+    ("positiv", "erfolg"):
+        "Gratuliere, das isch en schöne erfolg. Nimm dir ruhig en moment, zum stolz z sii.",
+    ("positiv", "erleichterung"):
+        "Guet z ghöre, dass s sich jetzt leichter aafühlt. Was hät dir am meiste gholfe?",
+    ("positiv", "stolz"):
+        "Du darfsch stolz sii uf dich. Was gfallt dir selber am beschte a dim weg bis da?",
+    ("positiv", "verbindung_freunde"):
+        "Schön, dass du so mensche um dich hesch. Solchi momänt tue mega guet.",
+    ("positiv", "motivation"):
+        "Das tönt nach vill energie. Wie wotsch die motivation für dich nutze?",
+    ("positiv", "vorfreude"):
+        "Vorfreud isch öppis Schöns. Uf was freusch di am meiste?",
+    ("positiv", "zufriedenheit_alltag"):
+        "Schön, dass sich dis läbe im momänt stimmig aafühlt. Was wotsch gern so biibe lah?",
 
+    # NEUTRAL
     ("neutral", "smalltalk"):
-        "Mir gohts guet, danke. Und dir?",
-
+        "Mir gohts guet, merci. Und dir so im alltag?",
     ("neutral", "orga"):
-        "Klingt guet. Säg mir eifach, wänn s dir am beschte passt.",
-
+        "Klingt guet. Säg eifach, was dir am beschte passt, denn chömer s so abmache.",
     ("neutral", "frage_info"):
-        "Gueti Frog. Ich versuechs dir kurz und eifach z erkläre.",
-
+        "Gueti frog. Ich versuech s dir möglichst eifach z erläuterä.",
     ("neutral", "sonstiges"):
-        "Alles klar, merci für dini Rückmeldung.",
+        "Alles klar, merci für dini rückmeldung.",
+    ("neutral", "status_update"):
+        "Merci fürs update. Wenn sich öppis ändert, chasch eifach wieder schriebe.",
+    ("neutral", "planung_langfristig"):
+        "Okay, denn chömer gern zäme luege, wie mer das langfristig cha aagle.",
+    ("neutral", "feedback_sachlich"):
+        "Danke fürs sachlich feedback. Das hilft, s besser iigschätze z chönne.",
+    ("neutral", "hobby_talk"):
+        "Klingt spannend. Erzähl gern no meh über dini hobbys, wenn du lusch hesch.",
+    ("neutral", "news_teilen"):
+        "Danke fürs teile. Spannend, was grad alles lauft.",
+    ("neutral", "technik_support"):
+        "Okay, luegemer zäme druf. Was genau funktioniert im momänt nöd so, wie s sött?",
 }
 
 DEFAULT_BY_LABEL_MUNDART = {
-    "negativ": "Das tönt nöd eifach. Wenn du wotsch, chömer zäme luege.",
-    "positiv": "Schön z ghöre. Danke fürs Teile.",
-    "neutral": "Alles klar, merci für dini Nachricht.",
+    "negativ": "Das tönt nöd eifach. Wenn du wotsch, luegemer zäme, was dir hälfe chönnt.",
+    "positiv": "Schön z ghöre. Danke, dass du das teilsch.",
+    "neutral": "Alles klar, merci für dini nachricht.",
 }
+
 
 
 def get_default_answer_mundart(label: str, intent: str) -> str:
@@ -493,25 +607,179 @@ def get_default_answer_mundart(label: str, intent: str) -> str:
     return DEFAULT_BY_LABEL_MUNDART.get(str(label), "")
 
 
-def guess_answer_style(label: str, intent: str) -> str:
-    """Grobtyp des Antwortstils (nur als Meta-Info im Datensatz)."""
-    if label == "negativ":
-        return "empathisch"
-    if label == "positiv":
-        return "bestärkend"
-    if intent in ["frage_info", "orga"]:
-        return "erklärend"
-    if intent == "smalltalk":
-        return "locker"
-    return "neutral"
+# =========================================================
+# 3) Augmentation
+# =========================================================
+
+SYNONYM_MAP = {
+    # eher negativ / belastend
+    "müehsam": ["streng", "nervig", "anstrengend"],
+    "müed": ["fix und fertig", "kaputt", "voll dure"],
+    "stress": ["druck", "belastig"],
+    "usgbrennt": ["am limit", "komplett dure"],
+
+    # eher positiv
+    "mega": ["huere", "richtig", "extrem"],
+    "guet": ["tiptop", "lässig", "solid"],
+    "freud": ["spass", "gaudi"],
+    "happy": ["glücklich", "ufgstellt"],
+
+    # eher neutral / weich
+    "okay": ["im rahme", "eigentlich guet", "so lala"],
+    "egal": ["nöd so wichtig", "nöd tragisch"],
+}
+
+GREETINGS = ["hey", "hoi", "ey", "jo", "sali", "hallo du"]
+
+NEG_TAILS = [
+    "gopfertami",
+    "gopfriedstutz",
+    "so en seich",
+    "so en käse",
+    "so en scheiss",
+    "eifach müehsam",
+    "richtig müehsam",
+    "zum schreiä",
+    "zum verseckä",
+    "zum d wand ufe laufä",
+]
+
+POS_TAILS = [
+    "mega guet",
+    "richtig schön",
+    "so geil",
+    "voll cool",
+    "eifach stark",
+    "richtig lässig",
+    "eifach nur schön",
+    "vo härze her guet",
+    "zum sich freue",
+    "zum dankbar sii",
+]
+
+NEU_TAILS = [
+    "so im fall",
+    "mal luege",
+    "mal gseh",
+    "denke ich",
+    "wür ich säge",
+    "isch okay so",
+    "passt so für mich",
+    "chömer so lah",
+    "für s erscht mal guet",
+    "mached mer so imfall",
+]
+
+GOODBYES = [
+    "lg",
+    "liebi grüess",
+    "gruessli",
+    "bis bald",
+    "ciao",
+    "tschüss",
+    "mach s guet",
+    "schönä tag no",
+    "schöns wucheend",
+    "bis spöter",
+]
+
+
+def replace_with_synonym_once(txt: str) -> str:
+    """Ersetzt höchstens ein Wort durch ein Synonym (falls vorhanden)."""
+    toks = txt.split()
+    if not toks:
+        return txt
+
+    candidate_indices = [
+        i for i, w in enumerate(toks)
+        if w in SYNONYM_MAP
+    ]
+    if not candidate_indices:
+        return txt
+
+    idx = random.choice(candidate_indices)
+    word = toks[idx]
+    synonym = random.choice(SYNONYM_MAP[word])
+    toks[idx] = synonym
+
+    return " ".join(toks)
+
+
+def augment_with_style(txt: str, label: str) -> str:
+    """Augmentation: optionale Begrüssung, optional Synonym, Sentiment-Tail, Verabschiedung."""
+    toks = txt.split()
+    if not toks:
+        return txt
+
+    # 1) optional Begrüssung vornedran
+    if random.random() < 0.25:
+        greeting = random.choice(GREETINGS)
+        toks = [greeting + ","] + toks
+
+    out = " ".join(toks)
+
+    # 2) optional genau ein Synonym ersetzen
+    if random.random() < 0.4:
+        out = replace_with_synonym_once(out)
+
+    # 3) optional Anhängsel je nach Sentiment
+    r = random.random()
+    if label == "negativ" and r < 0.3:
+        out = out + " " + random.choice(NEG_TAILS)
+    elif label == "positiv" and r < 0.3:
+        out = out + " " + random.choice(POS_TAILS)
+    elif label == "neutral" and r < 0.3:
+        out = out + " " + random.choice(NEU_TAILS)
+
+    # 4) optional Verabschiedung ans Ende
+    if random.random() < 0.25:
+        out = out + " " + random.choice(GOODBYES)
+
+    return out
+
+
+def upsample_to_target_per_label(
+    df: pd.DataFrame,
+    target_per_label: int = 500,
+) -> pd.DataFrame:
+    """Erweitert den Datensatz pro label via Augmentation (Begrüssung, Synonyme, Tails, Verabschiedung)."""
+    all_rows = [df]
+    for label in df["label"].unique():
+        cur = df[df["label"] == label]
+        needed = target_per_label - len(cur)
+        if needed <= 0:
+            continue
+
+        records = cur.to_dict("records")
+        generated = []
+        i = 0
+        while len(generated) < needed:
+            base_row = records[i % len(records)].copy()
+            base_row["is_seed"] = False
+            base_row["text"] = augment_with_style(base_row["text"], label=label)
+            generated.append(base_row)
+            i += 1
+
+        all_rows.append(pd.DataFrame(generated))
+
+    out = pd.concat(all_rows, ignore_index=True)
+    out = out.sample(frac=1.0, random_state=RANDOM_STATE).reset_index(drop=True)
+
+    # text_clean neu berechnen
+    out["text_clean"] = out["text"].astype(str).apply(preprocess_text_chat)
+    return out
+
 
 
 # =========================================================
-# 3) Dataset-Build-Funktionen
+# 4) Dataset-Build-Funktionen
 # =========================================================
 
-def build_base_dataset(out_csv: str = DATA_CSV_BASE) -> pd.DataFrame:
-    """Seed-Basisdatensatz (ohne Augmentation) bauen und speichern."""
+def build_base_dataset(
+    out_csv: str = DATA_CSV_BASE,
+    target_per_label: int | None = 500,
+) -> pd.DataFrame:
+    """Seed-Basisdatensatz bauen, optional per label auf Zielgrösse augmentieren."""
     rows = []
     for (label, intent), texts in EXAMPLES.items():
         for txt in texts:
@@ -527,11 +795,14 @@ def build_base_dataset(out_csv: str = DATA_CSV_BASE) -> pd.DataFrame:
         subset=["text", "label", "intent"]
     ).reset_index(drop=True)
 
-    # Shuffle für robustere Splits
-    base_df = base_df.sample(frac=1.0, random_state=RANDOM_STATE).reset_index(drop=True)
-
-    # Preprocessed Variante
-    base_df["text_clean"] = base_df["text"].astype(str).apply(preprocess_text_chat)
+    if target_per_label is not None:
+        base_df = upsample_to_target_per_label(
+            df=base_df,
+            target_per_label=target_per_label,
+        )
+    else:
+        # falls du mal ohne Augmentation fahren willst
+        base_df["text_clean"] = base_df["text"].astype(str).apply(preprocess_text_chat)
 
     base_df.to_csv(out_csv, index=False, encoding="utf-8")
     print(f"Neues Basis-DF gespeichert als: {out_csv}")
@@ -541,6 +812,9 @@ def build_base_dataset(out_csv: str = DATA_CSV_BASE) -> pd.DataFrame:
     print(base_df["label"].value_counts())
     print("\nIntent-Verteilung:")
     print(base_df["intent"].value_counts())
+    print("\nAnteil Seeds (is_seed):")
+    print(base_df["is_seed"].value_counts())
+
     return base_df
 
 
@@ -568,10 +842,6 @@ def build_chatpairs_dataset(
         lambda row: get_default_answer_mundart(row["label"], row["intent"]),
         axis=1,
     )
-    chatpairs_df["answer_style"] = chatpairs_df.apply(
-        lambda row: guess_answer_style(row["label"], row["intent"]),
-        axis=1,
-    )
     chatpairs_df["needs_review"] = True
 
     chatpairs_out = chatpairs_df[[
@@ -580,7 +850,6 @@ def build_chatpairs_dataset(
         "label",
         "intent",
         "answer_mundart",
-        "answer_style",
         "needs_review",
         "is_seed",
     ]]
