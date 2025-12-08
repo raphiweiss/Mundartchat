@@ -585,8 +585,8 @@ def main():
         st.header("📊 Daten & Modelle")
 
         base_df, resp_df = load_datasets()
-        st.write(f"📚 Basisdaten: {len(base_df)} Beispiele")
-        st.write(f"💬 Chatpairs: {len(resp_df)} Paare")
+        st.write(f"💬 Chatnachrichten: {len(resp_df)} Paare")
+        st.write(f"💬 Chatnachrichten: {len(resp_df)} Paare")
 
         with st.spinner("Modelle werden geladen / trainiert ..."):
             models = train_all_models(base_df, resp_df)
