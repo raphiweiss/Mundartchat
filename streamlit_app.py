@@ -583,10 +583,36 @@ def main():
     # ---------------- Sidebar: Daten & Modelle ----------------
     with st.sidebar:
         st.header("📊 Daten & Modelle")
-
+    
         base_df, resp_df = load_datasets()
         st.write(f"💬 Chatnachrichten: {len(resp_df)} Paare")
-        st.write(f"💬 Chatnachrichten: {len(resp_df)} Paare")
+    
+        st.markdown("### 😊 Sentiment & Intents (15)")
+    
+        st.markdown(
+            """
+    **😔 negativ**
+    - 😵‍💫 Stress & Überforderung  
+    - ⚡ Konflikte & Spannungen  
+    - 🤔 Selbstzweifel & Unsicherheit  
+    - 🥀 Traurigkeit & Einsamkeit  
+    - 🩺 Gesundheit & Sorgen  
+    
+    **😐 neutral**
+    - 💬 Smalltalk / Allgemeines  
+    - 📅 Organisation & Abmachungen  
+    - ❓ Info-Fragen & Erklärungen  
+    - 🎮 Hobbys & Interessen  
+    - 💻 Tech-Support & Sachprobleme  
+    
+    **😊 positiv**
+    - 🙏 Dankbarkeit  
+    - 😄 Freude & Gute Laune  
+    - 🏆 Erfolg & Stolz  
+    - 🤝 Verbundenheit & Nähe  
+    - 🚀 Motivation & Vorfreude  
+            """
+        )
 
         with st.spinner("Modelle werden geladen / trainiert ..."):
             models = train_all_models(base_df, resp_df)
