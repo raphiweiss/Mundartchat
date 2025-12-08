@@ -631,129 +631,129 @@ def main():
             )
 
     # ---------------- Modelle laden/trainieren ----------------
-    with st.spinner("Modelle werden geladen / trainiert ..."):
-        models = train_all_models(base_df, resp_df)
+        with st.spinner("Modelle werden geladen / trainiert ..."):
+            models = train_all_models(base_df, resp_df)
+    
+        eval_info = models["eval_info"]
 
-    eval_info = models["eval_info"]
-
-    # 1️⃣ Modell-Performance
-    with st.expander("🔍 Modell-Performance (Testset)", expanded=False):
-        for name, info in eval_info.items():
-            st.subheader(name.upper())
-
-            # Accuracy als Metric
-            st.metric("Accuracy", f"{info['accuracy']:.3f}")
-
-            # classification_report-Dict -> DataFrame
-            report_dict = info["report"]
-            df_report = pd.DataFrame(report_dict).T  # Zeilen = Klassen
-
-            # Accuracy-Reihe rauswerfen
-            if "accuracy" in df_report.index:
-                df_report = df_report.drop(index="accuracy")
-
-            df_report = df_report[["precision", "recall", "f1-score", "support"]]
-            st.dataframe(df_report, use_container_width=True)
-
-            # Confusion-Matrix als Heatmap (falls vorhanden)
-            if "confusion_matrix" in info:
-                st.caption(f"Confusion Matrix ({name.upper()})")
-
-                cm_df = info["confusion_matrix"]
-                cm = cm_df.to_numpy() if hasattr(cm_df, "to_numpy") else cm_df
-
-                fig, ax = plt.subplots()
-                im = ax.imshow(cm, cmap="Blues")
-
-                ax.set_xticks(np.arange(len(LABEL_ORDER)))
-                ax.set_yticks(np.arange(len(LABEL_ORDER)))
-                ax.set_xticklabels(LABEL_ORDER)
-                ax.set_yticklabels(LABEL_ORDER)
-                ax.set_xlabel("Predicted label")
-                ax.set_ylabel("True label")
-
-                for i in range(cm.shape[0]):
-                    for j in range(cm.shape[1]):
-                        ax.text(j, i, int(cm[i, j]), ha="center", va="center")
-
-                fig.tight_layout()
-                st.pyplot(fig)
-
-    # 2️⃣ Label-Verteilung
-    with st.expander("📈 Label-Verteilung", expanded=False):
-        label_counts = base_df["label"].value_counts().reindex(LABEL_ORDER, fill_value=0)
-        st.bar_chart(label_counts)
-        st.write(label_counts)
-
-    # 3️⃣ Textlängen (Tokens)
-    with st.expander("📏 Textlängen (Tokens)", expanded=False):
-        lengths = base_df["text_clean"].astype(str).apply(
-            lambda t: len(t.split()) if t.strip() else 0
-        )
-        st.write(f"Ø Länge: {lengths.mean():.1f} Tokens")
-        st.write(f"Median: {lengths.median():.0f} Tokens")
-        st.write(f"Max: {lengths.max():.0f} Tokens")
-        st.bar_chart(lengths.value_counts().sort_index())
-
-    # 4️⃣ Token-Statistik (Vokab)
-    with st.expander("🔤 Token-Statistik", expanded=False):
-        unigram_counter = models["ngram_counts"][1]
-        total_types = len(unigram_counter)
-        total_tokens = sum(unigram_counter.values())
-        hapax = [
-            tok for (tok,), cnt in unigram_counter.items()
-            if cnt == 1 and _is_good_token(tok)
-        ]
-        st.metric("Token-Typen (Vokab)", total_types)
-        st.metric("Token-Instanzen (laufende Wörter)", total_tokens)
-        st.metric("Hapax-Typen", len(hapax))
-        st.metric("Hapax-Anteil", f"{len(hapax) / total_types:.2f}")
-        st.write("Beispiele (Hapax):")
-        st.write(", ".join(hapax[:10]))
-
-    # 5️⃣ Zipf-Analyse
-    with st.expander("📐 Zipf-Analyse (Token-Verteilung)", expanded=False):
-        try:
-            fig_zipf, alpha, slope = plot_zipf_with_fit(
-                base_df,
-                text_col="text_clean",
-                min_freq=1,
-                fit_range=(5, 100),
-                title_suffix="Basisdaten",
+        # 1️⃣ Modell-Performance
+        with st.expander("🔍 Modell-Performance (Testset)", expanded=False):
+            for name, info in eval_info.items():
+                st.subheader(name.upper())
+    
+                # Accuracy als Metric
+                st.metric("Accuracy", f"{info['accuracy']:.3f}")
+    
+                # classification_report-Dict -> DataFrame
+                report_dict = info["report"]
+                df_report = pd.DataFrame(report_dict).T  # Zeilen = Klassen
+    
+                # Accuracy-Reihe rauswerfen
+                if "accuracy" in df_report.index:
+                    df_report = df_report.drop(index="accuracy")
+    
+                df_report = df_report[["precision", "recall", "f1-score", "support"]]
+                st.dataframe(df_report, use_container_width=True)
+    
+                # Confusion-Matrix als Heatmap (falls vorhanden)
+                if "confusion_matrix" in info:
+                    st.caption(f"Confusion Matrix ({name.upper()})")
+    
+                    cm_df = info["confusion_matrix"]
+                    cm = cm_df.to_numpy() if hasattr(cm_df, "to_numpy") else cm_df
+    
+                    fig, ax = plt.subplots()
+                    im = ax.imshow(cm, cmap="Blues")
+    
+                    ax.set_xticks(np.arange(len(LABEL_ORDER)))
+                    ax.set_yticks(np.arange(len(LABEL_ORDER)))
+                    ax.set_xticklabels(LABEL_ORDER)
+                    ax.set_yticklabels(LABEL_ORDER)
+                    ax.set_xlabel("Predicted label")
+                    ax.set_ylabel("True label")
+    
+                    for i in range(cm.shape[0]):
+                        for j in range(cm.shape[1]):
+                            ax.text(j, i, int(cm[i, j]), ha="center", va="center")
+    
+                    fig.tight_layout()
+                    st.pyplot(fig)
+    
+        # 2️⃣ Label-Verteilung
+        with st.expander("📈 Label-Verteilung", expanded=False):
+            label_counts = base_df["label"].value_counts().reindex(LABEL_ORDER, fill_value=0)
+            st.bar_chart(label_counts)
+            st.write(label_counts)
+    
+        # 3️⃣ Textlängen (Tokens)
+        with st.expander("📏 Textlängen (Tokens)", expanded=False):
+            lengths = base_df["text_clean"].astype(str).apply(
+                lambda t: len(t.split()) if t.strip() else 0
             )
-            st.pyplot(fig_zipf)
-            st.caption(f"Zipf-Exponent α ≈ {alpha:.3f}, Steigung ≈ {slope:.3f}")
-        except Exception as e:
-            st.warning(f"Zipf-Plot konnte nicht berechnet werden: {e}")
-
-    # 6️⃣ N-Gramm-Statistik (LM)
-    with st.expander("🧩 N-Gramm-Statistik (LM)", expanded=False):
-        ngram_counts = models["ngram_counts"]
-
-        st.subheader("Unigramme (1-Gramme)")
-        df_uni = get_top_ngrams(ngram_counts, n=1, topk=20)
-        st.dataframe(df_uni, use_container_width=True)
-
-        st.subheader("Bigramme (2-Gramme)")
-        df_bi = get_top_ngrams(ngram_counts, n=2, topk=20)
-        st.dataframe(df_bi, use_container_width=True)
-        
-    # 7️⃣ Projekt-PDF
-    with st.expander("📄 Projektpräsentation (PDF)", expanded=False):
-        pdf_path = "Schlusspräsentation.pdf"  # ggf. Pfad anpassen
-
-        try:
-            with open(pdf_path, "rb") as f:
-                pdf_bytes = f.read()
-
-            st.download_button(
-                label="📥 Präsentation als PDF herunterladen",
-                data=pdf_bytes,
-                file_name="Schlusspräsentation.pdf",
-                mime="application/pdf",
-            )
-        except FileNotFoundError:
-            st.warning(f"PDF nicht gefunden unter: {pdf_path}")    
+            st.write(f"Ø Länge: {lengths.mean():.1f} Tokens")
+            st.write(f"Median: {lengths.median():.0f} Tokens")
+            st.write(f"Max: {lengths.max():.0f} Tokens")
+            st.bar_chart(lengths.value_counts().sort_index())
+    
+        # 4️⃣ Token-Statistik (Vokab)
+        with st.expander("🔤 Token-Statistik", expanded=False):
+            unigram_counter = models["ngram_counts"][1]
+            total_types = len(unigram_counter)
+            total_tokens = sum(unigram_counter.values())
+            hapax = [
+                tok for (tok,), cnt in unigram_counter.items()
+                if cnt == 1 and _is_good_token(tok)
+            ]
+            st.metric("Token-Typen (Vokab)", total_types)
+            st.metric("Token-Instanzen (laufende Wörter)", total_tokens)
+            st.metric("Hapax-Typen", len(hapax))
+            st.metric("Hapax-Anteil", f"{len(hapax) / total_types:.2f}")
+            st.write("Beispiele (Hapax):")
+            st.write(", ".join(hapax[:10]))
+    
+        # 5️⃣ Zipf-Analyse
+        with st.expander("📐 Zipf-Analyse (Token-Verteilung)", expanded=False):
+            try:
+                fig_zipf, alpha, slope = plot_zipf_with_fit(
+                    base_df,
+                    text_col="text_clean",
+                    min_freq=1,
+                    fit_range=(5, 100),
+                    title_suffix="Basisdaten",
+                )
+                st.pyplot(fig_zipf)
+                st.caption(f"Zipf-Exponent α ≈ {alpha:.3f}, Steigung ≈ {slope:.3f}")
+            except Exception as e:
+                st.warning(f"Zipf-Plot konnte nicht berechnet werden: {e}")
+    
+        # 6️⃣ N-Gramm-Statistik (LM)
+        with st.expander("🧩 N-Gramm-Statistik (LM)", expanded=False):
+            ngram_counts = models["ngram_counts"]
+    
+            st.subheader("Unigramme (1-Gramme)")
+            df_uni = get_top_ngrams(ngram_counts, n=1, topk=20)
+            st.dataframe(df_uni, use_container_width=True)
+    
+            st.subheader("Bigramme (2-Gramme)")
+            df_bi = get_top_ngrams(ngram_counts, n=2, topk=20)
+            st.dataframe(df_bi, use_container_width=True)
+            
+        # 7️⃣ Projekt-PDF
+        with st.expander("📄 Projektpräsentation (PDF)", expanded=False):
+            pdf_path = "Schlusspräsentation.pdf"  # ggf. Pfad anpassen
+    
+            try:
+                with open(pdf_path, "rb") as f:
+                    pdf_bytes = f.read()
+    
+                st.download_button(
+                    label="📥 Präsentation als PDF herunterladen",
+                    data=pdf_bytes,
+                    file_name="Schlusspräsentation.pdf",
+                    mime="application/pdf",
+                )
+            except FileNotFoundError:
+                st.warning(f"PDF nicht gefunden unter: {pdf_path}")    
          
     # ---------------- Eingabe ----------------
     user_text = st.text_area(
