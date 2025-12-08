@@ -587,19 +587,7 @@ def main():
         base_df, resp_df = load_datasets()
         st.write(f"💬 Chatnachrichten: {len(resp_df)}")
 
-        with st.expander("🧠 Standardantworten (Defaults)"):
-            st.markdown(
-                """
-**Wie funktionieren die Default-Antworten?**
 
-- Jede Nachricht erhält automatisch eine passende Antwort  
-  basierend auf **Sentiment** (negativ/neutral/positiv)  
-  und **Intent** (insgesamt 18 Kategorien).
-- Pro Intent gibt es mehrere Varianten, inkl. **ultrakurzen Kurz-Reaktionen**.
-- Falls keine Intent-spezifische Antwort existiert, greift ein  
-  allgemeiner Fallback je Sentiment.
-                """
-            )
 
         with st.expander("😊 Sentiment (3) & Intents (18)"):
             st.markdown(
@@ -629,6 +617,20 @@ def main():
 - ✨ Kurzreaktionen (positiv) (50) 
                 """
             )
+            
+        with st.expander("🧠 Standardantworten (Defaults)"):
+            st.markdown(
+                """
+**Wie funktionieren die Default-Antworten?**
+
+- Jede Nachricht erhält automatisch eine passende Antwort  
+  basierend auf **Sentiment** (negativ/neutral/positiv)  
+  und **Intent** (insgesamt 18 Kategorien).
+- Pro Intent gibt es mehrere Varianten, inkl. **ultrakurzen Kurz-Reaktionen**.
+- Falls keine Intent-spezifische Antwort existiert, greift ein  
+  allgemeiner Fallback je Sentiment.
+                """
+            )            
 
     # ---------------- Modelle laden/trainieren ----------------
         with st.spinner("Modelle werden geladen / trainiert ..."):
