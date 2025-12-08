@@ -1114,10 +1114,6 @@ EXAMPLES = {
 # =========================================================
 DEFAULT_ANSWERS_MUNDART= {}
 
-# =========================================================
-# 2) Mundart-Chatpaare: Default-Antworten
-# =========================================================
-
 DEFAULT_ANSWERS_MUNDART[("negativ", "stress_ueberforderung")] = [
     "Ui, das tönt stressig. Was isch grad am dringendschte?",
     "Verstehe, das isch viel. Womit sötted mer aafange?",

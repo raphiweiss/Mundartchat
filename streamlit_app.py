@@ -585,7 +585,7 @@ def main():
         st.header("📊 Daten & Modelle")
         
         base_df, resp_df = load_datasets()
-        st.write(f"💬 Chatnachrichten: {len(resp_df)} Paare")
+        st.write(f"💬 Chatnachrichten: {len(resp_df)}")
         
         with st.expander("😊 Sentiment (3) & Intents (18)"):
             st.markdown(
