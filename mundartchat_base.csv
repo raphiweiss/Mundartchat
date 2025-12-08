@@ -1,14 +1,14 @@
 text,label,intent,is_seed,text_clean
 grad volle to-do-lischt am abarbeite und nämmer chum noh,negativ,stress_ueberforderung,True,grad volle to do lischt am abarbeite und naemmer chum noh
 "de tag isch nur am raste, kei sekunde ruig",negativ,stress_ueberforderung,True,de tag isch nur am raste kei sekunde ruig
-alles staplet sich uf und s wird nöd weniger,negativ,stress_ueberforderung,True,alles staplet sich uf und s wird ned weniger
+alles staplet sich uf und s wird nöd weniger,negativ,stress_ueberforderung,True,alles staplet sich uf und s wird noed weniger
 de kopf isch komplett überfüllt im momänt,negativ,stress_ueberforderung,True,de kopf isch komplett ueberfuellt im momaent
 "ufträge chömed us allen rigtige, kei verschnuufpaus",negativ,stress_ueberforderung,True,uftraege choemed us allen rigtige kei verschnuufpaus
 s tempo isch brutal hoch grad,negativ,stress_ueberforderung,True,s tempo isch brutal hoch grad
 im alltag pressierts a jeder ecke,negativ,stress_ueberforderung,True,im alltag pressierts a jeder ecke
 de stress chunt in wellene und alles wird z viel,negativ,stress_ueberforderung,True,de stress chunnt in wellene und alles wird z viel
 "ständig neues los, nüt wird fertig",negativ,stress_ueberforderung,True,staendig neues los nuet wird fertig
-de rhythmus isch nöd meh gscheid handelbar,negativ,stress_ueberforderung,True,de rhythmus isch ned meh gscheid handelbar
+de rhythmus isch nöd meh gscheid handelbar,negativ,stress_ueberforderung,True,de rhythmus isch noed meh gscheid handelbar
 jede chliini sache nimmt grad mega viel energie,negativ,stress_ueberforderung,True,jede chliini sache nimmt grad mega viel energie
 s lauft alles gleichzeitig und nüt passt i d agenda,negativ,stress_ueberforderung,True,s lauft alles gleichzeitig und nuet passt i d agenda
 de tag fingt hektisch aa und hört genauso uf,negativ,stress_ueberforderung,True,de tag fingt hektisch aa und hoert genauso uf
@@ -24,7 +24,7 @@ kei chance zum richtig abschalte,negativ,stress_ueberforderung,True,kei chance z
 "de kalender isch so voll, dass nüt meh platz het",negativ,stress_ueberforderung,True,de kalender isch so voll dass nuet meh platz het
 mini ressourcen sind aktuell uf minimalbetrieb,negativ,stress_ueberforderung,True,mini ressourcen sind aktuell uf minimalbetrieb
 ständig am jongliere mit viel z vil sache,negativ,stress_ueberforderung,True,staendig am jongliere mit viel z vil sache
-"s tempo het nöd mol en gang meh, nur turbo",negativ,stress_ueberforderung,True,s tempo het ned mol en go meh nur turbo
+"s tempo het nöd mol en gang meh, nur turbo",negativ,stress_ueberforderung,True,s tempo het noed mol en go meh nur turbo
 jede pause wird direkt wieder ufgfrässe,negativ,stress_ueberforderung,True,jede pause wird direkt wieder ufgfraesse
 alles bruucht grad doppelt so vil energie wie normal,negativ,stress_ueberforderung,True,alles bruucht grad doppelt so vil energie wie normal
 "d anspannung sitzet tief, meh als mer lieb isch",negativ,stress_ueberforderung,True,d anspannung sitzet tief meh als mer lieb isch
@@ -46,14 +46,14 @@ d anforderige wachsed schneller als d kapazität,negativ,stress_ueberforderung,T
 "jede ruum eimal blockiert, kei luft meh",negativ,stress_ueberforderung,True,jede ruum eimal blockiert kei luft meh
 "s gfühl, de tag hätt nur vier stunde",negativ,stress_ueberforderung,True,s gfuehl de tag haett nur vier stunde
 grad chli am kämpfe mit de menge ufgabe,negativ,stress_ueberforderung,True,grad chli am kaempfe mit de menge ufgabe
-"hektik pur, nöd mol zit fürs durchatme",negativ,stress_ueberforderung,True,hektik pur ned mol zit fuers durchatme
+"hektik pur, nöd mol zit fürs durchatme",negativ,stress_ueberforderung,True,hektik pur noed mol zit fuers durchatme
 de druck isch grad ständig präsent,negativ,stress_ueberforderung,True,de druck isch grad staendig praesent
 "alles lauft paralell, nüt isch richtig abgeschlossen",negativ,stress_ueberforderung,True,alles lauft paralell nuet isch richtig abgeschlossen
 d luft isch voll vo unausgsprochene spannige im momänt,negativ,konflikt_spannungen,True,d luft isch voll vo unausgsprochene spannige im momaent
 d stimmig isch grad mega angespannt zwüsche allne,negativ,konflikt_spannungen,True,d stimmig isch grad mega angespannt zwuesche allne
 jede diskussion driftet schnell i d falschi richtung,negativ,konflikt_spannungen,True,jede diskussion driftet schnell i d falschi richtung
-d kommunikation funktioniert imfall gar nöd,negativ,konflikt_spannungen,True,d kommunikation funktioniert im fall gar ned
-"strohung i de luft, öppis passt nöd",negativ,konflikt_spannungen,True,strohung i de luft oeppis passt ned
+d kommunikation funktioniert imfall gar nöd,negativ,konflikt_spannungen,True,d kommunikation funktioniert im fall gar noed
+"strohung i de luft, öppis passt nöd",negativ,konflikt_spannungen,True,strohung i de luft oeppis passt noed
 mini wört werde ständig falsch verstande,negativ,konflikt_spannungen,True,mini woert werde staendig falsch verstande
 d situation eskaliert immer wieder halb,negativ,konflikt_spannungen,True,d situation eskaliert immer wieder halb
 "es brennt uf de linie, kei ruhe im gspröch",negativ,konflikt_spannungen,True,es brennt uf de linie kei ruhe im gsproech
@@ -102,31 +102,31 @@ d spannig macht jede kommunikation extrem müehsam,negativ,konflikt_spannungen,T
 "grad chli am hinterfrage, wie stabil mini entscheidige sind",negativ,selbstzweifel_unsicherheit,True,grad chli am hinterfrage wie stabil mini entscheidige sind
 "grad chli unsicher, wie guet das cho wird",negativ,selbstzweifel_unsicherheit,True,grad chli unsicher wie guet das cho wird
 es fehlt e bitz am vertroue i mini entscheide,negativ,selbstzweifel_unsicherheit,True,es fehlt e bitz am vertroue i mini entscheide
-"nöd ganz sicher, öb dä weg der richtig isch",negativ,selbstzweifel_unsicherheit,True,ned ganz sicher oeb dae weg der richtig isch
+"nöd ganz sicher, öb dä weg der richtig isch",negativ,selbstzweifel_unsicherheit,True,noed ganz sicher oeb dae weg der richtig isch
 e paar sache fühled sich unklar a,negativ,selbstzweifel_unsicherheit,True,e paar sache fuehled sich unklar a
 d orientierig isch grad chli wacklig,negativ,selbstzweifel_unsicherheit,True,d orientierig isch grad chli wacklig
-eifach nöd hundertpro überzeugt vo mim plan,negativ,selbstzweifel_unsicherheit,True,eifach ned hundertpro ueberzeugt vo mim plan
+eifach nöd hundertpro überzeugt vo mim plan,negativ,selbstzweifel_unsicherheit,True,eifach noed hundertpro ueberzeugt vo mim plan
 e gewisse unsicherheit schwingt grad überall mit,negativ,selbstzweifel_unsicherheit,True,e gewisse unsicherheit schwingt grad ueberall mit
-"s gfühl, nöd ganz im bild z sii",negativ,selbstzweifel_unsicherheit,True,s gfuehl ned ganz im bild z sii
+"s gfühl, nöd ganz im bild z sii",negativ,selbstzweifel_unsicherheit,True,s gfuehl noed ganz im bild z sii
 mangsi situatione mache mi chli nervös,negativ,selbstzweifel_unsicherheit,True,mangsi situatione mache mi chli nervoes
-e paar dinge sind mir grad nöd ganz geheuer,negativ,selbstzweifel_unsicherheit,True,e paar dinge sind mir grad ned ganz geheuer
+e paar dinge sind mir grad nöd ganz geheuer,negativ,selbstzweifel_unsicherheit,True,e paar dinge sind mir grad noed ganz geheuer
 bei einigem fehlt mer dä letzte schub sicherheit,negativ,selbstzweifel_unsicherheit,True,bei einigem fehlt mer dae letzte schub sicherheit
 "chli am zweifle, öb ich s richtig ufpasse",negativ,selbstzweifel_unsicherheit,True,chli am zweifle oeb ich s richtig ufpasse
 "es isch schwierig, klar z gseh, was stimmt",negativ,selbstzweifel_unsicherheit,True,es isch schwierig klar z gseh was stimmt
 wankligi entscheidige sind grad überall,negativ,selbstzweifel_unsicherheit,True,wankligi entscheidige sind grad ueberall
 unentschlossenheit macht s langsam müehsam,negativ,selbstzweifel_unsicherheit,True,unentschlossenheit macht s langsam mueehsam
-"nöd sicher, weli option langfristig guet isch",negativ,selbstzweifel_unsicherheit,True,ned sicher weli option langfristig guet isch
+"nöd sicher, weli option langfristig guet isch",negativ,selbstzweifel_unsicherheit,True,noed sicher weli option langfristig guet isch
 e paar fragzeiche schwirred scho länger ume,negativ,selbstzweifel_unsicherheit,True,e paar fragzeiche schwirred scho laenger ume
 chli überfordert mit allne möglichkeite,negativ,selbstzweifel_unsicherheit,True,chli ueberfordert mit allne moeglichkeite
 grad am ringe mit prioritätä,negativ,selbstzweifel_unsicherheit,True,grad am ringe mit prioritaetae
 e unsichers gfühl begleitet mi i vilere sache,negativ,selbstzweifel_unsicherheit,True,e unsichers gfuehl begleitet mi i vilere sache
-"weiss nöd so recht, öb ich dä input korrekt verstande ha",negativ,selbstzweifel_unsicherheit,True,weiss ned so recht oeb ich dae input korrekt verstande ha
+"weiss nöd so recht, öb ich dä input korrekt verstande ha",negativ,selbstzweifel_unsicherheit,True,weiss noed so recht oeb ich dae input korrekt verstande ha
 "e paar unklari punkte mache s schwer, vorwärts z mache",negativ,selbstzweifel_unsicherheit,True,e paar unklari punkte mache s schwer vorwaerts z mache
-d innere stabilität isch grad nöd so verankert,negativ,selbstzweifel_unsicherheit,True,d innere stabilitaet isch grad ned so verankert
+d innere stabilität isch grad nöd so verankert,negativ,selbstzweifel_unsicherheit,True,d innere stabilitaet isch grad noed so verankert
 d gedanke springet ume und mache alles unruhig,negativ,selbstzweifel_unsicherheit,True,d gedanke springet ume und mache alles unruhig
 mues vil abwäge und das macht mi unentschlosse,negativ,selbstzweifel_unsicherheit,True,mues vil abwaege und das macht mi unentschlosse
 "chli verunsichert, wie ander das würded mache",negativ,selbstzweifel_unsicherheit,True,chli verunsichert wie ander das wuerded mache
-"nöd sicher, öb mini einschätzige stimmend",negativ,selbstzweifel_unsicherheit,True,ned sicher oeb mini einschaetzige stimmend
+"nöd sicher, öb mini einschätzige stimmend",negativ,selbstzweifel_unsicherheit,True,noed sicher oeb mini einschaetzige stimmend
 grad bitz am kämpfe mit d confident,negativ,selbstzweifel_unsicherheit,True,grad bitz am kaempfe mit d confident
 unsicheri situatione sind nid so mini stärchi,negativ,selbstzweifel_unsicherheit,True,unsicheri situatione sind nid so mini staerchi
 e paar mal abglenkt worde und d richtung verlore,negativ,selbstzweifel_unsicherheit,True,e paar mal abglenkt worde und d richtung verlore
@@ -135,18 +135,18 @@ d unklarheit zieht sich durch mehri thema,negativ,selbstzweifel_unsicherheit,Tru
 "fällt grad schwer, s richtige gfühl z packe",negativ,selbstzweifel_unsicherheit,True,faellt grad schwer s richtige gfuehl z packe
 bin chli am hin und her überlege,negativ,selbstzweifel_unsicherheit,True,bi chli am hin und her ueberlege
 "grad am suche nachere lösig, wo sich richtig aafühlt",negativ,selbstzweifel_unsicherheit,True,grad am suche nachere loesig wo sich richtig aafuehlt
-"nöd sicher, öb ich genug input ha zum entscheide",negativ,selbstzweifel_unsicherheit,True,ned sicher oeb ich genug input ha zum entscheide
+"nöd sicher, öb ich genug input ha zum entscheide",negativ,selbstzweifel_unsicherheit,True,noed sicher oeb ich genug input ha zum entscheide
 vieles wirkt grad chli diffus,negativ,selbstzweifel_unsicherheit,True,vieles wirkt grad chli diffus
 e grundlege sicherheit fehlt im moment,negativ,selbstzweifel_unsicherheit,True,e grundlege sicherheit fehlt im moment
-find nöd ganz de faden i dem thema,negativ,selbstzweifel_unsicherheit,True,find ned ganz de faden i dem thema
-mini gedanke lauft nöd ganz rund grad,negativ,selbstzweifel_unsicherheit,True,mini gedanke lauft ned ganz rund grad
+find nöd ganz de faden i dem thema,negativ,selbstzweifel_unsicherheit,True,find noed ganz de faden i dem thema
+mini gedanke lauft nöd ganz rund grad,negativ,selbstzweifel_unsicherheit,True,mini gedanke lauft noed ganz rund grad
 "mues no chli vergleiche, wäge und neu denke",negativ,selbstzweifel_unsicherheit,True,mues no chli vergleiche waege und neu denke
 "momentan chli i der luft, weder do no där",negativ,selbstzweifel_unsicherheit,True,momentan chli i der luft weder do no daer
 e par detail irritiered mi und mache mich unsicher,negativ,selbstzweifel_unsicherheit,True,e par detail irritiered mi und mache mich unsicher
 unentschlossen über d nächschte schritt,negativ,selbstzweifel_unsicherheit,True,unentschlossen ueber d naechschte schritt
 uf der suche nach klarere strukture im kopf,negativ,selbstzweifel_unsicherheit,True,uf der suche nach klarere strukture im kopf
 "chli vorsichtig unterwegs, will nüt überstürze",negativ,selbstzweifel_unsicherheit,True,chli vorsichtig unterwegs will nuet ueberstuerze
-d innere stimme isch grad nöd ganz eindeutig,negativ,selbstzweifel_unsicherheit,True,d innere stimme isch grad ned ganz eindeutig
+d innere stimme isch grad nöd ganz eindeutig,negativ,selbstzweifel_unsicherheit,True,d innere stimme isch grad noed ganz eindeutig
 "e chli unsicher, weli richtung denn stimmt",negativ,selbstzweifel_unsicherheit,True,e chli unsicher weli richtung denn stimmt
 "es bruucht no es paar gedanke meh, bis ich sicher bi",negativ,selbstzweifel_unsicherheit,True,es bruucht no es paar gedanke meh bis ich sicher bi
 d stille ume ane wirkt grad eher schwer als entspannt,negativ,traurigkeit_einsamkeit,True,d stille ume ane wirkt grad eher schwer als entspannt
@@ -160,7 +160,7 @@ d energie für soziale sache isch recht nidrig,negativ,traurigkeit_einsamkeit,Tr
 verbindig zu andere fühlt sich grad schwach a,negativ,traurigkeit_einsamkeit,True,verbindig zu andere fuehlt sich grad schwach a
 chli im eigenene kopf ufgfange,negativ,traurigkeit_einsamkeit,True,chli im eigenene kopf ufgfange
 wärmi und nächi fehlen im moment es bitz,negativ,traurigkeit_einsamkeit,True,waermi und naechi fehlen im moment es bitz
-d stimmig im innerne isch nöd ganz stabil,negativ,traurigkeit_einsamkeit,True,d stimmig im innerne isch ned ganz stabil
+d stimmig im innerne isch nöd ganz stabil,negativ,traurigkeit_einsamkeit,True,d stimmig im innerne isch noed ganz stabil
 "längeren momänt vo stille, wo chli drückt",negativ,traurigkeit_einsamkeit,True,laengeren momaent vo stille wo chli drueckt
 d tage ziehed sich und fühled sich lang a,negativ,traurigkeit_einsamkeit,True,d tage ziehed sich und fuehled sich lang a
 wenig austausch im alltag grad,negativ,traurigkeit_einsamkeit,True,wenig austausch im alltag grad
@@ -170,7 +170,7 @@ fühlt sich alles chli distanziert und unnahbar a,negativ,traurigkeit_einsamkeit
 s bedürfnis nach nächi isch imfall grad gross,negativ,traurigkeit_einsamkeit,True,s beduerfnis nach naechi isch im fall grad gross
 "umgebig isch voll, aber d nächi fehlt trotzdem",negativ,traurigkeit_einsamkeit,True,umgebig isch voll aber d naechi fehlt trotzdem
 "viel im inneren am laufe, aber wenig nach usse",negativ,traurigkeit_einsamkeit,True,viel im inneren am laufe aber wenig nach usse
-"d momänt sind ruhig, aber nöd im positive sinn",negativ,traurigkeit_einsamkeit,True,d momaent sind ruhig aber ned im positive sinn
+"d momänt sind ruhig, aber nöd im positive sinn",negativ,traurigkeit_einsamkeit,True,d momaent sind ruhig aber noed im positive sinn
 "s gfühl, es fehle chli verbindigspunkte",negativ,traurigkeit_einsamkeit,True,s gfuehl es fehle chli verbindigspunkte
 s soziale umfeld wirkt grad chli wacklig,negativ,traurigkeit_einsamkeit,True,s soziale umfeld wirkt grad chli wacklig
 wenig resonanz im gspröch mit andere,negativ,traurigkeit_einsamkeit,True,wenig resonanz im gsproech mit andere
@@ -179,14 +179,14 @@ d stimmig isch eher melancholisch,negativ,traurigkeit_einsamkeit,True,d stimmig 
 dr alltag fühlt sich distanziert a,negativ,traurigkeit_einsamkeit,True,dr alltag fuehlt sich distanziert a
 gedanke kreisle ume statt dass sie ruhe finde,negativ,traurigkeit_einsamkeit,True,gedanke kreisle ume statt dass sie ruhe finde
 chli losglöst vo situatione rundume,negativ,traurigkeit_einsamkeit,True,chli losgloest vo situatione rundume
-d nächi zu lüt chunnt momentan nöd so rächt a,negativ,traurigkeit_einsamkeit,True,d naechi zu luet chunnt momentan ned so raecht a
+d nächi zu lüt chunnt momentan nöd so rächt a,negativ,traurigkeit_einsamkeit,True,d naechi zu luet chunnt momentan noed so raecht a
 "viel stilli momänt, wo chli druck ufbaut",negativ,traurigkeit_einsamkeit,True,viel stilli momaent wo chli druck ufbaut
 "situationen, wo normalerweise freud brächend, wirked matt",negativ,traurigkeit_einsamkeit,True,situationen wo normalerweise freud braechend wirked matt
-"kontakt isch da, aber er vertieft sich nöd",negativ,traurigkeit_einsamkeit,True,kontakt isch da aber er vertieft sich ned
+"kontakt isch da, aber er vertieft sich nöd",negativ,traurigkeit_einsamkeit,True,kontakt isch da aber er vertieft sich noed
 d emotion sind chli schwerfällig,negativ,traurigkeit_einsamkeit,True,d emotion sind chli schwerfaellig
 e gewisse bedrückti atmosphäre begleitet vil momänt,negativ,traurigkeit_einsamkeit,True,e gewisse bedrueckti atmosphaere begleitet vil momaent
 d welt wirkt grad chli weiter weg als normal,negativ,traurigkeit_einsamkeit,True,d welt wirkt grad chli weiter weg als normal
-"verbindig wär schön, aber sie ergibt sich nöd so",negativ,traurigkeit_einsamkeit,True,verbindig waer schoen aber sie ergibt sich ned so
+"verbindig wär schön, aber sie ergibt sich nöd so",negativ,traurigkeit_einsamkeit,True,verbindig waer schoen aber sie ergibt sich noed so
 "öfters momänt, wo es chli ziehed im innerne",negativ,traurigkeit_einsamkeit,True,oefters momaent wo es chli ziehed im innerne
 wärmi fählt im alltag es deutliches stück,negativ,traurigkeit_einsamkeit,True,waermi faehlt im alltag es deutliches stueck
 soziale sache überfordered momentan chli,negativ,traurigkeit_einsamkeit,True,soziale sache ueberfordered momentan chli
@@ -201,13 +201,13 @@ d verbindige wirked chli dünn und fragil,negativ,traurigkeit_einsamkeit,True,d 
 wärmi und es offes ohr wären grad sehr wertvoll,negativ,traurigkeit_einsamkeit,True,waermi und es offes ohr waeren grad sehr wertvoll
 "wär beruhigend, e klare rückmeldung vom arzt z ha",negativ,gesundheit_sorgen,True,waer beruhigend e klare rueckmeldung vom arzt z ha
 "grad chli unsicher, was mit em körper los isch",negativ,gesundheit_sorgen,True,grad chli unsicher was mit em koerper los isch
-symptome sind nöd ganz eindeutig im momänt,negativ,gesundheit_sorgen,True,symptome sind ned ganz eindeutig im momaent
+symptome sind nöd ganz eindeutig im momänt,negativ,gesundheit_sorgen,True,symptome sind noed ganz eindeutig im momaent
 e paar körperliche sache irritiered chli,negativ,gesundheit_sorgen,True,e paar koerperliche sache irritiered chli
 d energiestufe isch heut eher nidrig,negativ,gesundheit_sorgen,True,d energiestufe isch heut eher nidrig
 wiederkehrendi unruhi im körper macht chli stutzig,negativ,gesundheit_sorgen,True,wiederkehrendi unruhi im koerper macht chli stutzig
-"nöd sicher, öb es vom stress oder öppis anders chunnt",negativ,gesundheit_sorgen,True,ned sicher oeb es vom stress oder oeppis anders chunnt
-"e chli druck im chopf, nöd ganz angenehm",negativ,gesundheit_sorgen,True,e chli druck im chopf ned ganz angenehm
-d konzentration sind grad nöd so stabil,negativ,gesundheit_sorgen,True,d konzentration sind grad ned so stabil
+"nöd sicher, öb es vom stress oder öppis anders chunnt",negativ,gesundheit_sorgen,True,noed sicher oeb es vom stress oder oeppis anders chunnt
+"e chli druck im chopf, nöd ganz angenehm",negativ,gesundheit_sorgen,True,e chli druck im chopf noed ganz angenehm
+d konzentration sind grad nöd so stabil,negativ,gesundheit_sorgen,True,d konzentration sind grad noed so stabil
 "uf und abe i de körperstimmig, recht ungewöhlich",negativ,gesundheit_sorgen,True,uf und abe i de koerperstimmig recht ungewoehlich
 d müdigkeit hält länger a als normal,negativ,gesundheit_sorgen,True,d muedigkeit haelt laenger a als normal
 e paar kleini symptome mache mich aufmerksam,negativ,gesundheit_sorgen,True,e paar kleini symptome mache mich aufmerksam
@@ -215,45 +215,45 @@ körperlich chli wacklig unterwegs,negativ,gesundheit_sorgen,True,koerperlich ch
 d körpersignale sind grad chli schwer z deute,negativ,gesundheit_sorgen,True,d koerpersignale sind grad chli schwer z deute
 schlaf isch nid so ruig gsi wie sonst,negativ,gesundheit_sorgen,True,schlaf isch nid so ruig gsi wie sonst
 d körperreaktione sind unerwartet chli intensiv,negativ,gesundheit_sorgen,True,d koerperreaktione sind unerwartet chli intensiv
-"nöd ganz sicher, wie ernst das isch",negativ,gesundheit_sorgen,True,ned ganz sicher wie ernst das isch
+"nöd ganz sicher, wie ernst das isch",negativ,gesundheit_sorgen,True,noed ganz sicher wie ernst das isch
 "grad chli überwältigt vo allem, au körperlich",negativ,gesundheit_sorgen,True,grad chli ueberwaeltigt vo allem au koerperlich
 d nervosität spiegelt sich es bitz im körper,negativ,gesundheit_sorgen,True,d nervositaet spiegelt sich es bitz im koerper
-öppis fühlt sich nöd ganz im gleichgwicht a,negativ,gesundheit_sorgen,True,oeppis fuehlt sich ned ganz im gleichgwicht a
+öppis fühlt sich nöd ganz im gleichgwicht a,negativ,gesundheit_sorgen,True,oeppis fuehlt sich noed ganz im gleichgwicht a
 d müdigkeit chunnt immer wieder in wellene,negativ,gesundheit_sorgen,True,d muedigkeit chunnt immer wieder in wellene
 e paar ungewöhnlichi verspannige sind debi,negativ,gesundheit_sorgen,True,e paar ungewoehnlichi verspannige sind debi
 körperlich chli weniger robust als normal,negativ,gesundheit_sorgen,True,koerperlich chli weniger robust als normal
-"e sachte schwere im körper, nöd ganz klar woher",negativ,gesundheit_sorgen,True,e sachte schwere im koerper ned ganz klar woher
+"e sachte schwere im körper, nöd ganz klar woher",negativ,gesundheit_sorgen,True,e sachte schwere im koerper noed ganz klar woher
 d atmig isch chli flach im momänt,negativ,gesundheit_sorgen,True,d atmig isch chli flach im momaent
 "d innere ruhe fehlt, spürbar au körperlich",negativ,gesundheit_sorgen,True,d innere ruhe fehlt spuerbar au koerperlich
 e gewisse sensibiliät i de körperregione,negativ,gesundheit_sorgen,True,e gewisse sensibiliaet i de koerperregione
 e paar komische reize chömed und gange wieder,negativ,gesundheit_sorgen,True,e paar komische reize choemed und gange wieder
 d körperwahrnehmig isch grad eher unstet,negativ,gesundheit_sorgen,True,d koerperwahrnehmig isch grad eher unstet
 schwankende energiestufe irritiert chli,negativ,gesundheit_sorgen,True,schwankende energiestufe irritiert chli
-"nöd ganz sicher, öb das nur temporär isch",negativ,gesundheit_sorgen,True,ned ganz sicher oeb das nur temporaer isch
-"körperlich nöd im topform, aber schwer z sage warum",negativ,gesundheit_sorgen,True,koerperlich ned im topform aber schwer z sage warum
+"nöd ganz sicher, öb das nur temporär isch",negativ,gesundheit_sorgen,True,noed ganz sicher oeb das nur temporaer isch
+"körperlich nöd im topform, aber schwer z sage warum",negativ,gesundheit_sorgen,True,koerperlich noed im topform aber schwer z sage warum
 d müdigkeit macht s alltägliche chli müehsam,negativ,gesundheit_sorgen,True,d muedigkeit macht s alltaegliche chli mueehsam
 e ungewöhlichi unruhe i de glider,negativ,gesundheit_sorgen,True,e ungewoehlichi unruhe i de glider
 symptome chömed ohni klare erklärig,negativ,gesundheit_sorgen,True,symptome choemed ohni klare erklaerig
-"d wahrnehmig isch chli verändret, nöd unangenehm aber ungewöhnlich",negativ,gesundheit_sorgen,True,d wahrnehmig isch chli veraendret ned unangenehm aber ungewoehnlich
+"d wahrnehmig isch chli verändret, nöd unangenehm aber ungewöhnlich",negativ,gesundheit_sorgen,True,d wahrnehmig isch chli veraendret noed unangenehm aber ungewoehnlich
 "wär schön, meh stabilität im körper z ha",negativ,gesundheit_sorgen,True,waer schoen meh stabilitaet im koerper z ha
-"mer spürt, dass öppis grad nöd ganz rund lauft",negativ,gesundheit_sorgen,True,mer spuert dass oeppis grad ned ganz rund lauft
-d körperreaktion passt nöd zu de erwartige,negativ,gesundheit_sorgen,True,d koerperreaktion passt ned zu de erwartige
+"mer spürt, dass öppis grad nöd ganz rund lauft",negativ,gesundheit_sorgen,True,mer spuert dass oeppis grad noed ganz rund lauft
+d körperreaktion passt nöd zu de erwartige,negativ,gesundheit_sorgen,True,d koerperreaktion passt noed zu de erwartige
 d spannig i de schulter löst sich kaum,negativ,gesundheit_sorgen,True,d spannig i de schulter loest sich kaum
 "grad chli vorsichtig unterwegs, körperlich nid ganz sicher",negativ,gesundheit_sorgen,True,grad chli vorsichtig unterwegs koerperlich nid ganz sicher
 wärmi und ruhi fehlen imfall chli i de glider,negativ,gesundheit_sorgen,True,waermi und ruhi fehlen im fall chli i de glider
 "e mini destabilität im körper, schwer z beschriebe",negativ,gesundheit_sorgen,True,e mini destabilitaet im koerper schwer z beschriebe
-d körperstimmig isch nöd konstant,negativ,gesundheit_sorgen,True,d koerperstimmig isch ned konstant
+d körperstimmig isch nöd konstant,negativ,gesundheit_sorgen,True,d koerperstimmig isch noed konstant
 "öppis drückt leicht, aber ohne klare ursach",negativ,gesundheit_sorgen,True,oeppis drueckt leicht aber ohne klare ursach
 e ungewissheit über d körperläch verlauf,negativ,gesundheit_sorgen,True,e ungewissheit ueber d koerperlaech verlauf
 e paar ungewohnte signale mache mer gedanke,negativ,gesundheit_sorgen,True,e paar ungewohnte signale mache mer gedanke
-"nöd dramatisch, aber definitiv spürbar anders als sonst",negativ,gesundheit_sorgen,True,ned dramatisch aber definitiv spuerbar anders als sonst
+"nöd dramatisch, aber definitiv spürbar anders als sonst",negativ,gesundheit_sorgen,True,noed dramatisch aber definitiv spuerbar anders als sonst
 d körper bruucht glaub grad es bitz meh achtig,negativ,gesundheit_sorgen,True,d koerper bruucht glaub grad es bitz meh achtig
 "insgeheim wärs beruhigend, meh klarheit über d symptome z ha",negativ,gesundheit_sorgen,True,insgeheim waers beruhigend meh klarheit ueber d symptome z ha
-"uff, gar nöd guet",negativ,kurzreaktion_negativ,True,uff gar ned guet
+"uff, gar nöd guet",negativ,kurzreaktion_negativ,True,uff gar noed guet
 totale schwachsinn,negativ,kurzreaktion_negativ,True,totale schwachsinn
 so en bullshit,negativ,kurzreaktion_negativ,True,so en bullshit
 vo mir us: nope,negativ,kurzreaktion_negativ,True,vo mir us nope
-gar nöd guet,negativ,kurzreaktion_negativ,True,gar ned guet
+gar nöd guet,negativ,kurzreaktion_negativ,True,gar noed guet
 huere müehsam,negativ,kurzreaktion_negativ,True,huere mueehsam
 einfach nur nervig,negativ,kurzreaktion_negativ,True,einfach nur nervig
 komplett schwach,negativ,kurzreaktion_negativ,True,komplett schwach
@@ -261,42 +261,42 @@ kannst vergässe,negativ,kurzreaktion_negativ,True,kannst vergaesse
 voll für nüt,negativ,kurzreaktion_negativ,True,voll fuer nuet
 so ein seich,negativ,kurzreaktion_negativ,True,so ein seich
 absolut unnötig,negativ,kurzreaktion_negativ,True,absolut unnoetig
-das isch nöd es ding,negativ,kurzreaktion_negativ,True,das isch ned es ding
+das isch nöd es ding,negativ,kurzreaktion_negativ,True,das isch noed es ding
 mega enttäuschend,negativ,kurzreaktion_negativ,True,mega enttaeuschend
 null begeisterig,negativ,kurzreaktion_negativ,True,null begeisterig
-definitiv nöd fan,negativ,kurzreaktion_negativ,True,definitiv ned fan
+definitiv nöd fan,negativ,kurzreaktion_negativ,True,definitiv noed fan
 finds richtig müesam,negativ,kurzreaktion_negativ,True,finds richtig mueesam
 wirklich nix speziells,negativ,kurzreaktion_negativ,True,wirklich nix speziells
 alles anders als guet,negativ,kurzreaktion_negativ,True,alles anders als guet
-so nöd optimal,negativ,kurzreaktion_negativ,True,so ned optimal
+so nöd optimal,negativ,kurzreaktion_negativ,True,so noed optimal
 ehrlich gseit: meh,negativ,kurzreaktion_negativ,True,ehrlich gseit meh
 chli zum abgwöhne,negativ,kurzreaktion_negativ,True,chli zum abgwoehne
 es bitz grusig ehrlich,negativ,kurzreaktion_negativ,True,es bitz grusig ehrlich
 vo mir: daumen abe,negativ,kurzreaktion_negativ,True,vo mir daumen abe
-passt mir gar nöd,negativ,kurzreaktion_negativ,True,passt mir gar ned
-würdi so nöd empfehle,negativ,kurzreaktion_negativ,True,wuerdi so ned empfehle
+passt mir gar nöd,negativ,kurzreaktion_negativ,True,passt mir gar noed
+würdi so nöd empfehle,negativ,kurzreaktion_negativ,True,wuerdi so noed empfehle
 fühlt sich falsch a,negativ,kurzreaktion_negativ,True,fuehlt sich falsch a
 eifach müehsam,negativ,kurzreaktion_negativ,True,eifach mueehsam
-wüki nöd überzeugend,negativ,kurzreaktion_negativ,True,wueki ned ueberzeugend
+wüki nöd überzeugend,negativ,kurzreaktion_negativ,True,wueki noed ueberzeugend
 unnoetiger stress,negativ,kurzreaktion_negativ,True,unnoetiger stress
 ke vibe,negativ,kurzreaktion_negativ,True,ke vibe
 gar kei lust druf,negativ,kurzreaktion_negativ,True,gar kei lust druf
-nöd mini welt,negativ,kurzreaktion_negativ,True,ned mini welt
+nöd mini welt,negativ,kurzreaktion_negativ,True,noed mini welt
 macht null freud,negativ,kurzreaktion_negativ,True,macht null freud
 finds recht schwach,negativ,kurzreaktion_negativ,True,finds recht schwach
 es bitz peinlich,negativ,kurzreaktion_negativ,True,es bitz peinlich
-nöd so nice,negativ,kurzreaktion_negativ,True,ned so nice
+nöd so nice,negativ,kurzreaktion_negativ,True,noed so nice
 sehr meh halt,negativ,kurzreaktion_negativ,True,sehr meh halt
 wär schöner anders,negativ,kurzreaktion_negativ,True,waer schoener anders
 ziemlech abstossend,negativ,kurzreaktion_negativ,True,ziemlech abstossend
 chli toxisch das,negativ,kurzreaktion_negativ,True,chli toxisch das
-mag das gar nöd,negativ,kurzreaktion_negativ,True,mag das gar ned
+mag das gar nöd,negativ,kurzreaktion_negativ,True,mag das gar noed
 ke bock uf das,negativ,kurzreaktion_negativ,True,ke bock uf das
 komplett overkill,negativ,kurzreaktion_negativ,True,komplett overkill
 fühlt sich komisch a,negativ,kurzreaktion_negativ,True,fuehlt sich komisch a
-nöd es highlight,negativ,kurzreaktion_negativ,True,ned es highlight
+nöd es highlight,negativ,kurzreaktion_negativ,True,noed es highlight
 imfall eher flop,negativ,kurzreaktion_negativ,True,im fall eher flop
-gar nöd meins,negativ,kurzreaktion_negativ,True,gar ned meins
+gar nöd meins,negativ,kurzreaktion_negativ,True,gar noed meins
 wär gern ufgheit blibe,negativ,kurzreaktion_negativ,True,waer gern ufgheit blibe
 voll daneben,negativ,kurzreaktion_negativ,True,voll daneben
 "bin imfall sehr dankbar für das, was du da gmacht hesch",positiv,dankbarkeit,True,bi im fall sehr dankbar fuer das was du da gmacht hesch
@@ -306,7 +306,7 @@ voll daneben,negativ,kurzreaktion_negativ,True,voll daneben
 "dini unterstützig bedeutet würkli vil, danke dir",positiv,dankbarkeit,True,dini unterstuetzig bedeutet wuerkli vil danke dir
 "es het mi richtig berührt, merci fürs drandänke",positiv,dankbarkeit,True,es het mi richtig beruehrt merci fuers drandaenke
 "eifach mal en grosses danke, het mega guet ta",positiv,dankbarkeit,True,eifach mal en grosses danke het mega guet ta
-"s isch nöd selbstverständlich, drum merci",positiv,dankbarkeit,True,s isch ned selbstverstaendlich drum merci
+"s isch nöd selbstverständlich, drum merci",positiv,dankbarkeit,True,s isch noed selbstverstaendlich drum merci
 "huere schön gsi, merci für die müeh",positiv,dankbarkeit,True,huere schoen gsi merci fuer die mueeh
 "dini geduld isch gold wert, danke dir vielmol",positiv,dankbarkeit,True,dini geduld isch gold wert danke dir vielmol
 "es chli merci, aber vo härze",positiv,dankbarkeit,True,es chli merci aber vo haerze
@@ -335,7 +335,7 @@ danke für dini spontane hilf – mega,positiv,dankbarkeit,True,danke fuer dini 
 "merci, dass du dir so vill zit gnoh hesch",positiv,dankbarkeit,True,merci dass du dir so vill zit gnoh hesch
 so feinfühlig reagiert – merci viu mau,positiv,dankbarkeit,True,so feinfuehlig reagiert merci viu mau
 "dini wort händ guet ta, danke",positiv,dankbarkeit,True,dini wort haend guet ta danke
-"merci, dass du nöd nur zuelose, sondern verstandsch",positiv,dankbarkeit,True,merci dass du ned nur zuelose sondern verstandsch
+"merci, dass du nöd nur zuelose, sondern verstandsch",positiv,dankbarkeit,True,merci dass du noed nur zuelose sondern verstandsch
 "es het würkli den unterschied gmacht, merci",positiv,dankbarkeit,True,es het wuerkli den unterschied gmacht merci
 "de support vo dir isch mega wertvoll, danke",positiv,dankbarkeit,True,de support vo dir isch mega wertvoll danke
 "het alles viel einfacher gmacht, merci!",positiv,dankbarkeit,True,het alles viel einfacher gmacht merci
@@ -386,7 +386,7 @@ en wunderschöni ruigi freud in mir,positiv,freude_gute_laune,True,en wunderscho
 eifach glacht über öppis chliins – tut guet,positiv,freude_gute_laune,True,eifach glacht ueber oeppis chliins tut guet
 "so en lässige moment hüt, ganz unspektakulär",positiv,freude_gute_laune,True,so en laessige moment huet ganz unspektakulaer
 en richtig wohltuende atmosphär gsi,positiv,freude_gute_laune,True,en richtig wohltuende atmosphaer gsi
-"hüt stimmt s vibe, nöd erklärbar aber schön",positiv,freude_gute_laune,True,huet stimmt s vibe ned erklaerbar aber schoen
+"hüt stimmt s vibe, nöd erklärbar aber schön",positiv,freude_gute_laune,True,huet stimmt s vibe noed erklaerbar aber schoen
 die situation het so positiv überrascht,positiv,freude_gute_laune,True,die situation het so positiv ueberrascht
 chlii glücksblitz grad – mega schön,positiv,freude_gute_laune,True,chlii gluecksblitz grad mega schoen
 "alles chli einfacher vorgcho hüt, das macht freud",positiv,freude_gute_laune,True,alles chli einfacher vorgcho huet das macht freud
@@ -472,7 +472,7 @@ d sanfti art vom gspröch hüt het mega gholfe,positiv,verbundenheit_naehe,True,
 so viel nächi ganz ohni druck – wunderschön,positiv,verbundenheit_naehe,True,so viel naechi ganz ohni druck wunderschoen
 "het sich wie mini mensche gfühlt, wo da sind",positiv,verbundenheit_naehe,True,het sich wie mini mensche gfuehlt wo da sind
 de moment hüt het nächi und ruhe brocht,positiv,verbundenheit_naehe,True,de moment huet het naechi und ruhe brocht
-"het guet ta, dass mer nöd müend spiele oder so",positiv,verbundenheit_naehe,True,het guet ta dass mer ned mueend spiele oder so
+"het guet ta, dass mer nöd müend spiele oder so",positiv,verbundenheit_naehe,True,het guet ta dass mer noed mueend spiele oder so
 d verbindig isch ganz unforced entsta,positiv,verbundenheit_naehe,True,d verbindig isch ganz unforced entsta
 s isch eifach gmüetlich und vertraut gsi,positiv,verbundenheit_naehe,True,s isch eifach gmueetlich und vertraut gsi
 "so en wärmi vibe hüt, het mi überraschet",positiv,verbundenheit_naehe,True,so en waermi vibe huet het mi ueberraschet
@@ -480,12 +480,12 @@ d nächi het würklich getröschte,positiv,verbundenheit_naehe,True,d naechi het
 het sich wie ächte halt aagfühlt,positiv,verbundenheit_naehe,True,het sich wie aechte halt aagfuehlt
 "so guet gsi, dass mer sich öppis persönlichs hät chönne teile",positiv,verbundenheit_naehe,True,so guet gsi dass mer sich oeppis persoenlichs haet choenne teile
 d ruigi energie zäme het voll gholfe,positiv,verbundenheit_naehe,True,d ruigi energie zaeme het voll gholfe
-het sich nöd oberflächlich oder forced aagfühlt,positiv,verbundenheit_naehe,True,het sich ned oberflaechlich oder forced aagfuehlt
+het sich nöd oberflächlich oder forced aagfühlt,positiv,verbundenheit_naehe,True,het sich noed oberflaechlich oder forced aagfuehlt
 d gmeinsam Ziit het de kopf sehr beruhigt,positiv,verbundenheit_naehe,True,d gmeinsam ziit het de kopf sehr beruhigt
 "en vibe, wo zeigt, dass s vertroue stimmt",positiv,verbundenheit_naehe,True,en vibe wo zeigt dass s vertroue stimmt
 het sich so echti freundschaft aagfühlt,positiv,verbundenheit_naehe,True,het sich so echti freundschaft aagfuehlt
 mini welt het sich grad chli grösser aagfühlt,positiv,verbundenheit_naehe,True,mini welt het sich grad chli groesser aagfuehlt
-"wärmi momänt, wo nöd gross erklärt müend wärde",positiv,verbundenheit_naehe,True,waermi momaent wo ned gross erklaert mueend waerde
+"wärmi momänt, wo nöd gross erklärt müend wärde",positiv,verbundenheit_naehe,True,waermi momaent wo noed gross erklaert mueend waerde
 "het guet ta, wie ehrlich alles gsi isch",positiv,verbundenheit_naehe,True,het guet ta wie ehrlich alles gsi isch
 so en wertvolli verbindig – het richtig glänzt,positiv,verbundenheit_naehe,True,so en wertvolli verbindig het richtig glaenzt
 d nächi het grad viel sicherheit bracht,positiv,verbundenheit_naehe,True,d naechi het grad viel sicherheit bracht
@@ -510,7 +510,7 @@ dä motivation-schub hüt isch enorm gsi,positiv,motivation_vorfreude,True,dae m
 d vorfreud macht grad richtig leicht,positiv,motivation_vorfreude,True,d vorfreud macht grad richtig leicht
 "mini ideen spränge ume, würkli inspirierend",positiv,motivation_vorfreude,True,mini ideen spraenge ume wuerkli inspirierend
 "so en positive drive, het mich überrascht",positiv,motivation_vorfreude,True,so en positive drive het mich ueberrascht
-"d energie hüt isch nöd normal, mega angenehm",positiv,motivation_vorfreude,True,d energie huet isch ned normal mega angenehm
+"d energie hüt isch nöd normal, mega angenehm",positiv,motivation_vorfreude,True,d energie huet isch noed normal mega angenehm
 "gseh richtig vor mir, wie guet s chönnt usechöme",positiv,motivation_vorfreude,True,gseh richtig vor mir wie guet s choennt usechoeme
 d motivation chunnt grad wie vo alle site,positiv,motivation_vorfreude,True,d motivation chunnt grad wie vo alle site
 "so bock uf s projekt, ehrlech",positiv,motivation_vorfreude,True,so bock uf s projekt ehrlech
@@ -699,7 +699,7 @@ söll ich das scheduling überneh?,neutral,orga_koordination,True,soell ich das 
 "gits öppis, wo di hinderet bi d planig?",neutral,orga_koordination,True,gits oeppis wo di hinderet bi d planig
 wär en spontaner ersatztermin ok?,neutral,orga_koordination,True,waer en spontaner ersatztermin ok
 "chan ich no klärihe, wer alles mitmacht?",neutral,orga_koordination,True,chan ich no klaerihe wer alles mitmacht
-"gits öppis, wo mer da besser nöd macht?",neutral,frage_info,True,gits oeppis wo mer da besser ned macht
+"gits öppis, wo mer da besser nöd macht?",neutral,frage_info,True,gits oeppis wo mer da besser noed macht
 "wie funktionieret das genau, chasch das kurz erläuterä?",neutral,frage_info,True,wie funktionieret das genau chasch das kurz erlaeuterae
 was bruucht mer alles für dä prozess?,neutral,frage_info,True,was bruucht mer alles fuer dae prozess
 wie lauft das normalerwiis ab?,neutral,frage_info,True,wie lauft das normalerwiis ab
@@ -727,7 +727,7 @@ gits e checkliste dafür?,neutral,frage_info,True,gits e checkliste dafuer
 brauchts spezielle software oder gaht s so?,neutral,frage_info,True,brauchts spezielle software oder gaht s so
 wo isch dä kniffligi teil bi dere sache?,neutral,frage_info,True,wo isch dae kniffligi teil bi dere sache
 wiso macht mer s eigentlich genau so?,neutral,frage_info,True,wiso macht mer s eigentlich genau so
-"gits en fallback, falls es nöd klappt?",neutral,frage_info,True,gits en fallback falls es ned klappt
+"gits en fallback, falls es nöd klappt?",neutral,frage_info,True,gits en fallback falls es noed klappt
 wie funktioniert s im hintergrund?,neutral,frage_info,True,wie funktioniert s im hintergrund
 "iss s wichtig, wie mer s formuliert?",neutral,frage_info,True,iss s wichtig wie mer s formuliert
 "gits es beispiel, wo ich dranne cha orientiere?",neutral,frage_info,True,gits es beispiel wo ich dranne chan orientiere
@@ -735,9 +735,9 @@ wie funktioniert s im hintergrund?,neutral,frage_info,True,wie funktioniert s im
 wo fangt mer am beschte aa?,neutral,frage_info,True,wo fangt mer am beschte aa
 wofür isch die funktion überhaupt da?,neutral,frage_info,True,wofuer isch die funktion ueberhaupt da
 isch das sehr zeitaufwendig?,neutral,frage_info,True,isch das sehr zeitaufwendig
-"gits öppis, wo mer lieber nöd mache sött?",neutral,frage_info,True,gits oeppis wo mer lieber ned mache soett
+"gits öppis, wo mer lieber nöd mache sött?",neutral,frage_info,True,gits oeppis wo mer lieber noed mache soett
 wie detailliert muess mer vorgeh?,neutral,frage_info,True,wie detailliert muess mer vorgeh
-"wo chan ich nachluege, falls ich nöd witer weis?",neutral,frage_info,True,wo chan ich nachluege falls ich ned witer weis
+"wo chan ich nachluege, falls ich nöd witer weis?",neutral,frage_info,True,wo chan ich nachluege falls ich noed witer weis
 was isch dä sinn vom ganze schritt?,neutral,frage_info,True,was isch dae sinn vom ganze schritt
 brauchts meh als nur die basis?,neutral,frage_info,True,brauchts meh als nur die basis
 "wie kontrollier ich, ob alles richtig lauft?",neutral,frage_info,True,wie kontrollier ich ob alles richtig lauft
@@ -780,14 +780,14 @@ kaffee röste als mini neui obssession,neutral,hobby_interests,True,kaffee roest
 "schach am spiele, macht mega spass zum üebe",neutral,hobby_interests,True,schach am spiele macht mega spass zum ueebe
 "wanderige am plane, wenn s wetter passt",neutral,hobby_interests,True,wanderige am plane wenn s wetter passt
 "bisschen DIY dehei, mal besser mal kreatives chaos",neutral,hobby_interests,True,bisschen diy dehei mal besser mal kreatives chaos
- languages am lernä – chli jeden tag,neutral,hobby_interests,True,languages am lernae chli jeden tag
+languages am lernä – chli jeden tag,neutral,hobby_interests,True,languages am lernae chli jeden tag
 "buecher sortiere und neui entdecke, macht freud",neutral,hobby_interests,True,buecher sortiere und neui entdecke macht freud
 "ab und zue chli meditatiön, hätt überraschende wirkig",neutral,hobby_interests,True,ab und zue chli meditatioen haett ueberraschende wirkig
 "pläuschigs töpfere – d händ si voll lehm, aber voll cool",neutral,hobby_interests,True,plaeuschigs toepfere d haend si voll lehm aber voll cool
 "fitnessstudio wieder am entdecke, langsam aber sicher",neutral,hobby_interests,True,fitnesstudio wieder am entdecke langsam aber sicher
 "velotouren machä, wenn s schön isch, mega befriedigend",neutral,hobby_interests,True,velotouren machae wenn s schoen isch mega befriedigend
 "backe grad vil, chli experiment mit teig und co.",neutral,hobby_interests,True,backe grad vil chli experiment mit teig und co
-art journaling am ausprobiere – bunt und chaotisch,neutral,hobby_interests,True,art journaling am ausprobiere bunt und chaotisch
+grad am choche – ziemlich chaotisch,neutral,hobby_interests,True,grad am choche ziemlich chaotisch
 videospieli mit kollege – macht immer gute laune,neutral,hobby_interests,True,videospieli mit kollege macht immer gute laune
 "brettspiel-obig gha, mega lässig gsi",neutral,hobby_interests,True,brettspiel obig gha mega laessig gsi
 "grad voll im lego-modus, erstaunlich entspannt",neutral,hobby_interests,True,grad voll im lego modus erstaunlich entspannt
@@ -801,19 +801,19 @@ minimalsport wie stretching oder yoga zwüschet dur,neutral,hobby_interests,True
 es paar kreative apps am teste – macht richtig laune,neutral,hobby_interests,True,es paar kreative apps am teste macht richtig laune
 "hesch gschaut, öb s problem nur bi dem eine gerät uftritt?",neutral,technik_support,True,hesch gschaut oeb s problem nur bi dem eine geraet uftritt
 "d app spinnt grad wieder ume, kei ahnig wieso",neutral,technik_support,True,d app spinnt grad wieder ume kei ahnig wieso
-irgendöppis stimmt nöd mit em update,neutral,technik_support,True,irgendoeppis stimmt ned mit em update
+irgendöppis stimmt nöd mit em update,neutral,technik_support,True,irgendoeppis stimmt noed mit em update
 "s wlan macht komische zicke, underbrucht immer",neutral,technik_support,True,s wlan macht komische zicke underbrucht immer
 dä login het spontan nüm wölle,neutral,technik_support,True,dae login het spontan nuem woelle
 "einstellung isch plötzlich verschwunde, kei plan",neutral,technik_support,True,einstellung isch ploetzlich verschwunde kei plan
 "mis gerät reagiert mega langsam, würkli müehsam",neutral,technik_support,True,mis geraet reagiert mega langsam wuerkli mueehsam
-"es chunt ständig en fehlermeldig, wo nöd klar isch",neutral,technik_support,True,es chunnt staendig en fehlermeldig wo ned klar isch
-"s kabel würd nöd erkennt, egal wie mer s aasteckt",neutral,technik_support,True,s kabel wuerd ned erkennt egal wie mer s aasteckt
+"es chunt ständig en fehlermeldig, wo nöd klar isch",neutral,technik_support,True,es chunnt staendig en fehlermeldig wo noed klar isch
+"s kabel würd nöd erkennt, egal wie mer s aasteckt",neutral,technik_support,True,s kabel wuerd noed erkennt egal wie mer s aasteckt
 irgendwie isch die funktion im menu nüm da,neutral,technik_support,True,irgendwie isch die funktion im menu nuem da
 "verbindig bricht ständig ab, mega nervig",neutral,technik_support,True,verbindig bricht staendig ab mega nervig
-"s backup het nöd funktioniert, grund unbekannt",neutral,technik_support,True,s backup het ned funktioniert grund unbekannt
+"s backup het nöd funktioniert, grund unbekannt",neutral,technik_support,True,s backup het noed funktioniert grund unbekannt
 "programm stürzt ab, sobald mer öppis lädt",neutral,technik_support,True,programm stuerzt ab sobald mer oeppis laedt
 d synchronisation bleibt i de hälfti stecke,neutral,technik_support,True,d synchronisation bleibt i de haelfti stecke
-"mis gerät zeigt komische icons a, nöd gewohnt",neutral,technik_support,True,mis geraet zeigt komische icons a ned gewohnt
+"mis gerät zeigt komische icons a, nöd gewohnt",neutral,technik_support,True,mis geraet zeigt komische icons a noed gewohnt
 "update isch durscht, aber jetzt goht nüt meh",neutral,technik_support,True,update isch durscht aber jetzt goht nuet meh
 "de button reagiärt nöd, wie wenn er blockiert wär",neutral,technik_support,True,de button reagiaert noed wie wenn er blockiert waer
 "s passwort zruggsetze klappt nöd, trotz instruktion",neutral,technik_support,True,s passwort zruggsetze klappt noed trotz instruktion
@@ -821,33 +821,33 @@ d synchronisation bleibt i de hälfti stecke,neutral,technik_support,True,d sync
 "die datei chan nüm ufmachet wärde, völlig komisch",neutral,technik_support,True,die datei chan nuem ufmachet waerde voellig komisch
 s exportiere vom dokument verweigert de dienst,neutral,technik_support,True,s exportiere vom dokument verweigert de dienst
 verbindig zum server bricht ständig zämme,neutral,technik_support,True,verbindig zum server bricht staendig zaemme
-"programm cha nöd installiert wärde, irgend es problem",neutral,technik_support,True,programm chan ned installiert waerde irgend es problem
+"programm cha nöd installiert wärde, irgend es problem",neutral,technik_support,True,programm chan noed installiert waerde irgend es problem
 s gerät het plötzlich kei ton meh,neutral,technik_support,True,s geraet het ploetzlich kei ton meh
 update rückgäng mache? keine ahnig wie das gah sött,neutral,technik_support,True,update rueckgaeng mache keine ahnig wie das gah soett
 "d app zeigt nöd, was sie sött – menüs komplett leer",neutral,technik_support,True,d app zeigt noed was sie soett menues komplett leer
 dateie verschwinde oder si am falsche ort,neutral,technik_support,True,dateie verschwinde oder si am falsche ort
 "s drucke funktioniert nöd, nur error uf em display",neutral,technik_support,True,s drucke funktioniert noed nur error uf em display
-"gerät überhitzet mega schnäll, irgendöppis stimmt nöd",neutral,technik_support,True,geraet ueberhitzet mega schnaell irgendoeppis stimmt ned
+"gerät überhitzet mega schnäll, irgendöppis stimmt nöd",neutral,technik_support,True,geraet ueberhitzet mega schnaell irgendoeppis stimmt noed
 bluetooth koppelig bricht immer ab,neutral,technik_support,True,bluetooth koppelig bricht immer ab
-benachrichtigige chömed nöd meh a,neutral,technik_support,True,benachrichtigige choemed ned meh a
+benachrichtigige chömed nöd meh a,neutral,technik_support,True,benachrichtigige choemed noed meh a
 "s bild friert ständig ii, müehsam ohne änd",neutral,technik_support,True,s bild friert staendig ii mueehsam ohne aend
 "programm zeigt an, dass es offen isch, aber nüt passiert",neutral,technik_support,True,programm zeigt an dass es offen isch aber nuet passiert
-"ladegerät wird nöd erkennt, obwohl s original isch",neutral,technik_support,True,ladegeraet wird ned erkennt obwohl s original isch
+"ladegerät wird nöd erkennt, obwohl s original isch",neutral,technik_support,True,ladegeraet wird noed erkennt obwohl s original isch
 "s update zeigt 99%, aber hängt ewig",neutral,technik_support,True,s update zeigt <NUM> aber haengt ewig
 "internet het volle balkä, aber nüt lädt",neutral,technik_support,True,internet het volle balkae aber nuet laedt
 d cloud synchronisiert nur teilweise,neutral,technik_support,True,d cloud synchronisiert nur teilweise
 "drucker isch online, aber nimmt kei ufträge a",neutral,technik_support,True,drucker isch online aber nimmt kei uftraege a
 touchscreen reagiert mega verzögert,neutral,technik_support,True,touchscreen reagiert mega verzoegert
 audio het plötzlich üble störige dri,neutral,technik_support,True,audio het ploetzlich ueble stoerige dri
-s mikrofon wird nöd erkennt im call,neutral,technik_support,True,s mikrofon wird ned erkennt im call
+s mikrofon wird nöd erkennt im call,neutral,technik_support,True,s mikrofon wird noed erkennt im call
 "es poppt ständig es fenster uf, aber ohni inhalt",neutral,technik_support,True,es poppt staendig es fenster uf aber ohni inhalt
 "s programm startet, aber schliesst grad wieder",neutral,technik_support,True,s programm startet aber schliesst grad wieder
 "s wifi het gueti verbindig, aber die app meint nein",neutral,technik_support,True,s wifi het gueti verbindig aber die app meint nein
 im browser lauft nur jede zweite site,neutral,technik_support,True,im browser lauft nur jede zweite site
-cache leere het nöd grad viel bracht,neutral,technik_support,True,cache leere het ned grad viel bracht
+cache leere het nöd grad viel bracht,neutral,technik_support,True,cache leere het noed grad viel bracht
 de cursor verschwindet zwüschetdur,neutral,technik_support,True,de cursor verschwindet zwueschetdur
 "s system macht sound, aber keis fenster zeigt woher",neutral,technik_support,True,s system macht sound aber keis fenster zeigt woher
-"d konfiguration wird nöd gspeichert, trotz save",neutral,technik_support,True,d konfiguration wird ned gspeichert trotz save
+"d konfiguration wird nöd gspeichert, trotz save",neutral,technik_support,True,d konfiguration wird noed gspeichert trotz save
 gerät macht plötzlich neustart ohni grund,neutral,technik_support,True,geraet macht ploetzlich neustart ohni grund
 passt,neutral,kurzreaktion_neutral,True,passt
 ok,neutral,kurzreaktion_neutral,True,ok

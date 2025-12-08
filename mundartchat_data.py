@@ -15,7 +15,7 @@ import random
 # Globale Config & Preprocessing
 # =========================================================
 
-RANDOM_STATE = 42
+RANDOM_STATE = 45
 np.random.seed(RANDOM_STATE)
 random.seed(RANDOM_STATE)
 
@@ -24,32 +24,21 @@ DATA_CSV_CHATPAIRS = "mundartchat_pairs.csv"
 
 LABEL_ORDER = ["negativ", "neutral", "positiv"]
 
-# Dialekt-Normalisierung (minimal, nur Formen, die im Datensatz vorkommen)
 DIALECT_MAP = {
-    # Verneinung / Normalisierung von "nöd"
-    # "nöd" -> "noed" (durch Umlaut-Normalisierung), hier Vereinheitlichung auf "ned"
-    "noed": "ned",
-
     # Formen von "sein"
-    # "bin" kommt häufig vor, "bi" ist deine Zielsform
     "bin": "bi",
 
     # Formen von "können"
-    # du verwendest oft "cha" / "chan" – wir ziehen alles auf "chan"
     "cha": "chan",
 
     # kommen / gehen
-    # du hast sowohl "chunt" wie "chunnt" im Dialekt üblich, Vereinheitlichung
     "chunt": "chunnt",
-    # "gang"/"geh" -> "go", damit nur eine Grundform
     "gang": "go",
     "geh": "go",
 
     # Ausdrücke
-    # "imfall" verwendest du sehr häufig – hier leicht normalisiert
     "imfall": "im fall",
 }
-
 
 URL_RE     = re.compile(r"https?://\S+|www\.\S+")
 USER_RE    = re.compile(r"@\w+")
@@ -962,14 +951,14 @@ EXAMPLES = {
         "schach am spiele, macht mega spass zum üebe",
         "wanderige am plane, wenn s wetter passt",
         "bisschen DIY dehei, mal besser mal kreatives chaos",
-        " languages am lernä – chli jeden tag",
+        "languages am lernä – chli jeden tag",
         "buecher sortiere und neui entdecke, macht freud",
         "ab und zue chli meditatiön, hätt überraschende wirkig",
         "pläuschigs töpfere – d händ si voll lehm, aber voll cool",
         "fitnessstudio wieder am entdecke, langsam aber sicher",
         "velotouren machä, wenn s schön isch, mega befriedigend",
         "backe grad vil, chli experiment mit teig und co.",
-        "art journaling am ausprobiere – bunt und chaotisch",
+        "grad am choche – ziemlich chaotisch",
         "videospieli mit kollege – macht immer gute laune",
         "brettspiel-obig gha, mega lässig gsi",
         "grad voll im lego-modus, erstaunlich entspannt",
