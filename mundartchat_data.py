@@ -494,9 +494,6 @@ EXAMPLES = {
         "merci, die unterstützig hett wehklä guet ta",
     ],
 
-
-
-
     ("positiv", "freude_gute_laune"): [
         "dä vibe hüt isch eifach nur schön",
         "grad so en richtig positive vibe hüt!",
@@ -549,8 +546,6 @@ EXAMPLES = {
         "locker, warm, fröhlich – guet fürs gfühl",
         "so fröhlichi energie hüt, tut extrem guet",
     ],
-
-
 
     ("positiv", "erfolg_stolz"): [
         "dä erfolgsmoment hüt het richtig guet ta",
@@ -605,7 +600,6 @@ EXAMPLES = {
         "dä tag hüt het stolz und zufriedenheit gschänkt",
     ],
 
-
     ("positiv", "verbundenheit_naehe"): [
         "d gmeinsam Ziit hüt het richtig guet ta",
         "het mega schön gfühlt, so ehrlich chönne rede",
@@ -658,10 +652,6 @@ EXAMPLES = {
         "so en schöne verbindigsmoment, ganz uferwartet",
         "het richtig ruhe und nächi bringt",
     ],
-
-
-
-
 
     ("positiv", "motivation_vorfreude"): [
         "d blosse ideä git scho mega schub",
@@ -716,7 +706,6 @@ EXAMPLES = {
         "vorfreud so gross, dass mer kaum cha warte",
     ],
 
-
     ("positiv", "kurzreaktion_positiv"): [
         "safe mega",
         "geil, oder",
@@ -769,9 +758,6 @@ EXAMPLES = {
         "nice umgesetzt",
         "voll okay so",
     ],
-
-
-
 
 
     # =========================================
@@ -1107,8 +1093,6 @@ EXAMPLES = {
 
 }
 
-
-
 # =========================================================
 # 2) Mundart-Chatpaare: Default-Antworten
 # =========================================================
@@ -1123,7 +1107,7 @@ DEFAULT_ANSWERS_MUNDART[("negativ", "stress_ueberforderung")] = [
     "Krass, volle Stress.",
 ]
 
-DEFAULT_ANSWERS_MUNDART[("negativ", "konflikt")] = [
+DEFAULT_ANSWERS_MUNDART[("negativ", "konflikt_spannungen")] = [
     "Schwierig. Was isch passiert?",
     "Okay, Konflikt sind müehsam. Worum geit's genau?",
     "Verstehe. Was het d Situation ausgelöst?",
@@ -1150,7 +1134,7 @@ DEFAULT_ANSWERS_MUNDART[("negativ", "traurigkeit_einsamkeit")] = [
     "Tönt recht schwer grad.",
 ]
 
-DEFAULT_ANSWERS_MUNDART[("negativ", "gesundheit_sorge")] = [
+DEFAULT_ANSWERS_MUNDART[("negativ", "gesundheit_sorgen")] = [
     "Ah okay, was macht dir genau Sorge?",
     "Verstehe. Welche Symptome stresst di am meiste?",
     "Okay — was isch s, wo di verunsicheret?",
@@ -1159,7 +1143,7 @@ DEFAULT_ANSWERS_MUNDART[("negativ", "gesundheit_sorge")] = [
     "Ja, das würd mi au beunruhige.",
 ]
 
-DEFAULT_ANSWERS_MUNDART[("negativ", "kurz")] = [
+DEFAULT_ANSWERS_MUNDART[("negativ", "kurzreaktion_negativ")] = [
     "Uff, versteh dich.",
     "Oha… was isch passiert?",
     "Tönt nöd guet.",
@@ -1179,7 +1163,7 @@ DEFAULT_ANSWERS_MUNDART[("neutral", "smalltalk")] = [
     "Wie isch d Stimmung so?",
 ]
 
-DEFAULT_ANSWERS_MUNDART[("neutral", "organisation")] = [
+DEFAULT_ANSWERS_MUNDART[("neutral", "orga_koordination")] = [
     "Okay, das chömer so mache.",
     "Passt. Säg eifach, was dir liegt.",
     "Guet, das luegemer a.",
@@ -1188,7 +1172,15 @@ DEFAULT_ANSWERS_MUNDART[("neutral", "organisation")] = [
     "Das klingt machbar.",
 ]
 
-DEFAULT_ANSWERS_MUNDART[("neutral", "hobby")] = [
+DEFAULT_ANSWERS_MUNDART[("neutral", "frage_info")] = [
+    "Klar, ich versuch s dir eifach z erkläre.",
+    "Okay, gueti Frog. Um was geit s genau?",
+    "Alles klar. Was wetsch genau wüsse?",
+    "Gerne, ich erklär s dir kurz.",
+    "Okay, luegemer das Schritt für Schritt a.",
+]
+
+DEFAULT_ANSWERS_MUNDART[("neutral", "hobby_interests")] = [
     "Ah spannend! Erzähl meh.",
     "Cool, was machsch denn genau?",
     "Nice! Wie bisch du dezue cho?",
@@ -1206,7 +1198,7 @@ DEFAULT_ANSWERS_MUNDART[("neutral", "technik_support")] = [
     "Guet, das chömer fixe.",
 ]
 
-DEFAULT_ANSWERS_MUNDART[("neutral", "kurz")] = [
+DEFAULT_ANSWERS_MUNDART[("neutral", "kurzreaktion_neutral")] = [
     "Alles klar.",
     "Verstande.",
     "Aha, ok.",
@@ -1235,7 +1227,7 @@ DEFAULT_ANSWERS_MUNDART[("positiv", "verbundenheit_naehe")] = [
     "So nächi Momänt sind gold wert.",
 ]
 
-DEFAULT_ANSWERS_MUNDART[("positiv", "kurz")] = [
+DEFAULT_ANSWERS_MUNDART[("positiv", "kurzreaktion_positiv")] = [
     "Mega!",
     "Nice!",
     "Voll!",
