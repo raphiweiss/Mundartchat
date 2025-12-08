@@ -381,7 +381,7 @@ EXAMPLES = {
         "komplett schwach",
         "kannst vergässe",
         "voll für nüt",
-        "so ein seich",
+        "so en seich",
         "absolut unnötig",
         "das isch nöd es ding",
         "mega enttäuschend",
@@ -408,7 +408,7 @@ EXAMPLES = {
         "finds recht schwach",
         "es bitz peinlich",
         "nöd so nice",
-        "sehr meh halt",
+        "so blöd",
         "wär schöner anders",
         "ziemlech abstossend",
         "chli toxisch das",
@@ -861,9 +861,6 @@ EXAMPLES = {
         "chan ich no klärihe, wer alles mitmacht?",
     ],
 
-
-
-
     ("neutral", "frage_info"): [
         "gits öppis, wo mer da besser nöd macht?",
         "wie funktionieret das genau, chasch das kurz erläuterä?",
@@ -917,8 +914,6 @@ EXAMPLES = {
         "wie würdisch du s jemandem erkläre, wo null ahnig het?",
     ],
 
-
-
     ("neutral", "hobby_interests"): [
         "so chli kreativi projecht dehei mache grad überraschend viel freud",
         "zletzt wieder chli meh am gamä gsii, tut guet zum abschalte",
@@ -971,8 +966,6 @@ EXAMPLES = {
         "minimalsport wie stretching oder yoga zwüschet dur",
         "es paar kreative apps am teste – macht richtig laune",
     ],
-
-
 
     ("neutral", "technik_support"): [
         "hesch gschaut, öb s problem nur bi dem eine gerät uftritt?",
@@ -1192,9 +1185,7 @@ DEFAULT_ANSWERS_MUNDART[("neutral", "kurzreaktion_neutral")] = [
     "Verstande.",
     "Aha, ok.",
     "Guet z wüsse.",
-    "Okay, noted.",
-    "Alles easy.",
-    "Check.",
+    "Okay",
 ]
 
 
@@ -1203,7 +1194,6 @@ DEFAULT_ANSWERS_MUNDART[("positiv", "freude_gute_laune")] = [
     "Nice! Freut mi mega für dich.",
     "Love it! Was het di so gfroet?",
     "Hammer! Erzähl meh.",
-    "Vibes sind on point",
     "Gönn dir die Freud!",
 ]
 
@@ -1213,7 +1203,6 @@ DEFAULT_ANSWERS_MUNDART[("positiv", "verbundenheit_naehe")] = [
     "Mega schön, so Verbindig!",
     "Das tuet immer guet.",
     "Das sind die best Momänt.",
-    "So nächi Momänt sind gold wert.",
 ]
 
 DEFAULT_ANSWERS_MUNDART[("positiv", "kurzreaktion_positiv")] = [
@@ -1221,9 +1210,7 @@ DEFAULT_ANSWERS_MUNDART[("positiv", "kurzreaktion_positiv")] = [
     "Nice!",
     "Voll!",
     "Haha geil!",
-    "Liebi vibes!",
     "Love it",
-    "Stabil!",
 ]
 
 

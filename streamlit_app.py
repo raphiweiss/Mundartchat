@@ -591,28 +591,28 @@ def main():
             st.markdown(
                 """
     **😔 negativ**
-    - 😵‍💫 Stress & Überforderung  
-    - ⚡ Konflikte & Spannungen  
-    - 🤔 Selbstzweifel & Unsicherheit  
-    - 🥀 Traurigkeit & Einsamkeit  
-    - 🩺 Gesundheit & Sorgen  
-    - 🗯️ Kurzreaktionen (negativ)  
+    - 😵‍💫 Stress & Überforderung (50)
+    - ⚡ Konflikte & Spannungen (50)
+    - 🤔 Selbstzweifel & Unsicherheit (50)
+    - 🥀 Traurigkeit & Einsamkeit (50)  
+    - 🩺 Gesundheit & Sorgen (50)  
+    - 🗯️ Kurzreaktionen (negativ) (50)  
     
     **😐 neutral**
-    - 💬 Smalltalk / Allgemeines  
-    - 📅 Organisation & Abmachungen  
-    - ❓ Info-Fragen & Erklärungen  
-    - 🎮 Hobbys & Interessen  
-    - 💻 Tech-Support & Sachprobleme  
-    - 🔹 Kurzreaktionen (neutral)  
+    - 💬 Smalltalk / Allgemeines (50) 
+    - 📅 Organisation & Abmachungen (50) 
+    - ❓ Info-Fragen & Erklärungen (50) 
+    - 🎮 Hobbys & Interessen (50)  
+    - 💻 Tech-Support & Sachprobleme (50) 
+    - 🔹 Kurzreaktionen (neutral) (50)  
     
     **😊 positiv**
-    - 🙏 Dankbarkeit  
-    - 😄 Freude & Gute Laune  
-    - 🏆 Erfolg & Stolz  
-    - 🤝 Verbundenheit & Nähe  
-    - 🚀 Motivation & Vorfreude  
-    - ✨ Kurzreaktionen (positiv)  
+    - 🙏 Dankbarkeit (50)  
+    - 😄 Freude & Gute Laune (50)  
+    - 🏆 Erfolg & Stolz (50) 
+    - 🤝 Verbundenheit & Nähe (50) 
+    - 🚀 Motivation & Vorfreude (50)  
+    - ✨ Kurzreaktionen (positiv) (50) 
                 """
             )
 
