@@ -563,11 +563,15 @@ def main():
     st.title("Mundart-Chat Demo")
     st.caption("Sentiment, Next-Word, Antwort-Retrieval für Schweizerdeutsch-Chat")
 
+    # ---- Daten & Modelle EINMAL laden/trainieren ----
+    base_df, resp_df = load_datasets()
+    with st.spinner("Modelle werden geladen / trainiert ..."):
+        models = train_all_models(base_df, resp_df)
+    eval_info = models["eval_info"]
+
     # ---------------- Sidebar: Daten & Modelle ----------------
     with st.sidebar:
         st.header("📊 Modelle & Datengrundlage")
-
-        base_df, resp_df = load_datasets()
         st.write(f"💬 Anzahl Chatnachrichten: {len(resp_df)}")
 
         with st.expander("😊 Sentiment (3) & Intents (18)"):
@@ -611,7 +615,6 @@ def main():
                 """
             )
 
-        # Modell-Übersicht
         with st.expander("🤖 Verwendete Modelle"):
             st.markdown(
                 """
@@ -629,25 +632,16 @@ def main():
                 """
             )
 
-        # Modelle trainieren / laden
-        with st.spinner("Modelle werden geladen / trainiert ..."):
-            models = train_all_models(base_df, resp_df)
-
-        eval_info = models["eval_info"]
-
         # 1️⃣ Modell-Performance
         with st.expander("🔍 Modell-Performance (Testset)", expanded=False):
             for name, info in eval_info.items():
                 st.subheader(name.upper())
-
                 st.metric("Accuracy", f"{info['accuracy']:.3f}")
 
                 report_dict = info["report"]
                 df_report = pd.DataFrame(report_dict).T
-
                 if "accuracy" in df_report.index:
                     df_report = df_report.drop(index="accuracy")
-
                 df_report = df_report[["precision", "recall", "f1-score", "support"]]
                 st.dataframe(df_report, use_container_width=True)
 
@@ -655,21 +649,17 @@ def main():
                     st.caption(f"Confusion Matrix ({name.upper()})")
                     cm_df = info["confusion_matrix"]
                     cm = cm_df.to_numpy()
-
                     fig, ax = plt.subplots()
                     ax.imshow(cm, cmap="Blues")
-
                     ax.set_xticks(np.arange(len(LABEL_ORDER)))
                     ax.set_yticks(np.arange(len(LABEL_ORDER)))
                     ax.set_xticklabels(LABEL_ORDER)
                     ax.set_yticklabels(LABEL_ORDER)
                     ax.set_xlabel("Predicted label")
                     ax.set_ylabel("True label")
-
                     for i in range(cm.shape[0]):
                         for j in range(cm.shape[1]):
                             ax.text(j, i, int(cm[i, j]), ha="center", va="center")
-
                     fig.tight_layout()
                     st.pyplot(fig)
 
@@ -723,11 +713,9 @@ def main():
         # 6️⃣ N-Gramm-Statistik
         with st.expander("🧩 N-Gramm-Statistik (LM)", expanded=False):
             ngram_counts = models["ngram_counts"]
-
             st.subheader("Unigramme (1-Gramme)")
             df_uni = get_top_ngrams(ngram_counts, n=1, topk=20)
             st.dataframe(df_uni, use_container_width=True)
-
             st.subheader("Bigramme (2-Gramme)")
             df_bi = get_top_ngrams(ngram_counts, n=2, topk=20)
             st.dataframe(df_bi, use_container_width=True)
@@ -738,7 +726,6 @@ def main():
             try:
                 with open(pdf_path, "rb") as f:
                     pdf_bytes = f.read()
-
                 st.download_button(
                     label="📥 Präsentation als PDF herunterladen",
                     data=pdf_bytes,
@@ -799,7 +786,6 @@ def main():
                         n_max=3,
                         topk=5,
                     )
-
                 if not cands:
                     st.warning("Keine brauchbaren Vorschläge gefunden.")
                 else:
@@ -837,7 +823,6 @@ def main():
                         topk=5,
                         min_sim=0.2,
                     )
-
                 st.write(f"**SBERT-Label:** {sbert_label}")
                 if answer is None:
                     st.warning(
@@ -863,7 +848,6 @@ def main():
                         topn=topn,
                         filter_by_label=True,
                     )
-
                 st.write(f"**SBERT-Label:** {sbert_label}")
                 if not neighbors:
                     st.warning("Keine passenden Nachbarn gefunden.")
