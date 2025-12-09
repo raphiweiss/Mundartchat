@@ -1,50 +1,50 @@
 user_text,user_text_clean,label,intent,answer_mundart,needs_review,is_seed
-grad volle to-do-lischt am abarbeite und nämmer chum noh,grad volle to do lischt am abarbeite und naemmer chum noh,negativ,stress_ueberforderung,Hefti Phase. Was wür dir grad am meiste Entlastig gä?,True,True
+grad volle to-do-lischt am abarbeite und nämmer chum noh,grad volle to do lischt am abarbeite und naemmer chum noh,negativ,stress_ueberforderung,Heftigi Phase. Was wür dir grad am meiste Entlastig gä?,True,True
 "de tag isch nur am raste, kei sekunde ruig",de tag isch nur am raste kei sekunde ruig,negativ,stress_ueberforderung,"Okay, das isch viel uf Einisch...",True,True
 alles staplet sich uf und s wird nöd weniger,alles staplet sich uf und s wird noed weniger,negativ,stress_ueberforderung,"Okay, das isch viel uf Einisch...",True,True
-de kopf isch komplett überfüllt im momänt,de kopf isch komplett ueberfuellt im momaent,negativ,stress_ueberforderung,Hefti Phase. Was wür dir grad am meiste Entlastig gä?,True,True
+de kopf isch komplett überfüllt im momänt,de kopf isch komplett ueberfuellt im momaent,negativ,stress_ueberforderung,Heftigi Phase. Was wür dir grad am meiste Entlastig gä?,True,True
 "ufträge chömed us allen rigtige, kei verschnuufpaus",uftraege choemed us allen rigtige kei verschnuufpaus,negativ,stress_ueberforderung,"Ui, das tönt stressig.",True,True
-s tempo isch brutal hoch grad,s tempo isch brutal hoch grad,negativ,stress_ueberforderung,Hefti Phase. Was wür dir grad am meiste Entlastig gä?,True,True
-im alltag pressierts a jeder ecke,im alltag pressierts a jeder ecke,negativ,stress_ueberforderung,Hefti Phase. Was wür dir grad am meiste Entlastig gä?,True,True
+s tempo isch brutal hoch grad,s tempo isch brutal hoch grad,negativ,stress_ueberforderung,Heftigi Phase. Was wür dir grad am meiste Entlastig gä?,True,True
+im alltag pressierts a jeder ecke,im alltag pressierts a jeder ecke,negativ,stress_ueberforderung,Heftigi Phase. Was wür dir grad am meiste Entlastig gä?,True,True
 de stress chunt in wellene und alles wird z viel,de stress chunnt in wellene und alles wird z viel,negativ,stress_ueberforderung,"Ui, das tönt stressig.",True,True
 "ständig neues los, nüt wird fertig",staendig neues los nuet wird fertig,negativ,stress_ueberforderung,"Ui, das tönt stressig.",True,True
 de rhythmus isch nöd meh gscheid handelbar,de rhythmus isch noed meh gscheid handelbar,negativ,stress_ueberforderung,"Okay, das isch viel uf Einisch...",True,True
 jede chliini sache nimmt grad mega viel energie,jede chliini sache nimmt grad mega viel energie,negativ,stress_ueberforderung,"Ui, das tönt stressig.",True,True
 s lauft alles gleichzeitig und nüt passt i d agenda,s lauft alles gleichzeitig und nuet passt i d agenda,negativ,stress_ueberforderung,"Ui, das tönt stressig.",True,True
-de tag fingt hektisch aa und hört genauso uf,de tag fingt hektisch aa und hoert genauso uf,negativ,stress_ueberforderung,Hefti Phase. Was wür dir grad am meiste Entlastig gä?,True,True
+de tag fingt hektisch aa und hört genauso uf,de tag fingt hektisch aa und hoert genauso uf,negativ,stress_ueberforderung,Heftigi Phase. Was wür dir grad am meiste Entlastig gä?,True,True
 kei ruum im chopf für öppis anders,kei ruum im chopf fuer oeppis anders,negativ,stress_ueberforderung,"Ui, das tönt stressig.",True,True
-uf allen fronten grad uf trab,uf allen fronten grad uf trab,negativ,stress_ueberforderung,Hefti Phase. Was wür dir grad am meiste Entlastig gä?,True,True
+uf allen fronten grad uf trab,uf allen fronten grad uf trab,negativ,stress_ueberforderung,Heftigi Phase. Was wür dir grad am meiste Entlastig gä?,True,True
 "s gfühl, dauernd am reagierä statt am plane",s gfuehl dauernd am reagierae statt am plane,negativ,stress_ueberforderung,"Krass, voll de Stress.",True,True
 de alltagsdruck isch eifach übermächtig,de alltagsdruck isch eifach uebermaechtig,negativ,stress_ueberforderung,"Krass, voll de Stress.",True,True
 jede minütli freizeit verschwindet sofort,jede minuetli freizeit verschwindet sofort,negativ,stress_ueberforderung,"Ui, das tönt stressig.",True,True
 de stress zieht sich durch de ganze wuche,de stress zieht sich durch de ganze wuche,negativ,stress_ueberforderung,"Uff, mega viel grad.",True,True
 s wird eifach immer meh statt weniger,s wird eifach immer meh statt weniger,negativ,stress_ueberforderung,"Ui, das tönt stressig.",True,True
-"dauernd unterwegs, nie am ankomme",dauernd unterwegs nie am ankomme,negativ,stress_ueberforderung,"Verstehe, das isch viel.",True,True
-kei chance zum richtig abschalte,kei chance zum richtig abschalte,negativ,stress_ueberforderung,Hefti Phase. Was wür dir grad am meiste Entlastig gä?,True,True
+"dauernd unterwegs, nie am ankomme",dauernd unterwegs nie am ankomme,negativ,stress_ueberforderung,"Verstah di, das isch viel.",True,True
+kei chance zum richtig abschalte,kei chance zum richtig abschalte,negativ,stress_ueberforderung,Heftigi Phase. Was wür dir grad am meiste Entlastig gä?,True,True
 "de kalender isch so voll, dass nüt meh platz het",de kalender isch so voll dass nuet meh platz het,negativ,stress_ueberforderung,"Krass, voll de Stress.",True,True
-mini ressourcen sind aktuell uf minimalbetrieb,mini ressourcen sind aktuell uf minimalbetrieb,negativ,stress_ueberforderung,"Verstehe, das isch viel.",True,True
-ständig am jongliere mit viel z vil sache,staendig am jongliere mit viel z vil sache,negativ,stress_ueberforderung,"Verstehe, das isch viel.",True,True
+mini ressourcen sind aktuell uf minimalbetrieb,mini ressourcen sind aktuell uf minimalbetrieb,negativ,stress_ueberforderung,"Verstah di, das isch viel.",True,True
+ständig am jongliere mit viel z vil sache,staendig am jongliere mit viel z vil sache,negativ,stress_ueberforderung,"Verstah di, das isch viel.",True,True
 "s tempo het nöd mol en gang meh, nur turbo",s tempo het noed mol en go meh nur turbo,negativ,stress_ueberforderung,"Krass, voll de Stress.",True,True
 jede pause wird direkt wieder ufgfrässe,jede pause wird direkt wieder ufgfraesse,negativ,stress_ueberforderung,"Okay, das isch viel uf Einisch...",True,True
 alles bruucht grad doppelt so vil energie wie normal,alles bruucht grad doppelt so vil energie wie normal,negativ,stress_ueberforderung,"Ui, das tönt stressig.",True,True
 "d anspannung sitzet tief, meh als mer lieb isch",d anspannung sitzet tief meh als mer lieb isch,negativ,stress_ueberforderung,"Uff, mega viel grad.",True,True
 de tag lauft einem nur dervo,de tag lauft einem nur dervo,negativ,stress_ueberforderung,"Okay, das isch viel uf Einisch...",True,True
-jedi ablenkig bringt grad no meh durcheinand,jedi ablenkig bringt grad no meh durcheinand,negativ,stress_ueberforderung,"Verstehe, das isch viel.",True,True
+jedi ablenkig bringt grad no meh durcheinand,jedi ablenkig bringt grad no meh durcheinand,negativ,stress_ueberforderung,"Verstah di, das isch viel.",True,True
 "s gfühl, im dauer-modus funktioniere z stecke",s gfuehl im dauer modus funktioniere z stecke,negativ,stress_ueberforderung,"Krass, voll de Stress.",True,True
 d batterie isch ständig im orange-bereich,d batterie isch staendig im orange bereich,negativ,stress_ueberforderung,"Ui, das tönt stressig.",True,True
 "zeitdruck überall, ruhe nirgends",zeitdruck ueberall ruhe nirgends,negativ,stress_ueberforderung,"Ui, das tönt stressig.",True,True
-d belastig het langsam en ungsunde höchi,d belastig het langsam en ungsunde hoechi,negativ,stress_ueberforderung,"Verstehe, das isch viel.",True,True
-sache sammelnd sich und wärtet uf lösige,sache sammelnd sich und waertet uf loesige,negativ,stress_ueberforderung,Hefti Phase. Was wür dir grad am meiste Entlastig gä?,True,True
-jede neue aufgab kommt ungelege,jede neue aufgab kommt ungelege,negativ,stress_ueberforderung,Hefti Phase. Was wür dir grad am meiste Entlastig gä?,True,True
-d konzentration chunnt kaum noh nach,d konzentration chunnt kaum noh nach,negativ,stress_ueberforderung,Hefti Phase. Was wür dir grad am meiste Entlastig gä?,True,True
+d belastig het langsam en ungsunde höchi,d belastig het langsam en ungsunde hoechi,negativ,stress_ueberforderung,"Verstah di, das isch viel.",True,True
+sache sammelnd sich und wärtet uf lösige,sache sammelnd sich und waertet uf loesige,negativ,stress_ueberforderung,Heftigi Phase. Was wür dir grad am meiste Entlastig gä?,True,True
+jede neue aufgab kommt ungelege,jede neue aufgab kommt ungelege,negativ,stress_ueberforderung,Heftigi Phase. Was wür dir grad am meiste Entlastig gä?,True,True
+d konzentration chunnt kaum noh nach,d konzentration chunnt kaum noh nach,negativ,stress_ueberforderung,Heftigi Phase. Was wür dir grad am meiste Entlastig gä?,True,True
 der stresspegel isch grad irrwitzig hoch,der stresspegel isch grad irrwitzig hoch,negativ,stress_ueberforderung,"Krass, voll de Stress.",True,True
-alles bruucht grad plötzlich extreme priorisierung,alles bruucht grad ploetzlich extreme priorisierung,negativ,stress_ueberforderung,Hefti Phase. Was wür dir grad am meiste Entlastig gä?,True,True
+alles bruucht grad plötzlich extreme priorisierung,alles bruucht grad ploetzlich extreme priorisierung,negativ,stress_ueberforderung,Heftigi Phase. Was wür dir grad am meiste Entlastig gä?,True,True
 de tag isch voller unterbrüch und het kei flow,de tag isch voller unterbruech und het kei flow,negativ,stress_ueberforderung,"Ui, das tönt stressig.",True,True
 s packt einem von morn bis abig,s packt einem von morn bis abig,negativ,stress_ueberforderung,"Okay, das isch viel uf Einisch...",True,True
 "kei ahnig, wohär die dauerhektik chunt, aber sie isch do",kei ahnig wohaer die dauerhektik chunt aber sie isch do,negativ,stress_ueberforderung,"Ui, das tönt stressig.",True,True
 d anforderige wachsed schneller als d kapazität,d anforderige wachsed schneller als d kapazitaet,negativ,stress_ueberforderung,"Ui, das tönt stressig.",True,True
-"jede ruum eimal blockiert, kei luft meh",jede ruum eimal blockiert kei luft meh,negativ,stress_ueberforderung,Hefti Phase. Was wür dir grad am meiste Entlastig gä?,True,True
-"s gfühl, de tag hätt nur vier stunde",s gfuehl de tag haett nur vier stunde,negativ,stress_ueberforderung,Hefti Phase. Was wür dir grad am meiste Entlastig gä?,True,True
+"jede ruum eimal blockiert, kei luft meh",jede ruum eimal blockiert kei luft meh,negativ,stress_ueberforderung,Heftigi Phase. Was wür dir grad am meiste Entlastig gä?,True,True
+"s gfühl, de tag hätt nur vier stunde",s gfuehl de tag haett nur vier stunde,negativ,stress_ueberforderung,Heftigi Phase. Was wür dir grad am meiste Entlastig gä?,True,True
 grad chli am kämpfe mit de menge ufgabe,grad chli am kaempfe mit de menge ufgabe,negativ,stress_ueberforderung,"Okay, das isch viel uf Einisch...",True,True
 "hektik pur, nöd mol zit fürs durchatme",hektik pur noed mol zit fuers durchatme,negativ,stress_ueberforderung,"Krass, voll de Stress.",True,True
 de druck isch grad ständig präsent,de druck isch grad staendig praesent,negativ,stress_ueberforderung,"Krass, voll de Stress.",True,True
@@ -212,7 +212,7 @@ d konzentration sind grad nöd so stabil,d konzentration sind grad noed so stabi
 d müdigkeit hält länger a als normal,d muedigkeit haelt laenger a als normal,negativ,gesundheit_sorgen,"Verständlich, dass dich das stresst.",True,True
 e paar kleini symptome mache mich aufmerksam,e paar kleini symptome mache mich aufmerksam,negativ,gesundheit_sorgen,"Ah okay, was macht dir genau Sorge?",True,True
 körperlich chli wacklig unterwegs,koerperlich chli wacklig unterwegs,negativ,gesundheit_sorgen,"Wo spürsch, dass öppis nöd stimmt?",True,True
-d körpersignale sind grad chli schwer z deute,d koerpersignale sind grad chli schwer z deute,negativ,gesundheit_sorgen,Verstehe. Welche Symptome stresst di am meiste?,True,True
+d körpersignale sind grad chli schwer z deute,d koerpersignale sind grad chli schwer z deute,negativ,gesundheit_sorgen,Verstehe. Weli Symptom stressed di am meiste?,True,True
 schlaf isch nid so ruig gsi wie sonst,schlaf isch nid so ruig gsi wie sonst,negativ,gesundheit_sorgen,"Wo spürsch, dass öppis nöd stimmt?",True,True
 d körperreaktione sind unerwartet chli intensiv,d koerperreaktione sind unerwartet chli intensiv,negativ,gesundheit_sorgen,"Ah okay, was macht dir genau Sorge?",True,True
 "nöd ganz sicher, wie ernst das isch",noed ganz sicher wie ernst das isch,negativ,gesundheit_sorgen,"Ah okay, was macht dir genau Sorge?",True,True
@@ -221,15 +221,15 @@ d nervosität spiegelt sich es bitz im körper,d nervositaet spiegelt sich es bi
 öppis fühlt sich nöd ganz im gleichgwicht a,oeppis fuehlt sich noed ganz im gleichgwicht a,negativ,gesundheit_sorgen,"Okay — was isch s, wo di verunsicheret?",True,True
 d müdigkeit chunnt immer wieder in wellene,d muedigkeit chunnt immer wieder in wellene,negativ,gesundheit_sorgen,"Ah okay, was macht dir genau Sorge?",True,True
 e paar ungewöhnlichi verspannige sind debi,e paar ungewoehnlichi verspannige sind debi,negativ,gesundheit_sorgen,"Verständlich, dass dich das stresst.",True,True
-körperlich chli weniger robust als normal,koerperlich chli weniger robust als normal,negativ,gesundheit_sorgen,Verstehe. Welche Symptome stresst di am meiste?,True,True
+körperlich chli weniger robust als normal,koerperlich chli weniger robust als normal,negativ,gesundheit_sorgen,Verstehe. Weli Symptom stressed di am meiste?,True,True
 "e sachte schwere im körper, nöd ganz klar woher",e sachte schwere im koerper noed ganz klar woher,negativ,gesundheit_sorgen,"Wo spürsch, dass öppis nöd stimmt?",True,True
 d atmig isch chli flach im momänt,d atmig isch chli flach im momaent,negativ,gesundheit_sorgen,"Okay — was isch s, wo di verunsicheret?",True,True
-"d innere ruhe fehlt, spürbar au körperlich",d innere ruhe fehlt spuerbar au koerperlich,negativ,gesundheit_sorgen,Verstehe. Welche Symptome stresst di am meiste?,True,True
+"d innere ruhe fehlt, spürbar au körperlich",d innere ruhe fehlt spuerbar au koerperlich,negativ,gesundheit_sorgen,Verstehe. Weli Symptom stressed di am meiste?,True,True
 e gewisse sensibiliät i de körperregione,e gewisse sensibiliaet i de koerperregione,negativ,gesundheit_sorgen,"Ah okay, was macht dir genau Sorge?",True,True
 e paar komische reize chömed und gange wieder,e paar komische reize choemed und gange wieder,negativ,gesundheit_sorgen,"Wo spürsch, dass öppis nöd stimmt?",True,True
 d körperwahrnehmig isch grad eher unstet,d koerperwahrnehmig isch grad eher unstet,negativ,gesundheit_sorgen,"Okay — was isch s, wo di verunsicheret?",True,True
 schwankende energiestufe irritiert chli,schwankende energiestufe irritiert chli,negativ,gesundheit_sorgen,"Ja, das würd mi au beunruhige.",True,True
-"nöd ganz sicher, öb das nur temporär isch",noed ganz sicher oeb das nur temporaer isch,negativ,gesundheit_sorgen,Verstehe. Welche Symptome stresst di am meiste?,True,True
+"nöd ganz sicher, öb das nur temporär isch",noed ganz sicher oeb das nur temporaer isch,negativ,gesundheit_sorgen,Verstehe. Weli Symptom stressed di am meiste?,True,True
 "körperlich nöd im topform, aber schwer z sage warum",koerperlich noed im topform aber schwer z sage warum,negativ,gesundheit_sorgen,"Ja, das würd mi au beunruhige.",True,True
 d müdigkeit macht s alltägliche chli müehsam,d muedigkeit macht s alltaegliche chli mueehsam,negativ,gesundheit_sorgen,"Ah okay, was macht dir genau Sorge?",True,True
 e ungewöhlichi unruhe i de glider,e ungewoehlichi unruhe i de glider,negativ,gesundheit_sorgen,"Verständlich, dass dich das stresst.",True,True
@@ -242,13 +242,13 @@ d spannig i de schulter löst sich kaum,d spannig i de schulter loest sich kaum,
 "grad chli vorsichtig unterwegs, körperlich nid ganz sicher",grad chli vorsichtig unterwegs koerperlich nid ganz sicher,negativ,gesundheit_sorgen,"Ja, das würd mi au beunruhige.",True,True
 wärmi und ruhi fehlen imfall chli i de glider,waermi und ruhi fehlen im fall chli i de glider,negativ,gesundheit_sorgen,"Verständlich, dass dich das stresst.",True,True
 "e mini destabilität im körper, schwer z beschriebe",e mini destabilitaet im koerper schwer z beschriebe,negativ,gesundheit_sorgen,"Ja, das würd mi au beunruhige.",True,True
-d körperstimmig isch nöd konstant,d koerperstimmig isch noed konstant,negativ,gesundheit_sorgen,Verstehe. Welche Symptome stresst di am meiste?,True,True
+d körperstimmig isch nöd konstant,d koerperstimmig isch noed konstant,negativ,gesundheit_sorgen,Verstehe. Weli Symptom stressed di am meiste?,True,True
 "öppis drückt leicht, aber ohne klare ursach",oeppis drueckt leicht aber ohne klare ursach,negativ,gesundheit_sorgen,"Ja, das würd mi au beunruhige.",True,True
-e ungewissheit über d körperläch verlauf,e ungewissheit ueber d koerperlaech verlauf,negativ,gesundheit_sorgen,Verstehe. Welche Symptome stresst di am meiste?,True,True
+e ungewissheit über d körperläch verlauf,e ungewissheit ueber d koerperlaech verlauf,negativ,gesundheit_sorgen,Verstehe. Weli Symptom stressed di am meiste?,True,True
 e paar ungewohnte signale mache mer gedanke,e paar ungewohnte signale mache mer gedanke,negativ,gesundheit_sorgen,"Ah okay, was macht dir genau Sorge?",True,True
 "nöd dramatisch, aber definitiv spürbar anders als sonst",noed dramatisch aber definitiv spuerbar anders als sonst,negativ,gesundheit_sorgen,"Ja, das würd mi au beunruhige.",True,True
 d körper bruucht glaub grad es bitz meh achtig,d koerper bruucht glaub grad es bitz meh achtig,negativ,gesundheit_sorgen,"Ah okay, was macht dir genau Sorge?",True,True
-"insgeheim wärs beruhigend, meh klarheit über d symptome z ha",insgeheim waers beruhigend meh klarheit ueber d symptome z ha,negativ,gesundheit_sorgen,Verstehe. Welche Symptome stresst di am meiste?,True,True
+"insgeheim wärs beruhigend, meh klarheit über d symptome z ha",insgeheim waers beruhigend meh klarheit ueber d symptome z ha,negativ,gesundheit_sorgen,Verstehe. Weli Symptom stressed di am meiste?,True,True
 "uff, gar nöd guet",uff gar noed guet,negativ,kurzreaktion_negativ,Krass.,True,True
 totale schwachsinn,totale schwachsinn,negativ,kurzreaktion_negativ,Tönt nöd guet.,True,True
 so en bullshit,so en bullshit,negativ,kurzreaktion_negativ,Tönt nöd guet.,True,True
@@ -302,53 +302,53 @@ voll daneben,voll daneben,negativ,kurzreaktion_negativ,Tönt nöd guet.,True,Tru
 "bin imfall sehr dankbar für das, was du da gmacht hesch",bi im fall sehr dankbar fuer das was du da gmacht hesch,positiv,dankbarkeit,Kei Problem!,True,True
 "merci viu mau, das isch würkli mega aufmerksam gsi",merci viu mau das isch wuerkli mega aufmerksam gsi,positiv,dankbarkeit,Sehr gärn!,True,True
 "huere lieb vo dir, danke tausig mol",huere lieb vo dir danke tausig mol,positiv,dankbarkeit,Kei Problem!,True,True
-"so e gschänk het mer grad den tag versüsst, merci!",so e gschaenk het mer grad den tag versuesst merci,positiv,dankbarkeit,Sehr gern gscheh,True,True
+"so e gschänk het mer grad den tag versüsst, merci!",so e gschaenk het mer grad den tag versuesst merci,positiv,dankbarkeit,Voll easy,True,True
 "dini unterstützig bedeutet würkli vil, danke dir",dini unterstuetzig bedeutet wuerkli vil danke dir,positiv,dankbarkeit,"Freut mi, wenn s hilft!",True,True
-"es het mi richtig berührt, merci fürs drandänke",es het mi richtig beruehrt merci fuers drandaenke,positiv,dankbarkeit,Sehr gern gscheh,True,True
+"es het mi richtig berührt, merci fürs drandänke",es het mi richtig beruehrt merci fuers drandaenke,positiv,dankbarkeit,Voll easy,True,True
 "eifach mal en grosses danke, het mega guet ta",eifach mal en grosses danke het mega guet ta,positiv,dankbarkeit,"Freut mi, wenn s hilft!",True,True
 "s isch nöd selbstverständlich, drum merci",s isch noed selbstverstaendlich drum merci,positiv,dankbarkeit,Sehr gärn!,True,True
 "huere schön gsi, merci für die müeh",huere schoen gsi merci fuer die mueeh,positiv,dankbarkeit,Sehr gärn!,True,True
-"dini geduld isch gold wert, danke dir vielmol",dini geduld isch gold wert danke dir vielmol,positiv,dankbarkeit,Sehr gern gscheh,True,True
-"es chli merci, aber vo härze",es chli merci aber vo haerze,positiv,dankbarkeit,Sehr gern gscheh,True,True
+"dini geduld isch gold wert, danke dir vielmol",dini geduld isch gold wert danke dir vielmol,positiv,dankbarkeit,Voll easy,True,True
+"es chli merci, aber vo härze",es chli merci aber vo haerze,positiv,dankbarkeit,Voll easy,True,True
 "so en liebe gest, merci 1000x",so en liebe gest merci <NUM>x,positiv,dankbarkeit,"Freut mi, wenn s hilft!",True,True
-"het mi mega gfreut, danke dir!",het mi mega gfreut danke dir,positiv,dankbarkeit,Gern passiert!,True,True
+"het mi mega gfreut, danke dir!",het mi mega gfreut danke dir,positiv,dankbarkeit,Gern gscheh!,True,True
 "merci fürs zuelose, das het sehr guet ta",merci fuers zuelose das het sehr guet ta,positiv,dankbarkeit,Kei Problem!,True,True
-en riesigs danke für dini hilf hüt,en riesigs danke fuer dini hilf huet,positiv,dankbarkeit,Sehr gern gscheh,True,True
-"merci, dass du druf ufgpasst hesch",merci dass du druf ufgpasst hesch,positiv,dankbarkeit,Gern passiert!,True,True
+en riesigs danke für dini hilf hüt,en riesigs danke fuer dini hilf huet,positiv,dankbarkeit,Voll easy,True,True
+"merci, dass du druf ufgpasst hesch",merci dass du druf ufgpasst hesch,positiv,dankbarkeit,Gern gscheh!,True,True
 "es isch so angenehm mit dir, merci viu mau",es isch so angenehm mit dir merci viu mau,positiv,dankbarkeit,Kei Problem!,True,True
 so viel ruhe und verständnis – danke!,so viel ruhe und verstaendnis danke,positiv,dankbarkeit,"Freut mi, wenn s hilft!",True,True
 "es het mer echt erleichterig bracht, merci",es het mer echt erleichterig bracht merci,positiv,dankbarkeit,Sehr gärn!,True,True
-so e klari erklärig – danke dir!,so e klari erklaerig danke dir,positiv,dankbarkeit,Sehr gern gscheh,True,True
+so e klari erklärig – danke dir!,so e klari erklaerig danke dir,positiv,dankbarkeit,Voll easy,True,True
 "dä input vo dir het echt weitergholfä, merci",dae input vo dir het echt weitergholfae merci,positiv,dankbarkeit,"Freut mi, wenn s hilft!",True,True
 für mini frage immer offe – merci!,fuer mini frage immer offe merci,positiv,dankbarkeit,Kei Problem!,True,True
 "huere wertvoll, was du gseit hesch, danke",huere wertvoll was du gseit hesch danke,positiv,dankbarkeit,"Freut mi, wenn s hilft!",True,True
 "es isch so angenehm, wie du d sache angeisch – merci",es isch so angenehm wie du d sache angeisch merci,positiv,dankbarkeit,Kei Problem!,True,True
 "das het mi grad en grossi last gnoh, merci dir",das het mi grad en grossi last gnoh merci dir,positiv,dankbarkeit,"Freut mi, wenn s hilft!",True,True
 "eifach mol danke, weils wichtig isch",eifach mol danke weils wichtig isch,positiv,dankbarkeit,Kei Problem!,True,True
-"dini perspektive het mir mega ghollfe, merci",dini perspektive het mir mega ghollfe merci,positiv,dankbarkeit,Gern passiert!,True,True
-"het mich grad richtig gfreut, merci!",het mich grad richtig gfreut merci,positiv,dankbarkeit,Sehr gern gscheh,True,True
+"dini perspektive het mir mega ghollfe, merci",dini perspektive het mir mega ghollfe merci,positiv,dankbarkeit,Gern gscheh!,True,True
+"het mich grad richtig gfreut, merci!",het mich grad richtig gfreut merci,positiv,dankbarkeit,Voll easy,True,True
 "merci, dass du immer so fair und ehrlich bisch",merci dass du immer so fair und ehrlich bisch,positiv,dankbarkeit,Sehr gärn!,True,True
-"es isch schön, dass mer sich uf dich cha verla, merci",es isch schoen dass mer sich uf dich chan verla merci,positiv,dankbarkeit,Gern passiert!,True,True
+"es isch schön, dass mer sich uf dich cha verla, merci",es isch schoen dass mer sich uf dich chan verla merci,positiv,dankbarkeit,Gern gscheh!,True,True
 danke für dini spontane hilf – mega,danke fuer dini spontane hilf mega,positiv,dankbarkeit,Sehr gärn!,True,True
 "huere cool vo dir gsi, merci!",huere cool vo dir gsi merci,positiv,dankbarkeit,Sehr gärn!,True,True
 "es het mer würkli de stress gnoh, danke dir",es het mer wuerkli de stress gnoh danke dir,positiv,dankbarkeit,Kei Problem!,True,True
-"merci, dass du dir so vill zit gnoh hesch",merci dass du dir so vill zit gnoh hesch,positiv,dankbarkeit,Sehr gern gscheh,True,True
+"merci, dass du dir so vill zit gnoh hesch",merci dass du dir so vill zit gnoh hesch,positiv,dankbarkeit,Voll easy,True,True
 so feinfühlig reagiert – merci viu mau,so feinfuehlig reagiert merci viu mau,positiv,dankbarkeit,"Freut mi, wenn s hilft!",True,True
-"dini wort händ guet ta, danke",dini wort haend guet ta danke,positiv,dankbarkeit,Sehr gern gscheh,True,True
+"dini wort händ guet ta, danke",dini wort haend guet ta danke,positiv,dankbarkeit,Voll easy,True,True
 "merci, dass du nöd nur zuelose, sondern verstandsch",merci dass du noed nur zuelose sondern verstandsch,positiv,dankbarkeit,"Freut mi, wenn s hilft!",True,True
-"es het würkli den unterschied gmacht, merci",es het wuerkli den unterschied gmacht merci,positiv,dankbarkeit,Gern passiert!,True,True
+"es het würkli den unterschied gmacht, merci",es het wuerkli den unterschied gmacht merci,positiv,dankbarkeit,Gern gscheh!,True,True
 "de support vo dir isch mega wertvoll, danke",de support vo dir isch mega wertvoll danke,positiv,dankbarkeit,Kei Problem!,True,True
-"het alles viel einfacher gmacht, merci!",het alles viel einfacher gmacht merci,positiv,dankbarkeit,Gern passiert!,True,True
+"het alles viel einfacher gmacht, merci!",het alles viel einfacher gmacht merci,positiv,dankbarkeit,Gern gscheh!,True,True
 so unkompliziert und hilfsbereit – merci,so unkompliziert und hilfsbereit merci,positiv,dankbarkeit,Sehr gärn!,True,True
-eifach dankbar für dini art,eifach dankbar fuer dini art,positiv,dankbarkeit,Gern passiert!,True,True
-"merci, es isch würkli es geschenk gsi",merci es isch wuerkli es geschenk gsi,positiv,dankbarkeit,Gern passiert!,True,True
-dä moment hüt mit dir – danke,dae moment huet mit dir danke,positiv,dankbarkeit,Sehr gern gscheh,True,True
+eifach dankbar für dini art,eifach dankbar fuer dini art,positiv,dankbarkeit,Gern gscheh!,True,True
+"merci, es isch würkli es geschenk gsi",merci es isch wuerkli es geschenk gsi,positiv,dankbarkeit,Gern gscheh!,True,True
+dä moment hüt mit dir – danke,dae moment huet mit dir danke,positiv,dankbarkeit,Voll easy,True,True
 "schön, dass mer uf dich zähle cha, merci",schoen dass mer uf dich zaehle cha merci,positiv,dankbarkeit,Kei Problem!,True,True
 dankbare vibe grad – merci dir!,dankbare vibe grad merci dir,positiv,dankbarkeit,Kei Problem!,True,True
-für mini nervosität hesch perfekt reagiert – danke,fuer mini nervositaet hesch perfekt reagiert danke,positiv,dankbarkeit,Sehr gern gscheh,True,True
-"es het mi beruhigt, merci viu mau",es het mi beruhigt merci viu mau,positiv,dankbarkeit,Gern passiert!,True,True
+für mini nervosität hesch perfekt reagiert – danke,fuer mini nervositaet hesch perfekt reagiert danke,positiv,dankbarkeit,Voll easy,True,True
+"es het mi beruhigt, merci viu mau",es het mi beruhigt merci viu mau,positiv,dankbarkeit,Gern gscheh!,True,True
 "de riesige unterschied, wo du gmacht hesch – danke!",de riesige unterschied wo du gmacht hesch danke,positiv,dankbarkeit,Sehr gärn!,True,True
-"merci, die unterstützig hett wehklä guet ta",merci die unterstuetzig hett wehklae guet ta,positiv,dankbarkeit,Gern passiert!,True,True
+"merci, die unterstützig hett wehklä guet ta",merci die unterstuetzig hett wehklae guet ta,positiv,dankbarkeit,Gern gscheh!,True,True
 dä vibe hüt isch eifach nur schön,dae vibe huet isch eifach nur schoen,positiv,freude_gute_laune,Hammer! Verzell meh.,True,True
 grad so en richtig positive vibe hüt!,grad so en richtig positive vibe huet,positiv,freude_gute_laune,Gönn dir die Freud!,True,True
 "huere schön, wenn öppis eifach klappt",huere schoen wenn oeppis eifach klappt,positiv,freude_gute_laune,Gönn dir die Freud!,True,True
@@ -407,11 +407,11 @@ mini arbeit het sich definitiv uszahlt,mini arbeit het sich definitiv uszahlt,po
 dä erfolg isch überraschend glatt cho,dae erfolg isch ueberraschend glatt cho,positiv,erfolg_stolz,Cooli Sach!,True,True
 "het richtig stolz gmacht, wie rund alles worde isch",het richtig stolz gmacht wie rund alles worde isch,positiv,erfolg_stolz,Cooli Sach!,True,True
 en task sauber durchzoge – top gfühl,en task sauber durchzoge top gfuehl,positiv,erfolg_stolz,Cooli Sach!,True,True
-"mega schön z spüre, dass d müeh frücht träg",mega schoen z spuere dass d mueeh fruecht traeg,positiv,erfolg_stolz,Gfreut mi für dich – echt cool!,True,True
-dä moment vo klari fortschritt het gut ta,dae moment vo klari fortschritt het gut ta,positiv,erfolg_stolz,Gfreut mi für dich – echt cool!,True,True
+"mega schön z spüre, dass d müeh frücht träg",mega schoen z spuere dass d mueeh fruecht traeg,positiv,erfolg_stolz,Freut mi für dich – echt cool!,True,True
+dä moment vo klari fortschritt het gut ta,dae moment vo klari fortschritt het gut ta,positiv,erfolg_stolz,Freut mi für dich – echt cool!,True,True
 "wieder öppis abghäklet, wo lang angstande isch",wieder oeppis abghaeklet wo lang angstande isch,positiv,erfolg_stolz,Top! Was het am beschte klappet?,True,True
 "es feedback übercho, wo sehr motiviert hät",es feedback uebercho wo sehr motiviert haet,positiv,erfolg_stolz,Mega! Gratuliere!,True,True
-d performance hüt het würkli überzeugt,d performance huet het wuerkli ueberzeugt,positiv,erfolg_stolz,Gfreut mi für dich – echt cool!,True,True
+d performance hüt het würkli überzeugt,d performance huet het wuerkli ueberzeugt,positiv,erfolg_stolz,Freut mi für dich – echt cool!,True,True
 säuber investierti zit het klar erfolg bracht,saeuber investierti zit het klar erfolg bracht,positiv,erfolg_stolz,Stark gmacht!,True,True
 dä lernschritt hüt isch richtig hangebliebe,dae lernschritt huet isch richtig hangebliebe,positiv,erfolg_stolz,Top! Was het am beschte klappet?,True,True
 "gseh, wie vill besser s worde isch – schöns gfühl",gseh wie vill besser s worde isch schoens gfuehl,positiv,erfolg_stolz,Top! Was het am beschte klappet?,True,True
@@ -421,42 +421,42 @@ es guets resultat trotz schwierige phase,es guets resultat trotz schwierige phas
 dä erfolg hüt isch mega verdient gsi,dae erfolg huet isch mega verdient gsi,positiv,erfolg_stolz,Cooli Sach!,True,True
 "het guet ta, so souverän z bliebe",het guet ta so souveraen z bliebe,positiv,erfolg_stolz,Stark gmacht!,True,True
 "klar gmerkt, wie vill kompetänz entstanden isch",klar gmerkt wie vill kompetaenz entstanden isch,positiv,erfolg_stolz,Top! Was het am beschte klappet?,True,True
-dä tag het stolz und zufriedenheit bracht,dae tag het stolz und zufriedenheit bracht,positiv,erfolg_stolz,Gfreut mi für dich – echt cool!,True,True
-"fortschritt gseh, Schritt für Schritt",fortschritt gseh schritt fuer schritt,positiv,erfolg_stolz,Gfreut mi für dich – echt cool!,True,True
-feedback vom team het richtig bestätigt,feedback vom team het richtig bestaetigt,positiv,erfolg_stolz,Gfreut mi für dich – echt cool!,True,True
+dä tag het stolz und zufriedenheit bracht,dae tag het stolz und zufriedenheit bracht,positiv,erfolg_stolz,Freut mi für dich – echt cool!,True,True
+"fortschritt gseh, Schritt für Schritt",fortschritt gseh schritt fuer schritt,positiv,erfolg_stolz,Freut mi für dich – echt cool!,True,True
+feedback vom team het richtig bestätigt,feedback vom team het richtig bestaetigt,positiv,erfolg_stolz,Freut mi für dich – echt cool!,True,True
 "dä moment vo: yes, das het funktioniert",dae moment vo yes das het funktioniert,positiv,erfolg_stolz,Stark gmacht!,True,True
-mini strategie isch perfekt ufgange,mini strategie isch perfekt ufgange,positiv,erfolg_stolz,Gfreut mi für dich – echt cool!,True,True
+mini strategie isch perfekt ufgange,mini strategie isch perfekt ufgange,positiv,erfolg_stolz,Freut mi für dich – echt cool!,True,True
 dä glunge abschluss het mega motiviert,dae glunge abschluss het mega motiviert,positiv,erfolg_stolz,Top! Was het am beschte klappet?,True,True
 "schön gsi z gseh, dass d üebig würkli wirkt",schoen gsi z gseh dass d ueebig wuerkli wirkt,positiv,erfolg_stolz,Stark gmacht!,True,True
-dä erfolg isch eifach ehrlich verdient,dae erfolg isch eifach ehrlich verdient,positiv,erfolg_stolz,Gfreut mi für dich – echt cool!,True,True
+dä erfolg isch eifach ehrlich verdient,dae erfolg isch eifach ehrlich verdient,positiv,erfolg_stolz,Freut mi für dich – echt cool!,True,True
 het richtig gfunkt zwischen idee und umsetzig,het richtig gfunkt zwischen idee und umsetzig,positiv,erfolg_stolz,Stark gmacht!,True,True
 d klarheit im resultat isch mega schön gsi,d klarheit im resultat isch mega schoen gsi,positiv,erfolg_stolz,Stark gmacht!,True,True
 "mega beeindruckt, wie rund s worde isch",mega beeindruckt wie rund s worde isch,positiv,erfolg_stolz,Stark gmacht!,True,True
 dä erreichte step hüt het gueti energie bracht,dae erreichte step huet het gueti energie bracht,positiv,erfolg_stolz,Mega! Gratuliere!,True,True
 froh gsi über dä saubere output,froh gsi ueber dae saubere output,positiv,erfolg_stolz,Stark gmacht!,True,True
 es komplizierts thema endlich gmacht – stark,es komplizierts thema endlich gmacht stark,positiv,erfolg_stolz,Top! Was het am beschte klappet?,True,True
-"jobbezoge erfolg hüt, het sehr guet ta",jobbezoge erfolg huet het sehr guet ta,positiv,erfolg_stolz,Gfreut mi für dich – echt cool!,True,True
+"jobbezoge erfolg hüt, het sehr guet ta",jobbezoge erfolg huet het sehr guet ta,positiv,erfolg_stolz,Freut mi für dich – echt cool!,True,True
 "dä moment, wo alles inegriffe het",dae moment wo alles inegriffe het,positiv,erfolg_stolz,Top! Was het am beschte klappet?,True,True
 "selbst stolz gsi, wie professionell s worde isch",selbst stolz gsi wie professionell s worde isch,positiv,erfolg_stolz,Cooli Sach!,True,True
 performance hüt het überzügt – guets zeiche,performance huet het ueberzuegt guets zeiche,positiv,erfolg_stolz,Cooli Sach!,True,True
-"het guet ta, mal so klare resultate z gseh",het guet ta mal so klare resultate z gseh,positiv,erfolg_stolz,Gfreut mi für dich – echt cool!,True,True
-"es hupfte richtig, als s endlich klappt het",es hupfte richtig als s endlich klappt het,positiv,erfolg_stolz,Gfreut mi für dich – echt cool!,True,True
+"het guet ta, mal so klare resultate z gseh",het guet ta mal so klare resultate z gseh,positiv,erfolg_stolz,Freut mi für dich – echt cool!,True,True
+"es hupfte richtig, als s endlich klappt het",es hupfte richtig als s endlich klappt het,positiv,erfolg_stolz,Freut mi für dich – echt cool!,True,True
 d investierti müeh isch voll ufgange,d investierti mueeh isch voll ufgange,positiv,erfolg_stolz,Mega! Gratuliere!,True,True
 dä fokus hüt het sich extrem uszahlt,dae fokus huet het sich extrem uszahlt,positiv,erfolg_stolz,Mega! Gratuliere!,True,True
 e siichtbare verbesserig macht mega stolz,e siichtbare verbesserig macht mega stolz,positiv,erfolg_stolz,Cooli Sach!,True,True
 klarer erfolg – und vor allem verdient,klarer erfolg und vor allem verdient,positiv,erfolg_stolz,Stark gmacht!,True,True
-dä ganze prozess het so vill lehri momänt bracht,dae ganze prozess het so vill lehri momaent bracht,positiv,erfolg_stolz,Gfreut mi für dich – echt cool!,True,True
-fortschritt sichtbar gmacht – stärkt ungemein,fortschritt sichtbar gmacht staerkt ungemein,positiv,erfolg_stolz,Gfreut mi für dich – echt cool!,True,True
+dä ganze prozess het so vill lehrrichi momänt bracht,dae ganze prozess het so vill lehrrichi momaent bracht,positiv,erfolg_stolz,Freut mi für dich – echt cool!,True,True
+fortschritt sichtbar gmacht – stärkt ungemein,fortschritt sichtbar gmacht staerkt ungemein,positiv,erfolg_stolz,Freut mi für dich – echt cool!,True,True
 "en erfolg, wo würkli Gewicht het",en erfolg wo wuerkli gewicht het,positiv,erfolg_stolz,Top! Was het am beschte klappet?,True,True
-dä tag hüt het stolz und zufriedenheit gschänkt,dae tag huet het stolz und zufriedenheit gschaenkt,positiv,erfolg_stolz,Gfreut mi für dich – echt cool!,True,True
+dä tag hüt het stolz und zufriedenheit gschänkt,dae tag huet het stolz und zufriedenheit gschaenkt,positiv,erfolg_stolz,Freut mi für dich – echt cool!,True,True
 d gmeinsam Ziit hüt het richtig guet ta,d gmeinsam ziit huet het richtig guet ta,positiv,verbundenheit_naehe,"Fühlt sich guet a, gäll?",True,True
 "het mega schön gfühlt, so ehrlich chönne rede",het mega schoen gfuehlt so ehrlich choenne rede,positiv,verbundenheit_naehe,"Fühlt sich guet a, gäll?",True,True
 dä moment vo nächi isch würkli berührend gsi,dae moment vo naechi isch wuerkli beruehrend gsi,positiv,verbundenheit_naehe,Das tuet immer guet.,True,True
-"so e warmi atmosphär zäme, ganz natürlich",so e warmi atmosphaer zaeme ganz natuerlich,positiv,verbundenheit_naehe,Das sind die best Momänt.,True,True
+"so e warmi atmosphär zäme, ganz natürlich",so e warmi atmosphaer zaeme ganz natuerlich,positiv,verbundenheit_naehe,Das sind die beschte Momänt.,True,True
 "het richtig verbindet, die situation",het richtig verbindet die situation,positiv,verbundenheit_naehe,"Fühlt sich guet a, gäll?",True,True
-e ehrlechs gspröch het grad mega viel bedeutet,e ehrlechs gsproech het grad mega viel bedeutet,positiv,verbundenheit_naehe,Das sind die best Momänt.,True,True
+e ehrlechs gspröch het grad mega viel bedeutet,e ehrlechs gsproech het grad mega viel bedeutet,positiv,verbundenheit_naehe,Das sind die beschte Momänt.,True,True
 "het guet ta, dass mer sich so öppet vertraue cha",het guet ta dass mer sich so oeppet vertraue chan,positiv,verbundenheit_naehe,Das tuet immer guet.,True,True
-d verbindig isch wieder richtig spürbar gsi,d verbindig isch wieder richtig spuerbar gsi,positiv,verbundenheit_naehe,Das sind die best Momänt.,True,True
+d verbindig isch wieder richtig spürbar gsi,d verbindig isch wieder richtig spuerbar gsi,positiv,verbundenheit_naehe,Das sind die beschte Momänt.,True,True
 het sich mega authentisch und nah aagfühlt,het sich mega authentisch und nah aagfuehlt,positiv,verbundenheit_naehe,"Fühlt sich guet a, gäll?",True,True
 dä gemeinsame vibe hüt isch top gsi,dae gemeinsame vibe huet isch top gsi,positiv,verbundenheit_naehe,"Fühlt sich guet a, gäll?",True,True
 "so schön gsi, dass mer voll ufem gliiche level gsi sind",so schoen gsi dass mer voll ufem gliiche level gsi sind,positiv,verbundenheit_naehe,"Mega schön, so Verbindig!",True,True
@@ -465,37 +465,37 @@ het sich wie en sichere ort aagfühlt,het sich wie en sichere ort aagfuehlt,posi
 "e warmi, vertrauti stimmig hüt – mega",e warmi vertrauti stimmig huet mega,positiv,verbundenheit_naehe,"Mega schön, so Verbindig!",True,True
 "schön, wenn mer eimander würkli versteht",schoen wenn mer eimander wuerkli versteht,positiv,verbundenheit_naehe,Schön so Momänt!,True,True
 d verbindig isch grad viel tiefer worde,d verbindig isch grad viel tiefer worde,positiv,verbundenheit_naehe,Das tuet immer guet.,True,True
-"het guet ta, wie offe alles gsi isch",het guet ta wie offe alles gsi isch,positiv,verbundenheit_naehe,Das sind die best Momänt.,True,True
+"het guet ta, wie offe alles gsi isch",het guet ta wie offe alles gsi isch,positiv,verbundenheit_naehe,Das sind die beschte Momänt.,True,True
 so en ehrliche austausch mach unglaublich viel us,so en ehrliche austausch mach unglaublich viel us,positiv,verbundenheit_naehe,Schön so Momänt!,True,True
 d sanfti art vom gspröch hüt het mega gholfe,d sanfti art vom gsproech huet het mega gholfe,positiv,verbundenheit_naehe,"Fühlt sich guet a, gäll?",True,True
 "het richtig berührt, wie präsent alles gsi isch",het richtig beruehrt wie praesent alles gsi isch,positiv,verbundenheit_naehe,Das tuet immer guet.,True,True
-so viel nächi ganz ohni druck – wunderschön,so viel naechi ganz ohni druck wunderschoen,positiv,verbundenheit_naehe,Das sind die best Momänt.,True,True
+so viel nächi ganz ohni druck – wunderschön,so viel naechi ganz ohni druck wunderschoen,positiv,verbundenheit_naehe,Das sind die beschte Momänt.,True,True
 "het sich wie mini mensche gfühlt, wo da sind",het sich wie mini mensche gfuehlt wo da sind,positiv,verbundenheit_naehe,Schön so Momänt!,True,True
 de moment hüt het nächi und ruhe brocht,de moment huet het naechi und ruhe brocht,positiv,verbundenheit_naehe,"Mega schön, so Verbindig!",True,True
 "het guet ta, dass mer nöd müend spiele oder so",het guet ta dass mer noed mueend spiele oder so,positiv,verbundenheit_naehe,"Fühlt sich guet a, gäll?",True,True
 d verbindig isch ganz unforced entsta,d verbindig isch ganz unforced entsta,positiv,verbundenheit_naehe,"Mega schön, so Verbindig!",True,True
-s isch eifach gmüetlich und vertraut gsi,s isch eifach gmueetlich und vertraut gsi,positiv,verbundenheit_naehe,Das sind die best Momänt.,True,True
+s isch eifach gmüetlich und vertraut gsi,s isch eifach gmueetlich und vertraut gsi,positiv,verbundenheit_naehe,Das sind die beschte Momänt.,True,True
 "so en wärmi vibe hüt, het mi überraschet",so en waermi vibe huet het mi ueberraschet,positiv,verbundenheit_naehe,"Mega schön, so Verbindig!",True,True
 d nächi het würklich getröschte,d naechi het wuerklich getroeschte,positiv,verbundenheit_naehe,Schön so Momänt!,True,True
 het sich wie ächte halt aagfühlt,het sich wie aechte halt aagfuehlt,positiv,verbundenheit_naehe,"Fühlt sich guet a, gäll?",True,True
 "so guet gsi, dass mer sich öppis persönlichs hät chönne teile",so guet gsi dass mer sich oeppis persoenlichs haet choenne teile,positiv,verbundenheit_naehe,Das tuet immer guet.,True,True
 d ruigi energie zäme het voll gholfe,d ruigi energie zaeme het voll gholfe,positiv,verbundenheit_naehe,"Fühlt sich guet a, gäll?",True,True
-het sich nöd oberflächlich oder forced aagfühlt,het sich noed oberflaechlich oder forced aagfuehlt,positiv,verbundenheit_naehe,Das sind die best Momänt.,True,True
+het sich nöd oberflächlich oder forced aagfühlt,het sich noed oberflaechlich oder forced aagfuehlt,positiv,verbundenheit_naehe,Das sind die beschte Momänt.,True,True
 d gmeinsam Ziit het de kopf sehr beruhigt,d gmeinsam ziit het de kopf sehr beruhigt,positiv,verbundenheit_naehe,Das tuet immer guet.,True,True
 "en vibe, wo zeigt, dass s vertroue stimmt",en vibe wo zeigt dass s vertroue stimmt,positiv,verbundenheit_naehe,"Fühlt sich guet a, gäll?",True,True
 het sich so echti freundschaft aagfühlt,het sich so echti freundschaft aagfuehlt,positiv,verbundenheit_naehe,"Mega schön, so Verbindig!",True,True
-mini welt het sich grad chli grösser aagfühlt,mini welt het sich grad chli groesser aagfuehlt,positiv,verbundenheit_naehe,Das sind die best Momänt.,True,True
+mini welt het sich grad chli grösser aagfühlt,mini welt het sich grad chli groesser aagfuehlt,positiv,verbundenheit_naehe,Das sind die beschte Momänt.,True,True
 "wärmi momänt, wo nöd gross erklärt müend wärde",waermi momaent wo noed gross erklaert mueend waerde,positiv,verbundenheit_naehe,"Fühlt sich guet a, gäll?",True,True
 "het guet ta, wie ehrlich alles gsi isch",het guet ta wie ehrlich alles gsi isch,positiv,verbundenheit_naehe,"Fühlt sich guet a, gäll?",True,True
-so en wertvolli verbindig – het richtig glänzt,so en wertvolli verbindig het richtig glaenzt,positiv,verbundenheit_naehe,Das sind die best Momänt.,True,True
+so en wertvolli verbindig – het richtig glänzt,so en wertvolli verbindig het richtig glaenzt,positiv,verbundenheit_naehe,Das sind die beschte Momänt.,True,True
 d nächi het grad viel sicherheit bracht,d naechi het grad viel sicherheit bracht,positiv,verbundenheit_naehe,"Fühlt sich guet a, gäll?",True,True
-"het sich so natürlich ergeben, mega schön",het sich so natuerlich ergeben mega schoen,positiv,verbundenheit_naehe,Das sind die best Momänt.,True,True
+"het sich so natürlich ergeben, mega schön",het sich so natuerlich ergeben mega schoen,positiv,verbundenheit_naehe,Das sind die beschte Momänt.,True,True
 dä austausch hüt het richtig satt gmacht im herz,dae austausch huet het richtig satt gmacht im herz,positiv,verbundenheit_naehe,"Fühlt sich guet a, gäll?",True,True
 "en moment vo echti nächi, selten und kostbar",en moment vo echti naechi selten und kostbar,positiv,verbundenheit_naehe,Das tuet immer guet.,True,True
 "het guet ta, so akzeptiert z sii",het guet ta so akzeptiert z sii,positiv,verbundenheit_naehe,"Fühlt sich guet a, gäll?",True,True
 "fühltsich an, als wär mer länger verbunden gsi",fuehltsich an als waer mer laenger verbunden gsi,positiv,verbundenheit_naehe,"Fühlt sich guet a, gäll?",True,True
 "e kleinigkeit, aber voller wärmi und nächi",e kleinigkeit aber voller waermi und naechi,positiv,verbundenheit_naehe,"Mega schön, so Verbindig!",True,True
-"dä vibe isch weich, vertraut, angenehm",dae vibe isch weich vertraut angenehm,positiv,verbundenheit_naehe,Das sind die best Momänt.,True,True
+"dä vibe isch weich, vertraut, angenehm",dae vibe isch weich vertraut angenehm,positiv,verbundenheit_naehe,Das sind die beschte Momänt.,True,True
 "het mir zeigt, wie viel gemeinsames mir händ",het mir zeigt wie viel gemeinsames mir haend,positiv,verbundenheit_naehe,Das tuet immer guet.,True,True
 "so en schöne verbindigsmoment, ganz uferwartet",so en schoene verbindigsmoment ganz uferwartet,positiv,verbundenheit_naehe,Das tuet immer guet.,True,True
 het richtig ruhe und nächi bringt,het richtig ruhe und naechi bringt,positiv,verbundenheit_naehe,Das tuet immer guet.,True,True
@@ -608,19 +608,19 @@ guete start gha i de tag?,guete start gha i de tag,neutral,smalltalk,Wie lauft's
 irgendöppis spannends passiert letzterzit?,irgendoeppis spannends passiert letzterzit,neutral,smalltalk,Verstande. Was lauft no so bi dir?,True,True
 wie isch s wetter bi dir?,wie isch s wetter bi dir,neutral,smalltalk,"Okay, und wie geit’s dir so?",True,True
 was stoh hüt alles so a?,was stoh huet alles so a,neutral,smalltalk,Alles klar.,True,True
-wie hesch s gester gha?,wie hesch s gester gha,neutral,smalltalk,Wie isch d Stimmung so?,True,True
+wie hesch s gester gha?,wie hesch s gester gha,neutral,smalltalk,Wie isch d Stimmig so?,True,True
 "lange nüm gseh, wie lauft s?",lange nuem gseh wie lauft s,neutral,smalltalk,Guet z wüsse. Sonst alles easy?,True,True
 gueti vibe am morgä oder eher schläfrig?,gueti vibe am morgae oder eher schlaefrig,neutral,smalltalk,Alles klar.,True,True
 was treibsch aktuell so im läbe?,was treibsch aktuell so im laebe,neutral,smalltalk,Guet z wüsse. Sonst alles easy?,True,True
 wie tüend d sache vorwärts go bi dir?,wie tueend d sache vorwaerts go bi dir,neutral,smalltalk,Verstande. Was lauft no so bi dir?,True,True
-was esch dini stimmig hüt?,was esch dini stimmig huet,neutral,smalltalk,Wie isch d Stimmung so?,True,True
+was esch dini stimmig hüt?,was esch dini stimmig huet,neutral,smalltalk,Wie isch d Stimmig so?,True,True
 wie isch s wucheend gsi?,wie isch s wucheend gsi,neutral,smalltalk,Alles klar.,True,True
 "irgendöppis, wo di grad freut?",irgendoeppis wo di grad freut,neutral,smalltalk,Alles klar.,True,True
 wie gaht s dim umfeld so?,wie gaht s dim umfeld so,neutral,smalltalk,Verstande. Was lauft no so bi dir?,True,True
 was hesch hüt no uf em plan?,was hesch huet no uf em plan,neutral,smalltalk,"Okay, und wie geit’s dir so?",True,True
 alles ruig oder chli trubel?,alles ruig oder chli trubel,neutral,smalltalk,Verstande. Was lauft no so bi dir?,True,True
 wie bisch id wuche gstarrt?,wie bisch id wuche gstarrt,neutral,smalltalk,Verstande. Was lauft no so bi dir?,True,True
-was hesch für plän am abig?,was hesch fuer plaen am abig,neutral,smalltalk,Wie isch d Stimmung so?,True,True
+was hesch für plän am abig?,was hesch fuer plaen am abig,neutral,smalltalk,Wie isch d Stimmig so?,True,True
 wie isch s am morge aagfange?,wie isch s am morge aagfange,neutral,smalltalk,Verstande. Was lauft no so bi dir?,True,True
 es bitz stressig oder ganz entspannt?,es bitz stressig oder ganz entspannt,neutral,smalltalk,Wie lauft's süsch?,True,True
 hesch hüt scho öppis guets ghaa?,hesch huet scho oeppis guets ghaa,neutral,smalltalk,Wie lauft's süsch?,True,True
@@ -629,7 +629,7 @@ was isch bis jetzt s highlight vo dim tag?,was isch bis jetzt s highlight vo dim
 wie lauft s bi der arbeit imfall?,wie lauft s bi der arbeit imfall,neutral,smalltalk,Guet z wüsse. Sonst alles easy?,True,True
 gsehsch dä tag eher locker oder vollpackt?,gsehsch dae tag eher locker oder vollpackt,neutral,smalltalk,"Okay, und wie geit’s dir so?",True,True
 wie isch s mit dinere energie hüt?,wie isch s mit dinere energie huet,neutral,smalltalk,Alles klar.,True,True
-"was bruucht es, dass der tag guet wird?",was bruucht es dass der tag guet wird,neutral,smalltalk,Wie isch d Stimmung so?,True,True
+"was bruucht es, dass der tag guet wird?",was bruucht es dass der tag guet wird,neutral,smalltalk,Wie isch d Stimmig so?,True,True
 "gits öppis, wo di hüt speziell beschäftigt?",gits oeppis wo di huet speziell beschaeftigt,neutral,smalltalk,Guet z wüsse. Sonst alles easy?,True,True
 wie fingsch du s tempo vo dim alltag im momänt?,wie fingsch du s tempo vo dim alltag im momaent,neutral,smalltalk,Alles klar.,True,True
 isch s wetter grad eher motivierend oder meh so naja?,isch s wetter grad eher motivierend oder meh so naja,neutral,smalltalk,Wie lauft's süsch?,True,True
@@ -637,14 +637,14 @@ wie isch s so im allgemeine bi dir?,wie isch s so im allgemeine bi dir,neutral,s
 schöne momänt dä wuche scho gha?,schoene momaent dae wuche scho gha,neutral,smalltalk,Verstande. Was lauft no so bi dir?,True,True
 wie isch s gfühl für dä tag gsi am morn?,wie isch s gfuehl fuer dae tag gsi am morn,neutral,smalltalk,Alles klar.,True,True
 hesch hüt mit öper special z schaffe gha?,hesch huet mit oeper special z schaffe gha,neutral,smalltalk,Wie lauft's süsch?,True,True
-wie tüend d tage im momänt verlaufe?,wie tueend d tage im momaent verlaufe,neutral,smalltalk,Wie isch d Stimmung so?,True,True
+wie tüend d tage im momänt verlaufe?,wie tueend d tage im momaent verlaufe,neutral,smalltalk,Wie isch d Stimmig so?,True,True
 was würdest du als vibe vo hüt beschriibe?,was wuerdest du als vibe vo huet beschriibe,neutral,smalltalk,Alles klar.,True,True
-wie isch d laune im momänt so?,wie isch d laune im momaent so,neutral,smalltalk,Wie isch d Stimmung so?,True,True
+wie isch d laune im momänt so?,wie isch d laune im momaent so,neutral,smalltalk,Wie isch d Stimmig so?,True,True
 "gits öppis lüssigs, wo di grad begleitet?",gits oeppis luessigs wo di grad begleitet,neutral,smalltalk,"Okay, und wie geit’s dir so?",True,True
 wie goht s dim rhythmus im alltag?,wie goht s dim rhythmus im alltag,neutral,smalltalk,Wie lauft's süsch?,True,True
 "hesch öppis, wo di grad überrascht hät?",hesch oeppis wo di grad ueberrascht haet,neutral,smalltalk,Guet z wüsse. Sonst alles easy?,True,True
 was isch dini spontane meinig zu hüt?,was isch dini spontane meinig zu huet,neutral,smalltalk,Wie lauft's süsch?,True,True
-wie isch d stimmig im umfeld grad?,wie isch d stimmig im umfeld grad,neutral,smalltalk,Wie isch d Stimmung so?,True,True
+wie isch d stimmig im umfeld grad?,wie isch d stimmig im umfeld grad,neutral,smalltalk,Wie isch d Stimmig so?,True,True
 merksch dä fröschti oder meh dä stress?,merksch dae froeschti oder meh dae stress,neutral,smalltalk,Alles klar.,True,True
 wie fühlts sich d wuche bisher a?,wie fuehlts sich d wuche bisher a,neutral,smalltalk,"Okay, und wie geit’s dir so?",True,True
 "gits öppis, wo di hüt bevorzugt begleite sött?",gits oeppis wo di huet bevorzugt begleite soett,neutral,smalltalk,Wie lauft's süsch?,True,True
