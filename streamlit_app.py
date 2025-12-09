@@ -657,6 +657,7 @@ def main():
                     cm = cm_df.to_numpy()
 
                     fig, ax = plt.subplots()
+                    ax.imshow(cm, cmap="Blues")
 
                     ax.set_xticks(np.arange(len(LABEL_ORDER)))
                     ax.set_yticks(np.arange(len(LABEL_ORDER)))
