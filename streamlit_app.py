@@ -177,7 +177,7 @@ def next_word_candidates(prefix, ngram_counts, analyzer, n_max=3, topk=5):
 # Modelle trainieren
 # =========================================================
 
-@st.cache_resource
+#@st.cache_resource
 def train_all_models(base_df: pd.DataFrame, resp_df: pd.DataFrame):
     """Trainiert Klassifikationsmodelle, LM und Retrieval-Komponenten."""
     # Split
