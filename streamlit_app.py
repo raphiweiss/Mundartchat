@@ -615,7 +615,7 @@ def main():
                 """
             )
 
-        with st.expander("🤖 Verwendete Modelle"):
+        with st.expander("💻 Verwendete Modelle"):
             st.markdown(
                 """
 **1. Klassifikation (Sentiment & Intents)**  
