@@ -568,7 +568,7 @@ def main():
         st.header("📊 Modelle & Datengrundlage")
 
         base_df, resp_df = load_datasets()
-        st.write(f"💬 Anzahl Chatnachrichten (Antwort-Paare): {len(resp_df)}")
+        st.write(f"💬 Anzahl Chatnachrichten: {len(resp_df)}")
 
         with st.expander("😊 Sentiment (3) & Intents (18)"):
             st.markdown(
@@ -610,25 +610,25 @@ def main():
   allgemeiner Fallback je Sentiment.
                 """
             )
-    # Modell-Übersicht
+
+        # Modell-Übersicht
         with st.expander("🤖 Verwendete Modelle"):
             st.markdown(
                 """
-    **1. Klassifikation (Sentiment & Intents)**  
-    - Bag-of-Words + Logistic Regression  
-    - TF-IDF (1–2-Gramme) + Logistic Regression  
-    - SBERT-Embeddings + Logistic Regression  
-    &nbsp;
-    
-    **2. Sprachmodell (Next-Word)**  
-    - Einfaches N-Gramm-Modell (1–3-Gramme, Backoff)  
-    &nbsp;
-    
-    **3. Antwort-Retrieval**  
-    - SBERT-Embeddings + Kosinus-Ähnlichkeit  
-    - Sucht die ähnlichsten Trainingsbeispiele und deren Antworten  
+**1. Klassifikation (Sentiment & Intents)**  
+- Bag-of-Words + Logistic Regression  
+- TF-IDF (1–2-Gramme) + Logistic Regression  
+- SBERT-Embeddings + Logistic Regression  
+
+**2. Sprachmodell (Next-Word)**  
+- Einfaches N-Gramm-Modell (1–3-Gramme, Backoff)  
+
+**3. Antwort-Retrieval**  
+- SBERT-Embeddings + Kosinus-Ähnlichkeit  
+- Sucht die ähnlichsten Trainingsbeispiele und deren Antworten  
                 """
-        )
+            )
+
         # Modelle trainieren / laden
         with st.spinner("Modelle werden geladen / trainiert ..."):
             models = train_all_models(base_df, resp_df)
