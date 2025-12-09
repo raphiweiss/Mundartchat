@@ -583,7 +583,7 @@ EXAMPLES = {
         "dä fokus hüt het sich extrem uszahlt",
         "e siichtbare verbesserig macht mega stolz",
         "klarer erfolg – und vor allem verdient",
-        "dä ganze prozess het so vill lehri momänt bracht",
+        "dä ganze prozess het so vill lehrrichi momänt bracht",
         "fortschritt sichtbar gmacht – stärkt ungemein",
         "en erfolg, wo würkli Gewicht het",
         "dä tag hüt het stolz und zufriedenheit gschänkt",
@@ -1082,8 +1082,8 @@ DEFAULT_ANSWERS_MUNDART= {}
 
 DEFAULT_ANSWERS_MUNDART[("negativ", "stress_ueberforderung")] = [
     "Ui, das tönt stressig.",
-    "Verstehe, das isch viel.",
-    "Hefti Phase. Was wür dir grad am meiste Entlastig gä?",
+    "Verstah di, das isch viel.",
+    "Heftigi Phase. Was wür dir grad am meiste Entlastig gä?",
     "Okay, das isch viel uf Einisch...",
     "Uff, mega viel grad.",
     "Krass, voll de Stress.",
@@ -1118,7 +1118,7 @@ DEFAULT_ANSWERS_MUNDART[("negativ", "traurigkeit_einsamkeit")] = [
 
 DEFAULT_ANSWERS_MUNDART[("negativ", "gesundheit_sorgen")] = [
     "Ah okay, was macht dir genau Sorge?",
-    "Verstehe. Welche Symptome stresst di am meiste?",
+    "Verstehe. Weli Symptom stressed di am meiste?",
     "Okay — was isch s, wo di verunsicheret?",
     "Wo spürsch, dass öppis nöd stimmt?",
     "Verständlich, dass dich das stresst.",
@@ -1142,7 +1142,7 @@ DEFAULT_ANSWERS_MUNDART[("neutral", "smalltalk")] = [
     "Verstande. Was lauft no so bi dir?",
     "Guet z wüsse. Sonst alles easy?",
     "Wie lauft's süsch?",
-    "Wie isch d Stimmung so?",
+    "Wie isch d Stimmig so?",
 ]
 
 DEFAULT_ANSWERS_MUNDART[("neutral", "orga_koordination")] = [
@@ -1191,9 +1191,9 @@ DEFAULT_ANSWERS_MUNDART[("neutral", "kurzreaktion_neutral")] = [
 DEFAULT_ANSWERS_MUNDART[("positiv", "dankbarkeit")] = [
     "Sehr gärn!",
     "Kei Problem!",
-    "Gern passiert!",
+    "Gern gscheh!",
     "Freut mi, wenn s hilft!",
-    "Sehr gern gscheh"
+    "Voll easy"
 ]
 
 DEFAULT_ANSWERS_MUNDART[("positiv", "freude_gute_laune")] = [
@@ -1207,7 +1207,7 @@ DEFAULT_ANSWERS_MUNDART[("positiv", "freude_gute_laune")] = [
 DEFAULT_ANSWERS_MUNDART[("positiv", "erfolg_stolz")] = [
     "Mega! Gratuliere!",
     "Stark gmacht!",
-    "Gfreut mi für dich – echt cool!",
+    "Freut mi für dich – echt cool!",
     "Top! Was het am beschte klappet?",
     "Cooli Sach!"
 ]
@@ -1217,7 +1217,7 @@ DEFAULT_ANSWERS_MUNDART[("positiv", "verbundenheit_naehe")] = [
     "Fühlt sich guet a, gäll?",
     "Mega schön, so Verbindig!",
     "Das tuet immer guet.",
-    "Das sind die best Momänt.",
+    "Das sind die beschte Momänt.",
 ]
 
 DEFAULT_ANSWERS_MUNDART[("positiv", "motivation_vorfreude")] = [
