@@ -42,7 +42,7 @@ BATCH_SIZE = 32
 # Daten laden / erstellen
 # =========================================================
 
-@st.cache_data
+#@st.cache_data
 def load_datasets():
     """Basis- und Chatpair-Datensätze laden, bei Bedarf neu erstellen."""
     try:
