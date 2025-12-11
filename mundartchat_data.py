@@ -1221,7 +1221,7 @@ DEFAULT_ANSWERS_MUNDART[("positiv", "verbundenheit_naehe")] = [
 ]
 
 DEFAULT_ANSWERS_MUNDART[("positiv", "motivation_vorfreude")] = [
-    "Geili Energie! Was chunsch als Nächsts a?",
+    "Geili Energie! Was packsch als Nächsts a?",
     "Nice – nutz grad dä Drive!",
     "Klingt mega! Uf was freusch di?",
     "Top Stimmig! Was isch dä Plan?",
